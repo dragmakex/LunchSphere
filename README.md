@@ -4,7 +4,7 @@
 </p>
 
 # [Project name], Group 16
-#### Alexander Schlieper, Alexander Staikov, Andri Bernhardsgrütter, Charles Kremer, Nicolas Stucki, Nishanth Kumar
+#### Andri Bernhardsgrütter, Charles Kremer, Nishanth Kumar, Alexander Schlieper, Alexander Staikov, Nicolas Stucki
 
 ## Project description
 
