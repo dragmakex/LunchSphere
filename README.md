@@ -3,8 +3,8 @@
   <img height="56" src="img/eth-sip-3l.png">     
 </p>
 
-# [Project name], Group [Group number]
-#### Student 1, Student 2, Student 3, Student 4, Student 5, Student 6
+# [Project name], Group 16
+#### Alexander Schlieper, Alexander Staikov, Andri Bernhardsgrütter, Charles Kremer, Nicolas Stucki, Nishanth Kumar
 
 ## Project description
 
