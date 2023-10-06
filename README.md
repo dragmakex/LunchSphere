@@ -89,6 +89,9 @@
   #### Affinity diagram: 
   https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540
 
+  ![Brainstorming](https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/5611db35-c80d-43f4-8ede-35b6f0ae6b3d)
+
+
 ## Project description
 
     TODO
