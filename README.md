@@ -86,6 +86,8 @@
   invite colleagues for lunch, and see food ratings. Insights include integration with maps, 
   personalization, and in-app ratings. They have a flexible lunch schedule.
 
+  ### Affinity diagram: https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540
+
 ## Project description
 
     TODO
