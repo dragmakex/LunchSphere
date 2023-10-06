@@ -7,7 +7,7 @@
 #### Andri Bernhardsgrütter, Charles Kremer, Nishanth Kumar, Alexander Schlieper, Alexander Staikov, Nicolas Stucki
 
 # Needfinding
-  ##Interview summaries
+  ## Interview summaries
   
   ### Interview 1
   The student from the University of Zurich prefers lunch with a close-knit group, finding it a refreshing 
