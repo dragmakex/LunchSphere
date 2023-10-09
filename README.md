@@ -60,7 +60,7 @@
   sometimes but prefer to eat with people. Whether they eat with new people or people they know 
   does not matter as much.
   
-  ###Interview 9
+  ### Interview 9
   The psychology student at the University of Zurich values familiarity in their lunch companions and 
   appreciates the availability of vegan options. Their lunchtime usually spans from 11:30 to 12:30. The 
   number of people and change of venue aren't major concerns. They use WhatsApp to organize lunch 
@@ -91,6 +91,18 @@
 
   ![Brainstorming](https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/5611db35-c80d-43f4-8ede-35b6f0ae6b3d)
 
+## "How Might We" Statements
+- How might we enable users to find a common lunchtime in a time-efficient manner?
+  - How might we enable the user to show their friends when they are available for lunch?
+  - How might we reduce the amount of work needed to plan lunch and remove repetitive actions?
+  - How might we make the user feel at ease with sharing lunch with a less familiar person?
+  - How might we allow users to set and modify standing arrangements easily?
+- How might we enable the user to find the right size of groups?
+  - How might we enable the user to have control over the group of people that join?
+- How might we make sure that users actually commit to their proposed lunchtime?
+  - How might we prompt users to keep their shared lunchtime slots updated?
+  - How might we decide how to prioritize the different needs of the users? (Place, Time, Amount of people)
+- How might we integrate in-app decision-making features for lunch plans?
 
 ## Project description
 
