@@ -103,6 +103,7 @@
   - How might we prompt users to keep their shared lunchtime slots updated?
   - How might we decide how to prioritize the different needs of the users? (Place, Time, Amount of people)
 - How might we integrate in-app decision-making features for lunch plans?
+- How might we enable the user to select a specific restaurant or provide his preferences?
 
 ## Project description
 
