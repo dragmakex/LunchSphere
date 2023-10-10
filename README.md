@@ -61,7 +61,7 @@
   sometimes but prefer to eat with people. Whether they eat with new people or people they know 
   does not matter as much.
   
-  ### Interview 9
+  #### Interview 9
   The psychology student at the University of Zurich values familiarity in their lunch companions and 
   appreciates the availability of vegan options. Their lunchtime usually spans from 11:30 to 12:30. The 
   number of people and change of venue aren't major concerns. They use WhatsApp to organize lunch 
