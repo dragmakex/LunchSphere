@@ -8,6 +8,7 @@
 
 ## Needfinding
   ### Interview summaries
+  We conducted and summarized twelve needfinding interviews to gather information on how students and workers plan their lunches. 
   
   #### Interview 1
   The student from the University of Zurich prefers lunch with a close-knit group, finding it a refreshing 
