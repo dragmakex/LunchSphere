@@ -111,7 +111,14 @@ We liked the user-friendly interface and functionality but were wondering at whi
 Group chats are the natural solution that almost every potential user is using to plan their lunches. They exist on every major messaging service like whatsapp, discord, etc. In these group chats of friends, one person proposes the time and everyone gives some kind of reaction to the plan to indicate if they will join or not. This is also the most flexible solution as no framework is imposed on how to plan the lunch and thus allows for any kind of irregularity. However, since group chats tend to be used for different reasons as well, the lunch messages can be lost in the amount of sent messages. The other problem is that a group chat is not always inclusive of every person joining the meal and thus don’t solve the problem in its most general form. We found that the messages exchanged in order to plan a lunch are often repetitive, thus indicated that there is an opportunity for optimisation. Below are a few screenshots of how these group chats might look like.
 
 #### Lunchzeit
-todo
+Lunchzeit, a German firm established in 2017 with a team of three professionals, focuses on fostering workplace connections and enhancing overall well-being. Their lunchlottery function is designed to facilitate diverse and engaging connections among employees. Their core philosophy is built upon the idea that fostering comfortable and connected employees leads to quantifiable benefits, such as reduced sick days, increased loyalty, and heightened productivity and creativity.
+
+One notable aspect of Lunchzeit's approach is its adaptability. They tailor their matchmaking algorithm to meet the specific requirements of each partnering company, offering bespoke solutions. Whether it's the creation of a user-friendly web app or the seamless integration of their services into a company's intranet, Lunchzeit provides tailored solutions.
+
+Furthermore, Lunchzeit offers its services at 49€ per month, presenting an affordable option for companies aiming to improve their corporate culture and boost employee morale.
+
+This is something that could also be great for students, since feeling connected as a student and having people to ask questions can also improve a students grades and morale. 
+Thus it might be beneficial to try to connect people not only with their best friends for lunch, but maybe add other students from time to time. 
 
 ## "How Might We" Statements
 - How might we enable users to find a common lunchtime in a time-efficient manner?
