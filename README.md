@@ -92,6 +92,27 @@
 
   ![Brainstorming](https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/5611db35-c80d-43f4-8ede-35b6f0ae6b3d)
 
+## Desk Research
+We researched 12 related works and have summarized the three most related or relevant ones here.
+
+#### Lunchpool
+Lunchpool kicked off as a startup idea back in 2019, aiming to help colleagues connect and network over lunch. We got in touch with CEO Alexander Abell and learned that due to the COVID-19 pandemic, they shifted their focus to virtual events. Nonetheless, the original idea provided us with some valuable insights.
+Initially, the app was designed for in-company use. On Lunchpool, users set up profiles with info ranging from dietary needs to favorite movies. This setup encourages users to meet new people, as shared interests can break the ice and prevent any awkward silences. Users can let others know they're "down for lunch" and can then be invited by others or they can start their own lunch event that others can join. After connecting once you become “lunch buddies” for repeat lunch plans. It was also meant to integrate with common calendar apps and also provide you with restaurant recommendations.
+We liked the user-friendly interface and functionality but were wondering at which point the profile with interests etc. becomes to complicated and closer to a full-fledged social media than a casual everyday lunch planner.
+
+
+![lunchpool1 (2)](https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/17c49e9e-f23c-4f3f-8ea6-118e5e590c9c)
+![lunchpool2 (2) (1)](https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/ff949911-1353-4d3f-9a34-06c8802f6402)
+
+
+
+
+#### Group Chats
+Group chats are the natural solution that almost every potential user is using to plan their lunches. They exist on every major messaging service like whatsapp, discord, etc. In these group chats of friends, one person proposes the time and everyone gives some kind of reaction to the plan to indicate if they will join or not. This is also the most flexible solution as no framework is imposed on how to plan the lunch and thus allows for any kind of irregularity. However, since group chats tend to be used for different reasons as well, the lunch messages can be lost in the amount of sent messages. The other problem is that a group chat is not always inclusive of every person joining the meal and thus don’t solve the problem in its most general form. We found that the messages exchanged in order to plan a lunch are often repetitive, thus indicated that there is an opportunity for optimisation. Below are a few screenshots of how these group chats might look like.
+
+#### Lunchzeit
+todo
+
 ## "How Might We" Statements
 - How might we enable users to find a common lunchtime in a time-efficient manner?
   - How might we enable the user to show their friends when they are available for lunch?
@@ -105,6 +126,8 @@
   - How might we decide how to prioritize the different needs of the users? (Place, Time, Amount of people)
 - How might we integrate in-app decision-making features for lunch plans?
 - How might we enable the user to select a specific restaurant or provide his preferences?
+
+
 
 ## Project description
 
