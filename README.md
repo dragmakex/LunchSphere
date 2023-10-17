@@ -126,7 +126,7 @@ We liked the user-friendly interface and functionality but were wondering at whi
 
 Group chats are the natural solution that almost every potential user is using to plan their lunches. They exist on every major messaging service like whatsapp, discord, etc. In these group chats of friends, one person proposes the time and everyone gives some kind of reaction to the plan to indicate if they will join or not. This is also the most flexible solution as no framework is imposed on how to plan the lunch and thus allows for any kind of irregularity. However, since group chats tend to be used for different reasons as well, the lunch messages can be lost in the amount of sent messages. The other problem is that a group chat is not always inclusive of every person joining the meal and thus don’t solve the problem in its most general form. We found that the messages exchanged in order to plan a lunch are often repetitive, thus indicated that there is an opportunity for optimisation. Below are a few screenshots of how these group chats might look like.
 
-![Group Chat Screenshot 1](Deliverables/week3/group_chat_screenshot_1.png)
+<img width="186" alt="group_chat_screenshot_1 (1)" src="https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/1b88a0e1-04e2-47a7-98c2-8504881541cf">
 ![Group Chat Screenshot 2](Deliverables/week3/group_chat_screenshot_2.png)
 
 #### Lunchzeit
