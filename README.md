@@ -188,7 +188,7 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 
 #### Idea A
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg" alt="Paper Prototype Idea A 2" title="Paper Prototype Idea A 2" width="300" height="600" />
-
+At the beginning of the week you select your preferred lunch times for each day and the application matches you with friends that have chosen the same times.
 
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_1.jpg" alt="Paper Prototype Idea A 1" title="Paper Prototype Idea A 1" width="300" height="600" />
 
