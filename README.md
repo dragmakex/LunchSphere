@@ -187,7 +187,7 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 ## Low-fidelity Prototype
 
 #### Idea A
-TODO
+![Paper Prototype Image 1](Deliverables/LowFiPrototyping/IdeaA/Paper/IMG_20231017_110329.jpg)
 
 #### Idea B
 TODO
