@@ -188,12 +188,11 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 
 #### Idea A
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_1.jpg" alt="Paper Prototype Idea A 1" title="Paper Prototype Idea A 1" width="400" height="700" />
-![Paper Prototype Idea A 2](Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg)
+<img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg" alt="Paper Prototype Idea A 2" title="Paper Prototype Idea A 2" width="400" height="700" />
 
 #### Idea B
-![Paper Prototype Idea B 1](Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg)
-![Paper Prototype Idea B 2](Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg)
-
+<img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg" alt="Paper Prototype Idea B 2" title="Paper Prototype Idea B 2" width="400" height="700" />
+<img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg" alt="Paper Prototype Idea B 3" title="Paper Prototype Idea B 3" width="400" height="700" />
 
 ## Mid-fidelity Prototype
 
