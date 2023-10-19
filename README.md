@@ -191,8 +191,8 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 ![Paper Prototype Idea A 2](Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg)
 
 #### Idea B
-![Paper Prototype Idea B 1](Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_1.jpg)
-![Paper Prototype Idea B 2](Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg)
+![Paper Prototype Idea B 1](Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg)
+![Paper Prototype Idea B 2](Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg)
 
 
 ## Mid-fidelity Prototype
