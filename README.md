@@ -186,7 +186,7 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 
 ## Low-fidelity Prototype
 
-    TODO
+### Idea A
 
 ## Mid-fidelity Prototype
 
