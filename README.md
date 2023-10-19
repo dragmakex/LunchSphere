@@ -186,7 +186,11 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 
 ## Low-fidelity Prototype
 
-### Idea A
+#### Idea A
+TODO
+
+#### Idea B
+TODO
 
 ## Mid-fidelity Prototype
 
