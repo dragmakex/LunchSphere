@@ -187,7 +187,7 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 ## Low-fidelity Prototype
 
 #### Idea A
-<img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_1.jpg" alt="Paper Prototype Idea A 1" title="Paper Prototype Idea A 1" width="500" height="800" />
+<img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_1.jpg" alt="Paper Prototype Idea A 1" title="Paper Prototype Idea A 1" width="400" height="700" />
 ![Paper Prototype Idea A 2](Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg)
 
 #### Idea B
