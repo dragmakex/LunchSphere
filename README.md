@@ -188,6 +188,7 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 
 #### Idea A
 ![Paper Prototype Image 1](Deliverables/LowFiPrototyping/IdeaA/Paper/IMG_20231017_110329.jpg)
+![Paper Prototype Image 2](Deliverables/LowFiPrototyping/IdeaA/Paper/IMG_20231017_111105.jpg)
 
 #### Idea B
 TODO
