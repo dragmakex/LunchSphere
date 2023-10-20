@@ -189,6 +189,8 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 #### Idea A
 <img src="Deliverables/LowFiPrototyping/IdeaA/Storyboard/IMG_1247.JPG" alt="Storyboard Idea A" title="Storyboard Idea A" width="500" height="600" />
 
+This version of the app illustrates the convenience of automated lunch scheduling for busy students. Without the hassle of daily planning, Mika receives timely notifications about lunch matches with friends.
+
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg" alt="Paper Prototype Idea A 2" title="Paper Prototype Idea A 2" width="300" height="600" />
 
 At the start of each week, you can select your desired lunch times and canteen for each day. You can do so by scrolling through a list of available times and selecting your preferred canteen from a dropdown menu. The app then pairs you with friends who have opted for the same time slot.  The final location is determined based on the majority vote.
@@ -200,6 +202,7 @@ You received a match for a lunch time and place with your friends and can either
 #### Idea B
 <img src="Deliverables/LowFiPrototyping/IdeaB/Storyboard/IMG_1246.JPG" alt="Storyboard Idea B" title="Storyboard Idea B" width="500" height="600" />
 
+This version of the app demonstrates the coordination of lunch plans amidst a hectic schedule. Bypassing the clutter of multiple chat groups, this version showcases the proposition and matching process. 
 
 <img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg" alt="Paper Prototype Idea B 2" title="Paper Prototype Idea B 2" width="300" height="600" />
 
@@ -211,6 +214,8 @@ Through this interface, you can suggest a time using a scrollable selector and c
 
 #### Idea C
 <img src="Deliverables/LowFiPrototyping/IdeaC/Storyboard/image.jpg" alt="Storyboard Idea C" title="Storyboard Idea C" width="800" height="600" />
+
+This version of the app showcases the process of confirming attendance for a lunch meeting initiated by another user.
 
 ## Mid-fidelity Prototype
 
