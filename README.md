@@ -189,11 +189,11 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 #### Idea A
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg" alt="Paper Prototype Idea A 2" title="Paper Prototype Idea A 2" width="300" height="600" />
 
-At the beginning of the week you select your preferred lunch times and canteen for each day and the application matches you with friends that have chosen the same time. You can scroll through a list of times and use a dropdown menu for the canteen choice. The place will be chosen based on the most votes.
+At the start of each week, you can select your desired lunch times and canteen for each day. You can do so by scrolling through a list of available times and selecting your preferred canteen from a dropdown menu. The app then pairs you with friends who have opted for the same time slot.  The final location is determined based on the majority vote.
 
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_1.jpg" alt="Paper Prototype Idea A 1" title="Paper Prototype Idea A 1" width="300" height="600" />
 
-You got matched for a lunch time and place with your friends and can either accept or reject the offer.
+You received a match for a lunch time and place with your friends and can either accept or reject the offer.
 
 #### Idea B
 <img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg" alt="Paper Prototype Idea B 2" title="Paper Prototype Idea B 2" width="300" height="600" />
@@ -202,8 +202,7 @@ The home screen shows you an already proposed location and time including the pe
 
 <img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg" alt="Paper Prototype Idea B 3" title="Paper Prototype Idea B 3" width="300" height="600" />
 
-This interface lets you propose a time using a scrolling selector for the time and a dropdown menu for the canteen choice. You can also set the meeting point using a textbox.
-
+Through this interface, you can suggest a time using a scrollable selector and choose a canteen from a dropdown menu. Additionally, you can specify the meeting point in a provided textbox.
 
 ## Mid-fidelity Prototype
 
