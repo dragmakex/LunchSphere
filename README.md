@@ -198,9 +198,11 @@ You got matched for a lunch time and place with your friends and can either acce
 #### Idea B
 <img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg" alt="Paper Prototype Idea B 2" title="Paper Prototype Idea B 2" width="300" height="600" />
 
-The home screen shows you an already proposed location and time including the people joining.  You can either press
+The home screen shows you an already proposed location and time including the people joining.  You can either press on the offer to join or press a button to propose another time.
 
 <img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg" alt="Paper Prototype Idea B 3" title="Paper Prototype Idea B 3" width="300" height="600" />
+
+
 
 ## Mid-fidelity Prototype
 
