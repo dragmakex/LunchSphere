@@ -210,7 +210,7 @@ The home screen shows you an already proposed location and time including the pe
 Through this interface, you can suggest a time using a scrollable selector and choose a canteen from a dropdown menu. You can also designate the meeting point using the provided textbox and select the maximum number of friends joining via a dropdown menu.
 
 #### Idea C
-
+<img src="Deliverables/LowFiPrototyping/IdeaC/Storyboard/image.jpg" alt="Storyboard Idea C" title="Storyboard Idea C" width="800" height="600" />
 
 ## Mid-fidelity Prototype
 
