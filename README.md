@@ -187,6 +187,8 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 ## Low-fidelity Prototype
 
 #### Idea A
+<img src="Deliverables/LowFiPrototyping/IdeaA/Storyboard/IMG_1247.JPG" alt="Paper Prototype Idea A 2" title="Paper Prototype Idea A 2" width="300" height="600" />
+
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg" alt="Paper Prototype Idea A 2" title="Paper Prototype Idea A 2" width="300" height="600" />
 
 At the start of each week, you can select your desired lunch times and canteen for each day. You can do so by scrolling through a list of available times and selecting your preferred canteen from a dropdown menu. The app then pairs you with friends who have opted for the same time slot.  The final location is determined based on the majority vote.
