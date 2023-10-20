@@ -202,7 +202,7 @@ The home screen shows you an already proposed location and time including the pe
 
 <img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg" alt="Paper Prototype Idea B 3" title="Paper Prototype Idea B 3" width="300" height="600" />
 
-Through this interface, you can suggest a time using a scrollable selector and choose a canteen from a dropdown menu. Additionally, you can specify the meeting point in a provided textbox.
+Through this interface, you can suggest a time using a scrollable selector and choose a canteen from a dropdown menu. You can also designate the meeting point using the provided textbox and select the maximum number of friends joining via a dropdown menu.
 
 ## Mid-fidelity Prototype
 
