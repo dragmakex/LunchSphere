@@ -189,7 +189,7 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 #### Idea A
 <img src="Deliverables/LowFiPrototyping/IdeaA/Storyboard/IMG_1247.JPG" alt="Storyboard Idea A" title="Storyboard Idea A" width="500" height="600" />
 
-This version of the app illustrates the convenience of automated lunch scheduling for busy students. Without the hassle of daily planning, Mika receives timely notifications about lunch matches with friends.
+This version of the app illustrates the convenience of automated lunch scheduling for busy students. Without the hassle of daily planning, one receives timely notifications about lunch matches with friends based on the selected availability in the beginning of the week.
 
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg" alt="Paper Prototype Idea A 2" title="Paper Prototype Idea A 2" width="300" height="600" />
 
