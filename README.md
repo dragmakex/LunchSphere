@@ -202,7 +202,7 @@ The home screen shows you an already proposed location and time including the pe
 
 <img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg" alt="Paper Prototype Idea B 3" title="Paper Prototype Idea B 3" width="300" height="600" />
 
-This interface lets you propose a time using a scrolling selector for the time and a dropdown menu for the canteen choice.
+This interface lets you propose a time using a scrolling selector for the time and a dropdown menu for the canteen choice. You can also set the meeting point using a textbox.
 
 
 ## Mid-fidelity Prototype
