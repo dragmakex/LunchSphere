@@ -237,7 +237,7 @@ This prototype handles the lunch scheduling problem in an automatic way. At the 
 
 #### Peer Feedback
 
-##### Testers
+#### Testers
 Nishanth Kumar: Group 19 <br>
 Nicolas Stucki: Group 12 <br>
 Andri Bernhardsgrütter: Group 11 <br>
