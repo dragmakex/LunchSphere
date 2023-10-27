@@ -228,9 +228,12 @@ This prototype solves the lunch scheduling problem day by day. You can commit to
 
 
 #### Prototype 2: Automatic Scheduling
-<img src="img/automatic_1.png" alt="Prototype Automatic 1" title="Prototype Automatic 1" width="300" height="600" /> <img src="img/automatic_2.png" alt="Prototype Automatic 2" title="Prototype Automatic 2" width="300" height="600" />
 
-<img src="img/automatic_3.png" alt="Prototype Automatic 3" title="Prototype Automatic 3" width="300" height="600" /> <img src="img/automatic_4.png" alt="Prototype Automatic 4" title="Prototype Automatic 4" width="300" height="600" />
+<img src="img/automatic_3.png" alt="Prototype Automatic 3" title="Prototype Automatic 3" width="300" height="600"/> <img src="img/automatic_2.png" alt="Prototype Automatic 2" title="Prototype Automatic 2" width="300" height="600" />
+
+<img src="img/automatic_1.png" alt="Prototype Automatic 1" title="Prototype Automatic 1" width="300" height="600"/> <img src="img/automatic_4.png" alt="Prototype Automatic 4" title="Prototype Automatic 4" width="300" height="600" />
+
+This prototype handles the lunch scheduling problem in an automatic way. 
 
 ## Hi-fidelity Prototype
 
