@@ -224,7 +224,7 @@ This version of the app showcases the process of confirming attendance for a lun
 
 <img src="img/manual_3.png" alt="Prototype Manual 3" title="Prototype Manual 3" width="300" height="600" /> <img src="img/manual_4.png" alt="Prototype Manual 4" title="Prototype Manual 4" width="300" height="600" />
 
-
+This prototype solves the lunch scheduling problem day by day. You can commit to a time scheduled by your friends or you can also propose a time and invite them yourself. With easy login features, you can manage your circle by adding them to your friends list. Overall, this version of the app allows for flexible scheduling on a daily basis and facilitates last-minute plan changes. 
 
 
 #### Prototype 2: Automatic Scheduling
