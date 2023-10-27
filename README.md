@@ -219,7 +219,18 @@ This version of the app showcases the process of confirming attendance for a lun
 
 ## Mid-fidelity Prototype
 
-    TODO
+#### Prototype 1
+<img src="img/manual_1.png" alt="Prototype Manual 1" title="Prototype Manual 1" width="300" height="600" /> <img src="img/manual_2.png" alt="Prototype Manual 2" title="Prototype Manual 2" width="300" height="600" />
+
+<img src="img/manual_3.png" alt="Prototype Manual 3" title="Prototype Manual 3" width="300" height="600" /> <img src="img/manual_4.png" alt="Prototype Manual 4" title="Prototype Manual 4" width="300" height="600" />
+
+
+
+
+#### Prototype 2
+<img src="img/automatic_1.png" alt="Prototype Automatic 1" title="Prototype Automatic 1" width="300" height="600" /> <img src="img/automatic_2.png" alt="Prototype Automatic 2" title="Prototype Automatic 2" width="300" height="600" />
+
+<img src="img/automatic_3.png" alt="Prototype Automatic 3" title="Prototype Automatic 3" width="300" height="600" /> <img src="img/automatic_4.png" alt="Prototype Automatic 4" title="Prototype Automatic 4" width="300" height="600" />
 
 ## Hi-fidelity Prototype
 
