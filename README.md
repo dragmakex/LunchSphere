@@ -235,6 +235,20 @@ This prototype solves the lunch scheduling problem day by day. You can commit to
 
 This prototype handles the lunch scheduling problem in an automatic way. At the beginning of the week you pick your preferred lunch times for each day and either create or join a group of friends. The app will then automatically pick a time that suits each individual group member and propose it to the group. On each day you can then decide which group you would like to eat lunch with by accepting or declining the algorithm's proposed lunch time for each group. This scheduling manner allows for less last-minute flexibility, but it takes away the daily hassle of committing to and proposing lunch times. You simply set your preferences once a week and pick your preferred slot daily."
 
+#### Peer Feedback
+
+##### Testers
+Nishanth Kumar: Group 19 <br>
+Nicolas Stucki: Group 12 <br>
+Andri Bernhardsgrütter: Group 11 <br>
+
+#### TODO: Summary of Peer Feedback
+- describe highlights of test sessions
+- compare prototypes to each other in terms of feedback
+
+#### TODO: Conclusion
+- state which idea is the most promising one to be pursued on your prototypes 
+
 ## Hi-fidelity Prototype
 
     TODO
