@@ -233,7 +233,7 @@ This prototype solves the lunch scheduling problem day by day. You can commit to
 
 <img src="img/automatic_1.png" alt="Prototype Automatic 1" title="Prototype Automatic 1" width="300" height="600"/> <img src="img/automatic_4.png" alt="Prototype Automatic 4" title="Prototype Automatic 4" width="300" height="600" />
 
-This prototype handles the lunch scheduling problem in an automatic way. 
+This prototype handles the lunch scheduling problem in an automatic way. At the beginning of the week you pick your preferred lunch times for each day and either create or join a group of friends. The app will then automatically pick a time that suits each individual group member and propose it to the group. On each day you can then decide which group you would like to eat lunch with by accepting or declining the algorithm's proposed lunch time for each group. This scheduling manner allows for less last-minute flexibility, but it takes away the daily hassle of committing to and proposing lunch times. Simply set your preferences once a week and pick your preferred slot daily."
 
 ## Hi-fidelity Prototype
 
