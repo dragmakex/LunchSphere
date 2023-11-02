@@ -242,16 +242,15 @@ Nishanth Kumar: Group 19 <br>
 Nicolas Stucki: Group 12 <br>
 Andri Bernhardsgrütter: Group 11 <br>
 
-#### TODO: Summary of Peer Feedback
-- describe highlights of test sessions
-- compare prototypes to each other in terms of feedback
+#### Summary of Peer Feedback
 
-We showed the manual and automatic prototypes to several people. They recognized the problem that we are trying to solve but didn't quite agree on our approach. First of all, most of the peer reviewers liked the automatic approach more, which was a slight surprise for us. They said that the manual invitation-based system is too much of a hassle and they wouldn't use it, as it doesn't simplify the lunch scheduling process for them since they could make use of their already existing chat apps. They enjoyed the idea of having to enter their schedule only once a week and then the app handles all of the lunch scheduling. They didn't understand the added value for the manual system. 
+We presented both our manual and automatic prototype models to a group of students. They recognized the problem that we are trying to solve, but didn't quite agree on our approach. Contrary to our expectations, the majority of our peer reviewers expressed a preference for the automatic model. They criticized the manual, invitation-based system as inconvenient, stating they were unlikely to use it. They argued it failed to solve the lunch scheduling problem in an easy way, pointing out that it is too similar to other messaging services and would only add to the confusion caused by having yet another app. They liked the automatic approach, since it's based on entering your availability just once a week and letting the app make lunch arrangements. In contrast, the purpose and benefit of the manual system remained unclear to them. The reviewers only raised one concern specific to the automatic model, which was regarding the potential complications in changing your weekly available lunch times when a lunch appointment is already set for that day.
 
-For both of these prototypes they suggested good features that could be added:
-
-- Showing your favorite groups on top using a favorites system
-- Display who declined and accepted
+For both prototypes, they offered valuable suggestions for additional features:
+- Implementing a favorites system to prioritize preferred groups.
+- Integrating personal preferences into user profiles, such as food preferences, allergies, location preferences, etc.
+- Displaying who has accepted or declined invitations.
+- Adding and inviting friends of friends or suggested friends
 
 #### TODO: Conclusion
 - state which idea is the most promising one to be pursued on your prototypes 
