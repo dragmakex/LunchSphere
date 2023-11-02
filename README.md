@@ -246,6 +246,13 @@ Andri Bernhardsgrütter: Group 11 <br>
 - describe highlights of test sessions
 - compare prototypes to each other in terms of feedback
 
+We showed the manual and automatic prototypes to several people. They recognized the problem that we are trying to solve but didn't quite agree on our approach. First of all, most of the peer reviewers liked the automatic approach more, which was a slight surprise for us. They said that the manual invitation-based system is too much of a hassle and they wouldn't use it, as it doesn't simplify the lunch scheduling process for them since they could make use of their already existing chat apps. They enjoyed the idea of having to enter their schedule only once a week and then the app handles all of the lunch scheduling. They didn't understand the added value for the manual system. 
+
+For both of these prototypes they suggested good features that could be added:
+
+- Showing your favorite groups on top using a favorites system
+- Display who declined and accepted
+
 #### TODO: Conclusion
 - state which idea is the most promising one to be pursued on your prototypes 
 
