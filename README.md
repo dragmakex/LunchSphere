@@ -130,7 +130,6 @@ Group chats are the natural solution that almost every potential user is using t
 <br>
 <img width="186" alt="group_chat_screenshot_2 (1)" src="https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/3973cbd6-0a3d-492b-9f1b-3aa6b974f1c9">
 
-
 #### Lunchzeit
 
 Lunchzeit, a German firm established in 2017 with a team of three professionals, focuses on fostering workplace connections and enhancing overall well-being. Their lunchlottery function is designed to facilitate diverse and engaging connections among employees. Their core philosophy is built upon the idea that fostering comfortable and connected employees leads to quantifiable benefits, such as reduced sick days, increased loyalty, and heightened productivity and creativity.
@@ -187,32 +186,35 @@ Introduction to chosen topic in own words, possibly with a brief motivation
 ## Low-fidelity Prototype
 
 #### Idea A
+
 <img src="Deliverables/LowFiPrototyping/IdeaA/Storyboard/IMG_1247.JPG" alt="Storyboard Idea A" title="Storyboard Idea A" width="500" height="600" />
 
 This version of the app illustrates the convenience of automated lunch scheduling for busy students. Without the hassle of daily planning, one receives timely notifications about lunch matches with friends based on the selected availability in the beginning of the week.
 
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg" alt="Paper Prototype Idea A 2" title="Paper Prototype Idea A 2" width="300" height="600" />
 
-At the start of each week, you can select your desired lunch times and canteen for each day. You can do so by scrolling through a list of available times and selecting your preferred canteen from a dropdown menu. The app then pairs you with friends who have opted for the same time slot.  The final location is determined based on the majority vote.
+At the start of each week, you can select your desired lunch times and canteen for each day. You can do so by scrolling through a list of available times and selecting your preferred canteen from a dropdown menu. The app then pairs you with friends who have opted for the same time slot. The final location is determined based on the majority vote.
 
 <img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_1.jpg" alt="Paper Prototype Idea A 1" title="Paper Prototype Idea A 1" width="300" height="600" />
 
 You received a match for a lunch time and place with your friends and can either accept or reject the offer.
 
 #### Idea B
+
 <img src="Deliverables/LowFiPrototyping/IdeaB/Storyboard/IMG_1246.JPG" alt="Storyboard Idea B" title="Storyboard Idea B" width="500" height="600" />
 
-This version of the app demonstrates the coordination of lunch plans amidst a hectic schedule. Bypassing the clutter of multiple chat groups, this version showcases the proposition and matching process. 
+This version of the app demonstrates the coordination of lunch plans amidst a hectic schedule. Bypassing the clutter of multiple chat groups, this version showcases the proposition and matching process.
 
 <img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg" alt="Paper Prototype Idea B 2" title="Paper Prototype Idea B 2" width="300" height="600" />
 
-The home screen shows you an already proposed location and time including the people joining.  You can either press on the offer to join or press a button to propose another time.
+The home screen shows you an already proposed location and time including the people joining. You can either press on the offer to join or press a button to propose another time.
 
 <img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg" alt="Paper Prototype Idea B 3" title="Paper Prototype Idea B 3" width="300" height="600" />
 
 Through this interface, you can suggest a time using a scrollable selector and choose a canteen from a dropdown menu. You can also designate the meeting point using the provided textbox and select the maximum number of friends joining via a dropdown menu.
 
 #### Idea C
+
 <img src="Deliverables/LowFiPrototyping/IdeaC/Storyboard/image.jpg" alt="Storyboard Idea C" title="Storyboard Idea C" width="800" height="600" />
 
 This version of the app showcases the process of confirming attendance for a lunch meeting initiated by another user.
@@ -220,12 +222,12 @@ This version of the app showcases the process of confirming attendance for a lun
 ## Mid-fidelity Prototype
 
 #### Prototype 1: Manual Scheduling
+
 <img src="img/manual_1.png" alt="Prototype Manual 1" title="Prototype Manual 1" width="300" height="600" /> <img src="img/manual_2.png" alt="Prototype Manual 2" title="Prototype Manual 2" width="300" height="600" />
 
 <img src="img/manual_3.png" alt="Prototype Manual 3" title="Prototype Manual 3" width="300" height="600" /> <img src="img/manual_4.png" alt="Prototype Manual 4" title="Prototype Manual 4" width="300" height="600" />
 
-This prototype solves the lunch scheduling problem day by day. You can commit to a time scheduled by your friends or you can also propose a time and invite them yourself. With easy login features, you can manage your circle by adding them to your friends list. Overall, this version of the app allows for flexible scheduling on a daily basis and facilitates last-minute plan changes. 
-
+This prototype solves the lunch scheduling problem day by day. You can commit to a time scheduled by your friends or you can also propose a time and invite them yourself. With easy login features, you can manage your circle by adding them to your friends list. Overall, this version of the app allows for flexible scheduling on a daily basis and facilitates last-minute plan changes.
 
 #### Prototype 2: Automatic Scheduling
 
@@ -238,6 +240,7 @@ This prototype handles the lunch scheduling problem in an automatic way. At the 
 #### Peer Feedback
 
 #### Testers
+
 Nishanth Kumar: Group 19 <br>
 Nicolas Stucki: Group 12 <br>
 Andri Bernhardsgrütter: Group 11 <br>
@@ -247,14 +250,15 @@ Andri Bernhardsgrütter: Group 11 <br>
 We presented both our manual and automatic prototype models to a group of students. They recognized the problem that we are trying to solve, but didn't quite agree on our approach. Contrary to our expectations, the majority of our peer reviewers expressed a preference for the automatic model. They criticized the manual, invitation-based system as inconvenient, stating they were unlikely to use it. They argued it failed to solve the lunch scheduling problem in an easy way, pointing out that it is too similar to other messaging services and would only add to the confusion caused by having yet another app. They liked the automatic approach, since it's based on entering your availability just once a week and letting the app make lunch arrangements. In contrast, the purpose and benefit of the manual system remained unclear to them. The reviewers only raised one concern specific to the automatic model, which was regarding the potential complications in changing your weekly available lunch times when a lunch appointment is already set for that day.
 
 For both prototypes, they offered valuable suggestions for additional features:
+
 - Implementing a favorites system to prioritize preferred groups.
 - Integrating personal preferences into user profiles, such as food preferences, allergies, location preferences, etc.
 - Displaying who has accepted or declined invitations.
 - Adding and inviting friends of friends or suggested friends
 
-#### TODO: Conclusion
+#### Conclusion
 
-After our recent feedback session, it became evident that while our core idea held promise, our execution needed refining. Several concerns were raised, especially around the user workload in the invitation-based system, prompting us to reconsider our approach.
+After our recent feedback session, it became evident that while our core idea held promise, our execution needed refining. We combined the best ideas from both prototypes to create yet another prototype, which solves the weak points of each individual prototype. Refer to pictures below for the new prototype.
 
 We've transitioned from a labor-intensive invitation system to a more streamlined automatic scheduling system. Although the latter does alleviate much of the user's responsibility, it also necessitated a weekly plan input, which we perceived as another potential friction point.
 
@@ -267,6 +271,9 @@ Flexibility: Members aren't strictly bound to the default. They can suggest alte
 Spontaneous Lunches: While our group-based system streamlines scheduled lunches, we recognize the joy of spontaneous outings. We've catered to this by introducing a 'wildcard' function. Users can quickly form a temporary group by cherry-picking members from existing groups. These ad-hoc groups are ephemeral, dissolving post-lunch to ensure your group menu remains clutter-free.
 
 In essence, our new prototype aims to strike a balance between structure and spontaneity, ensuring users have a hassle-free experience while retaining the flexibility to mix things up when they wish
+
+Here are the images of the final prototype:
+![final prototype full](img/finalprototype1.png)
 
 ## Hi-fidelity Prototype
 
