@@ -253,7 +253,20 @@ For both prototypes, they offered valuable suggestions for additional features:
 - Adding and inviting friends of friends or suggested friends
 
 #### TODO: Conclusion
-- state which idea is the most promising one to be pursued on your prototypes 
+
+After our recent feedback session, it became evident that while our core idea held promise, our execution needed refining. Several concerns were raised, especially around the user workload in the invitation-based system, prompting us to reconsider our approach.
+
+We've transitioned from a labor-intensive invitation system to a more streamlined automatic scheduling system. Although the latter does alleviate much of the user's responsibility, it also necessitated a weekly plan input, which we perceived as another potential friction point.
+
+To further simplify the process, we've introduced a group-based system. Here's how it works:
+
+Group Creation: A group leader establishes a group, setting a default time and location for lunch. This preset arrangement gets automatically proposed every day, making the decision process virtually hands-off for most members.
+
+Flexibility: Members aren't strictly bound to the default. They can suggest alternative times if needed. Moreover, users have the liberty to be part of multiple groups, providing them with a range of lunch options daily. All it takes is a single click to select their preferred group for the day.
+
+Spontaneous Lunches: While our group-based system streamlines scheduled lunches, we recognize the joy of spontaneous outings. We've catered to this by introducing a 'wildcard' function. Users can quickly form a temporary group by cherry-picking members from existing groups. These ad-hoc groups are ephemeral, dissolving post-lunch to ensure your group menu remains clutter-free.
+
+In essence, our new prototype aims to strike a balance between structure and spontaneity, ensuring users have a hassle-free experience while retaining the flexibility to mix things up when they wish
 
 ## Hi-fidelity Prototype
 
