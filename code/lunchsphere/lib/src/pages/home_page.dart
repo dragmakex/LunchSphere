@@ -1,99 +1,66 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lunchsphere/src/models/group_schedule_model.dart';
+import 'package:lunchsphere/src/pages/group_schedule_card.dart';
+import 'package:lunchsphere/src/providers/data_provider.dart';
+import 'package:lunchsphere/src/services/api_service.dart';
+import 'package:lunchsphere/src/util/style_consts.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  HomePage({super.key});
+
+  final ApiService apiService = ApiService();
 
   @override
   Widget build(BuildContext context) {
+    final provider = context.watch<DataProvider>();
     return CupertinoPageScaffold(
-      navigationBar: const CupertinoNavigationBar(
-        middle: Text('LunchSphere'),
-        leading: Icon(CupertinoIcons.person),
-        backgroundColor: CupertinoColors.systemGrey6,
-      ),
-      child: SafeArea(
-        child: ListView(
-          children: [
-            lunchtimeTile('The bibstreet boys', '11:45',
-                ['Lionel Messi', 'Aitana Bonmati']),
-            lunchtimeTile(
-                'HCI Group', '12:30', ['Frenkie De Jong', 'Ferran Torres']),
-            lunchtimeTileWithComment(
-                'Charles Kremer',
-                '12:45',
-                ['Lionel Messi', 'Aitana Bonmati', 'Andres Iniesta'],
-                'There’s a special deal at RiceUp, Let’s head there!'),
-            createCustomLunchtime(),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget lunchtimeTile(String title, String time, List<String> participants) {
-    return Card(
-      margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
-      child: ListTile(
-        title: Text(title),
-        subtitle: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(time),
-            ...participants.map((participant) => Text(participant)),
-          ],
-        ),
-        trailing: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            CupertinoButton(child: const Text('Accept'), onPressed: () {}),
-            CupertinoButton(child: const Text('Decline'), onPressed: () {}),
-            CupertinoButton(child: const Text('Options'), onPressed: () {}),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget lunchtimeTileWithComment(
-      String title, String time, List<String> participants, String comment) {
-    return Card(
-      margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
-      child: Column(
-        children: [
-          ListTile(
-            title: Text(title),
-            subtitle: Text(time),
-            trailing: const Icon(CupertinoIcons.chat_bubble),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15.0),
-            child: Text(comment),
-          ),
-          ListTile(
-            subtitle: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children:
-                  participants.map((participant) => Text(participant)).toList(),
+      backgroundColor: StyleConsts.backgroundPrimary,
+      child: SingleChildScrollView(
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            child: Column(
+              children: [
+                const SizedBox(height: 8),
+                buildHeader(),
+                const SizedBox(height: 32),
+                for (GroupScheduleModel groupSchedule
+                    in provider.groupSchedules) ...[
+                  GroupScheduleCard(
+                    groupSchedule: groupSchedule,
+                  ),
+                  const SizedBox(height: 10),
+                ],
+              ],
             ),
-            trailing:
-                CupertinoButton(child: const Text('Accept'), onPressed: () {}),
           ),
-        ],
+        ),
       ),
     );
   }
 
-  Widget createCustomLunchtime() {
+  Padding buildHeader() {
     return Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: Column(
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Text(
-              'Reached the end and still hungry for plans? 🤔 If none of your group schedule fits, why not propose your own lunchtime? All people sharing a group with you will be able to join.'),
-          CupertinoButton.filled(
-            child: const Text('Create Custom Lunchtime'),
-            onPressed: () {},
+          const Icon(
+            Icons.account_circle,
+            color: StyleConsts.greyDarker,
+            size: 32,
+          ),
+          Image.asset(
+            'assets/images/LunchSphereLogo_154x33.png',
+            fit: BoxFit.cover,
+            height: 32, // Adjust the size to fit your logo design
+          ),
+          Image.asset(
+            'assets/images/avatar1.png',
+            fit: BoxFit.cover,
+            height: 32, // Adjust the size to fit your logo design
           ),
         ],
       ),

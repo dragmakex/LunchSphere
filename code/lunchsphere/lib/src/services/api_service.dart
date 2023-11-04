@@ -1,9 +1,22 @@
+import 'dart:convert';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
+import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/models/user.dart';
 
 class ApiService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  Future<List<GroupScheduleModel>> getGroupSchedules() async {
+    final jsonString =
+        await rootBundle.loadString('assets/data/group_schedules.json');
+    final jsonResponse = jsonDecode(jsonString) as List;
+    return jsonResponse
+        .map((scheduleJson) => GroupScheduleModel.fromJson(scheduleJson))
+        .toList();
+  }
 
   // Get a single user by ID
   Future<User?> getUser(String userId) async {

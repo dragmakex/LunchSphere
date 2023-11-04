@@ -18,7 +18,7 @@ class CustomButton extends StatelessWidget {
     required this.onPressed,
     required this.child,
     this.color = StyleConsts.purplePrimary,
-    this.borderRadius = 5,
+    this.borderRadius = 12,
     this.padding = const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
     this.border,
     this.height,
@@ -68,8 +68,8 @@ class _TouchableOpacityState extends State<TouchableOpacity> {
       onTapCancel: () => setState(() => _isPressed = false),
       onTap: widget.onPressed,
       child: AnimatedOpacity(
-          duration: const Duration(milliseconds: 150),
-          opacity: _isPressed ? 0.5 : 1,
+          duration: const Duration(milliseconds: 100),
+          opacity: _isPressed ? 0.4 : 1,
           child: widget.child),
     );
   }

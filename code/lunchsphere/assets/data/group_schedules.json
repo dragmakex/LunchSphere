@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "groupName": "The Bibstreet boys",
+    "time": "11:45",
+    "profilesJoining": [
+      {
+        "id": 2,
+        "name": "Lionel Messi",
+        "avatarUrl": "assets/images/avatar1.png"
+      },
+      {
+        "id": 3,
+        "name": "Aitana Bonmati",
+        "avatarUrl": "assets/images/avatar2.png"
+      }
+    ],
+    "profilesPending": [],
+    "profilesDeclined": []
+  },
+  {
+    "id": 2,
+    "groupName": "HCI Group",
+    "time": "12:30",
+    "profilesJoining": [
+      {
+        "id": 4,
+        "name": "Frenkie De Jong",
+        "avatarUrl": "assets/images/avatar1.png"
+      },
+      {
+        "id": 5,
+        "name": "Ferran Torres",
+        "avatarUrl": "assets/images/avatar1.png"
+      }
+    ],
+    "profilesPending": [],
+    "profilesDeclined": []
+  }
+]
