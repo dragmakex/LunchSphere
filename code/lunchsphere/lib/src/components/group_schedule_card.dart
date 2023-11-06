@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
+import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/models/profile_model.dart';
+import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
 import 'package:lunchsphere/src/pages/group_schedule_detail_page.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
@@ -31,13 +33,7 @@ class GroupScheduleCard extends StatelessWidget {
           const Text("👥 Joining", style: StyleConsts.groupSubHeader),
           const SizedBox(height: 10.0),
           for (ProfileModel p in groupSchedule.profilesJoining) ...[
-            Row(
-              children: [
-                Image.asset(p.avatarUrl, width: 32, height: 32),
-                const SizedBox(width: 8),
-                Text(p.name, style: StyleConsts.textPrimary),
-              ],
-            ),
+            ProfilePictureTextComponent(profile: p),
             const SizedBox(height: 4),
           ],
           const SizedBox(height: 24),
@@ -52,7 +48,16 @@ class GroupScheduleCard extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         CustomButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              CupertinoPageRoute(
+                builder: (context) => CommittedSchedulePage(
+                  groupSchedule: groupSchedule,
+                ),
+              ),
+            );
+          },
           color: StyleConsts.greenBackground,
           padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 40.0),
           child: Text(

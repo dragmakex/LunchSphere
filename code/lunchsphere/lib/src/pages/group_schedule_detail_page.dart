@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lunchsphere/src/components/group_schedule_detail_card.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
-import 'package:lunchsphere/src/models/profile_model.dart';
+import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
 
@@ -15,7 +16,8 @@ class GroupScheduleDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // similar body to homepage
+    print("Why this not working???");
+
     return CupertinoPageScaffold(
       backgroundColor: StyleConsts.backgroundPrimary,
       child: SingleChildScrollView(
@@ -43,7 +45,10 @@ class GroupScheduleDetailPage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 20),
-                buildCard(context),
+                GroupScheduleDetailCard(
+                  groupSchedule: groupSchedule,
+                  bottomWidget: buildActionButtons(context),
+                ),
               ],
             ),
           ),
@@ -52,102 +57,21 @@ class GroupScheduleDetailPage extends StatelessWidget {
     );
   }
 
-  Container buildCard(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      decoration: BoxDecoration(
-        color: StyleConsts.white,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SizedBox(height: 4),
-          Text(groupSchedule.groupName, style: StyleConsts.groupTitle),
-          const SizedBox(height: 10.0),
-          Text(groupSchedule.time, style: StyleConsts.bigTimeStyle),
-          const SizedBox(height: 24),
-          buildProfileGroup(
-            "👥 Joining",
-            groupSchedule.profilesJoining,
-            "No one is joining yet",
-          ),
-          buildProfileGroup(
-            "👥 Pending",
-            groupSchedule.profilesPending,
-            "No one is pending",
-          ),
-          buildProfileGroup(
-            "👥 Declined",
-            groupSchedule.profilesDeclined,
-            "No one has declined yet",
-          ),
-          CustomButton(
-            width: double.infinity,
-            onPressed: () {},
-            color: StyleConsts.greenBackground,
-            padding:
-                const EdgeInsets.symmetric(vertical: 12.0, horizontal: 40.0),
-            child: Center(
-              child: Text(
-                "Accept",
-                style: StyleConsts.buttonText
-                    .copyWith(color: StyleConsts.greenPrimary),
-              ),
-            ),
-          ),
-          const SizedBox(height: 10),
-          CustomButton(
-            width: double.infinity,
-            onPressed: () {},
-            color: StyleConsts.purpleLighter,
-            padding:
-                const EdgeInsets.symmetric(vertical: 12.0, horizontal: 40.0),
-            child: Center(
-              child: Text(
-                "Request Reschedule",
-                style: StyleConsts.buttonText
-                    .copyWith(color: StyleConsts.purplePrimary),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Column buildProfileGroup(
-      String title, List<ProfileModel> profiles, String emptyListMessage) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Text("👥 Joining", style: StyleConsts.groupSubHeader),
-        const SizedBox(height: 10.0),
-        if (profiles.isEmpty)
-          Text(emptyListMessage, style: StyleConsts.textPrimary)
-        else
-          for (ProfileModel p in groupSchedule.profilesJoining) ...[
-            Row(
-              children: [
-                Image.asset(p.avatarUrl, width: 32, height: 32),
-                const SizedBox(width: 8),
-                Text(p.name, style: StyleConsts.textPrimary),
-              ],
-            ),
-            const SizedBox(height: 4),
-          ],
-        const SizedBox(height: 20),
-      ],
-    );
-  }
-
-  Widget buildButtonColumn(BuildContext context) {
+  Column buildActionButtons(BuildContext context) {
     return Column(
       children: [
         CustomButton(
           width: double.infinity,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              CupertinoPageRoute(
+                builder: (context) => CommittedSchedulePage(
+                  groupSchedule: groupSchedule,
+                ),
+              ),
+            );
+          },
           color: StyleConsts.greenBackground,
           padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 40.0),
           child: Center(
@@ -158,23 +82,18 @@ class GroupScheduleDetailPage extends StatelessWidget {
             ),
           ),
         ),
+        const SizedBox(height: 10),
         CustomButton(
-          color: StyleConsts.white,
-          padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 40.0),
-          onPressed: () {
-            Navigator.push(
-              context,
-              CupertinoPageRoute(
-                builder: (context) => GroupScheduleDetailPage(
-                  groupSchedule: groupSchedule,
-                ),
-              ),
-            );
-          },
-          child: Text(
-            "Options",
-            style: StyleConsts.buttonText
-                .copyWith(color: StyleConsts.purplePrimary),
+          width: double.infinity,
+          onPressed: () {},
+          color: StyleConsts.purpleLighter,
+          padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 40.0),
+          child: Center(
+            child: Text(
+              "Request Reschedule",
+              style: StyleConsts.buttonText
+                  .copyWith(color: StyleConsts.purplePrimary),
+            ),
           ),
         ),
       ],

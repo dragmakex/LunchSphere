@@ -42,6 +42,12 @@ class StyleConsts {
     fontFamily: 'SF Pro Text',
     fontWeight: FontWeight.w400,
   );
+  static const TextStyle textSecondary = TextStyle(
+    color: Color(0xFFABAFC3),
+    fontSize: 16,
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w400,
+  );
   static const TextStyle buttonText = TextStyle(
     fontSize: 16,
     fontFamily: 'SF Pro Text',

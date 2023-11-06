@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       create: (context) => DataProvider(),
       child: CupertinoApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'LunchSphere',
         theme: const CupertinoThemeData(
           primaryColor: CupertinoColors.activeBlue,
           brightness: Brightness.light,
