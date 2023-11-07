@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:lunchsphere/src/components/group_schedule_detail_card.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/pages/home_page.dart';
+import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
 
@@ -37,8 +38,10 @@ class CommittedSchedulePage extends StatelessWidget {
                     CustomButton(
                       color: StyleConsts.white.withAlpha(0),
                       onPressed: () {
-                        // TODO pop to correct level
-                        Navigator.pop(context);
+                        Navigator.popUntil(
+                          context,
+                          (route) => route.settings.name == Routes.homeRoute,
+                        );
                       },
                       child: Text(
                         "Can't make it?",

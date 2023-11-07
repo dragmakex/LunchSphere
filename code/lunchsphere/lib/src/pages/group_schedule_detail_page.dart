@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lunchsphere/src/components/group_schedule_detail_card.dart';
+import 'package:lunchsphere/src/components/page_widget.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
+import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
 
@@ -16,43 +18,16 @@ class GroupScheduleDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("Why this not working???");
-
-    return CupertinoPageScaffold(
-      backgroundColor: StyleConsts.backgroundPrimary,
-      child: SingleChildScrollView(
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: 20),
-                Row(
-                  children: [
-                    CupertinoButton(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      child: const Icon(
-                        Icons.arrow_back_ios,
-                        color: StyleConsts.blackPrimary,
-                        size: 24,
-                      ),
-                    ),
-                    const Text("Schedule Details",
-                        style: StyleConsts.pageTitle),
-                  ],
-                ),
-                const SizedBox(height: 20),
-                GroupScheduleDetailCard(
-                  groupSchedule: groupSchedule,
-                  bottomWidget: buildActionButtons(context),
-                ),
-              ],
-            ),
+    return PageWidgetScrollable(
+      title: "Schedule Details",
+      canPop: true,
+      child: Column(
+        children: [
+          GroupScheduleDetailCard(
+            groupSchedule: groupSchedule,
+            bottomWidget: buildActionButtons(context),
           ),
-        ),
+        ],
       ),
     );
   }
@@ -85,7 +60,13 @@ class GroupScheduleDetailPage extends StatelessWidget {
         const SizedBox(height: 10),
         CustomButton(
           width: double.infinity,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(
+              context,
+              Routes.rescheduleRequestRoute,
+              arguments: groupSchedule,
+            );
+          },
           color: StyleConsts.purpleLighter,
           padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 40.0),
           child: Center(

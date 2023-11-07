@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:lunchsphere/src/pages/home_page.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
+import 'package:lunchsphere/src/util/routes.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
@@ -27,6 +28,8 @@ class MyApp extends StatelessWidget {
           primaryColor: CupertinoColors.activeBlue,
           brightness: Brightness.light,
         ),
+        initialRoute: Routes.homeRoute,
+        onGenerateRoute: Routes.generateRoute,
         home: HomePage(),
       ),
     );

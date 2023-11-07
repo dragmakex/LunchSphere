@@ -60,7 +60,7 @@ class GroupScheduleDetailCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("👥 Joining", style: StyleConsts.groupSubHeader),
+        Text(title, style: StyleConsts.groupSubHeader),
         const SizedBox(height: 10.0),
         if (profiles.isEmpty)
           Text(emptyListMessage, style: StyleConsts.textPrimary)

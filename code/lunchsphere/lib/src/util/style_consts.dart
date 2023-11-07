@@ -59,4 +59,16 @@ class StyleConsts {
     fontFamily: 'SF Pro Text',
     fontWeight: FontWeight.w600,
   );
+  static const TextStyle textField = TextStyle(
+    color: StyleConsts.blackPrimary,
+    fontSize: 16,
+    fontFamily: 'SF Pro Text',
+    // fontWeight: FontWeight.w500,
+  );
+  static const TextStyle textFieldPlaceHolder = TextStyle(
+    color: StyleConsts.greyLight,
+    fontSize: 16,
+    fontFamily: 'SF Pro Text',
+    // fontWeight: FontWeight.w500,
+  );
 }

@@ -74,3 +74,33 @@ class _TouchableOpacityState extends State<TouchableOpacity> {
     );
   }
 }
+
+class CustomIconButton extends StatelessWidget {
+  final Color color;
+  final EdgeInsets? padding;
+  final VoidCallback onPressed;
+  final IconData icon;
+  final Color iconColor;
+  const CustomIconButton({
+    super.key,
+    this.color = StyleConsts.white,
+    this.padding,
+    required this.onPressed,
+    required this.icon,
+    this.iconColor = StyleConsts.purplePrimary,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return CustomButton(
+      color: color,
+      padding: padding ??
+          const EdgeInsets.symmetric(vertical: 12.0, horizontal: 12.0),
+      onPressed: onPressed,
+      child: Icon(
+        icon,
+        color: iconColor,
+      ),
+    );
+  }
+}

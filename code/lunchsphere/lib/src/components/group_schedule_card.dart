@@ -2,8 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/models/profile_model.dart';
-import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
-import 'package:lunchsphere/src/pages/group_schedule_detail_page.dart';
+import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
 
@@ -49,13 +48,10 @@ class GroupScheduleCard extends StatelessWidget {
       children: [
         CustomButton(
           onPressed: () {
-            Navigator.push(
+            Navigator.pushNamed(
               context,
-              CupertinoPageRoute(
-                builder: (context) => CommittedSchedulePage(
-                  groupSchedule: groupSchedule,
-                ),
-              ),
+              Routes.committedScheduleRoute,
+              arguments: groupSchedule,
             );
           },
           color: StyleConsts.greenBackground,
@@ -70,13 +66,10 @@ class GroupScheduleCard extends StatelessWidget {
           color: StyleConsts.white,
           padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 40.0),
           onPressed: () {
-            Navigator.push(
+            Navigator.pushNamed(
               context,
-              CupertinoPageRoute(
-                builder: (context) => GroupScheduleDetailPage(
-                  groupSchedule: groupSchedule,
-                ),
-              ),
+              Routes.groupScheduleDetailRoute,
+              arguments: groupSchedule,
             );
           },
           child: Text(
