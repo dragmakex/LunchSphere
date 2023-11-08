@@ -8,8 +8,8 @@ import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
 import 'package:provider/provider.dart';
 
-class HomePage extends StatelessWidget {
-  HomePage({super.key});
+class HomePageA extends StatelessWidget {
+  HomePageA({super.key});
 
   final ApiService apiService = ApiService();
 
