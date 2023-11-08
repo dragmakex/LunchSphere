@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lunchsphere/src/models/group_schedule_model.dart';
-import 'package:lunchsphere/src/components/group_schedule_card.dart';
+import 'package:appinio_swiper/appinio_swiper.dart';
+import 'package:lunchsphere/src/components/tinder_schedule_body.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/services/api_service.dart';
+import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
 import 'package:provider/provider.dart';
@@ -21,33 +22,31 @@ class HomePageB extends StatelessWidget {
       child: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            // insert Title text
             padding: const EdgeInsets.symmetric(horizontal: 10.0),
             child: Column(
               children: [
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10.0),
-                  child: Text(
-                    "B TEST.",
-                    style: StyleConsts.textSecondary,
-                  ),
-                ),
                 const SizedBox(height: 8),
                 buildHeader(),
                 const SizedBox(height: 32),
-                for (GroupScheduleModel groupSchedule
-                    in provider.groupSchedules) ...[
-                  GroupScheduleCard(
-                    groupSchedule: groupSchedule,
-                  ),
-                  const SizedBox(height: 10),
-                ],
-                const SizedBox(height: 32),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10.0),
-                  child: Text(
-                    "Reached the end and still hungry for plans? 🤔 If none of your group schedule fits, why not propose your own lunchtime? All people sharing a group with you will be able to join.",
-                    style: StyleConsts.textSecondary,
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.75,
+                  child: AppinioSwiper(
+                    cardsCount: provider.groupSchedules.length,
+                    // on right swipe: route to committed schedule
+                    onSwipe: (index, direction) {
+                      if (direction == AppinioSwiperDirection.right) {
+                        Navigator.pushNamed(
+                          context,
+                          Routes.committedScheduleRoute,
+                          arguments: provider.groupSchedules[index],
+                        );
+                      }
+                    },
+                    cardsBuilder: (context, index) {
+                      return GroupScheduleBody(
+                        groupSchedule: provider.groupSchedules[index],
+                      );
+                    },
                   ),
                 ),
                 const SizedBox(height: 20),

@@ -10,7 +10,6 @@ class DataProvider with ChangeNotifier {
   DataProvider() {
     _loadGroupSchedules();
   }
-
   Future<void> _loadGroupSchedules() async {
     groupSchedules = await apiService.getGroupSchedules();
     isLoading = false;
