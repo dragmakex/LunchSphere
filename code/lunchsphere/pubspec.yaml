@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  appinio_swiper: ^2.0.3
   cupertino_icons: ^1.0.2
   firebase_core: ^2.21.0
   cloud_firestore: ^4.12.2
