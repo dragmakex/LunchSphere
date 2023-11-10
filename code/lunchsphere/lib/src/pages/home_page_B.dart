@@ -19,53 +19,51 @@ class HomePageB extends StatelessWidget {
     final provider = context.watch<DataProvider>();
     return CupertinoPageScaffold(
       backgroundColor: StyleConsts.backgroundPrimary,
-      child: SingleChildScrollView(
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
-            child: Column(
-              children: [
-                const SizedBox(height: 8),
-                buildHeader(),
-                const SizedBox(height: 32),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.75,
-                  child: AppinioSwiper(
-                    cardsCount: provider.groupSchedules.length,
-                    // on right swipe: route to committed schedule
-                    onSwipe: (index, direction) {
-                      if (direction == AppinioSwiperDirection.right) {
-                        Navigator.pushNamed(
-                          context,
-                          Routes.committedScheduleRoute,
-                          arguments: provider.groupSchedules[index],
-                        );
-                      }
-                    },
-                    cardsBuilder: (context, index) {
-                      return GroupScheduleBody(
-                        groupSchedule: provider.groupSchedules[index],
+      child: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          child: Column(
+            children: [
+              const SizedBox(height: 8),
+              buildHeader(),
+              const SizedBox(height: 32),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.6,
+                child: AppinioSwiper(
+                  cardsCount: provider.groupSchedules.length,
+                  // on right swipe: route to committed schedule
+                  onSwipe: (index, direction) {
+                    if (direction == AppinioSwiperDirection.right) {
+                      Navigator.pushNamed(
+                        context,
+                        Routes.committedScheduleRoute,
+                        arguments: provider.groupSchedules[index],
                       );
-                    },
+                    }
+                  },
+                  cardsBuilder: (context, index) {
+                    return TinderScheduleBody(
+                      groupSchedule: provider.groupSchedules[index],
+                    );
+                  },
+                ),
+              ),
+              const Spacer(),
+              CustomButton(
+                color: StyleConsts.purplePrimary,
+                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                width: double.infinity,
+                onPressed: () {},
+                child: Center(
+                  child: Text(
+                    "Create Custom Lunchtime",
+                    style: StyleConsts.buttonText
+                        .copyWith(color: StyleConsts.white),
                   ),
                 ),
-                const SizedBox(height: 20),
-                CustomButton(
-                  color: StyleConsts.purplePrimary,
-                  padding: const EdgeInsets.symmetric(vertical: 16.0),
-                  width: double.infinity,
-                  onPressed: () {},
-                  child: Center(
-                    child: Text(
-                      "Create Custom Lunchtime",
-                      style: StyleConsts.buttonText
-                          .copyWith(color: StyleConsts.white),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 64),
-              ],
-            ),
+              ),
+              const SizedBox(height: 8),
+            ],
           ),
         ),
       ),

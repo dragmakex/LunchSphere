@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:lunchsphere/src/components/group_schedule_detail_card.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
-import 'package:lunchsphere/src/pages/home_page_A.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';

@@ -2,14 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/models/profile_model.dart';
-import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
-import 'package:lunchsphere/src/widgets/custom_button.dart';
 
-class GroupScheduleBody extends StatelessWidget {
+class TinderScheduleBody extends StatelessWidget {
   final GroupScheduleModel groupSchedule;
 
-  const GroupScheduleBody({Key? key, required this.groupSchedule})
+  const TinderScheduleBody({Key? key, required this.groupSchedule})
       : super(key: key);
 
   @override

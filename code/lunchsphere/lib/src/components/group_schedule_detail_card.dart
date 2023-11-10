@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/models/profile_model.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
-import 'package:lunchsphere/src/widgets/custom_button.dart';
 
 import '../models/group_schedule_model.dart';
 

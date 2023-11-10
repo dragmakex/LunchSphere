@@ -1,8 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-import 'package:lunchsphere/src/pages/ABchoser.dart';
-import 'package:lunchsphere/src/pages/home_page_A.dart';
+import 'package:lunchsphere/src/pages/ab_chooser.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:provider/provider.dart';
@@ -22,10 +21,10 @@ class MyApp extends StatelessWidget {
     // wrap with user_provider
     return ChangeNotifierProvider(
       create: (context) => DataProvider(),
-      child: CupertinoApp(
+      child: const CupertinoApp(
         debugShowCheckedModeBanner: false,
         title: 'LunchSphere',
-        theme: const CupertinoThemeData(
+        theme: CupertinoThemeData(
           primaryColor: CupertinoColors.activeBlue,
           brightness: Brightness.light,
         ),

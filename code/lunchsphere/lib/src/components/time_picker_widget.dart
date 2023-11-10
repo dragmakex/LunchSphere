@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';

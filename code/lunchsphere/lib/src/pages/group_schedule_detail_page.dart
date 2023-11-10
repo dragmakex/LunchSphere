@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:lunchsphere/src/components/group_schedule_detail_card.dart';
 import 'package:lunchsphere/src/components/page_widget.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
