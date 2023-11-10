@@ -36,5 +36,62 @@
     ],
     "profilesPending": [],
     "profilesDeclined": []
+  },
+  {
+    "id": 3,
+    "groupName": "The Lunch Bunch",
+    "time": "12:00",
+    "profilesJoining": [
+      {
+        "id": 6,
+        "name": "Sergio Aguero",
+        "avatarUrl": "assets/images/avatar1.png"
+      },
+      {
+        "id": 7,
+        "name": "Jenni Hermoso",
+        "avatarUrl": "assets/images/avatar2.png"
+      }
+    ],
+    "profilesPending": [],
+    "profilesDeclined": []
+  },
+  {
+    "id": 4,
+    "groupName": "The Foodies",
+    "time": "13:00",
+    "profilesJoining": [
+      {
+        "id": 8,
+        "name": "Gerard Pique",
+        "avatarUrl": "assets/images/avatar1.png"
+      },
+      {
+        "id": 9,
+        "name": "Alexia Putella",
+        "avatarUrl": "assets/images/avatar2.png"
+      }
+    ],
+    "profilesPending": [],
+    "profilesDeclined": []
+  },
+  {
+    "id": 5,
+    "groupName": "The Gourmet Club",
+    "time": "12:15",
+    "profilesJoining": [
+      {
+        "id": 10,
+        "name": "Ansu Fati",
+        "avatarUrl": "assets/images/avatar1.png"
+      },
+      {
+        "id": 11,
+        "name": "Caroline Graham Hansen",
+        "avatarUrl": "assets/images/avatar2.png"
+      }
+    ],
+    "profilesPending": [],
+    "profilesDeclined": []
   }
 ]

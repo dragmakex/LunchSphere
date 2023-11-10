@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:appinio_swiper/appinio_swiper.dart';
 import 'package:lunchsphere/src/components/tinder_schedule_body.dart';
+import 'package:lunchsphere/src/models/buttons.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/services/api_service.dart';
 import 'package:lunchsphere/src/util/routes.dart';
@@ -13,7 +14,7 @@ class HomePageB extends StatelessWidget {
   HomePageB({super.key});
 
   final ApiService apiService = ApiService();
-
+  final AppinioSwiperController controller = AppinioSwiperController();
   @override
   Widget build(BuildContext context) {
     final provider = context.watch<DataProvider>();
@@ -26,11 +27,13 @@ class HomePageB extends StatelessWidget {
             children: [
               const SizedBox(height: 8),
               buildHeader(),
-              const SizedBox(height: 32),
+              const SizedBox(height: 50),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.6,
+                height: MediaQuery.of(context).size.height * 0.5,
                 child: AppinioSwiper(
+                  controller: controller,
                   cardsCount: provider.groupSchedules.length,
+                  swipeOptions: const AppinioSwipeOptions.all(),
                   // on right swipe: route to committed schedule
                   onSwipe: (index, direction) {
                     if (direction == AppinioSwiperDirection.right) {
@@ -47,6 +50,24 @@ class HomePageB extends StatelessWidget {
                     );
                   },
                 ),
+              ),
+              const SizedBox(height: 32),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(
+                    width: 80,
+                  ),
+                  swipeLeftButton(controller),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  swipeRightButton(controller),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  unswipeButton(controller),
+                ],
               ),
               const Spacer(),
               CustomButton(

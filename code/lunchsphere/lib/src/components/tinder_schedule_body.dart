@@ -34,6 +34,9 @@ class TinderScheduleBody extends StatelessWidget {
             const SizedBox(height: 4),
           ],
           const SizedBox(height: 24),
+          const Text("Place", style: StyleConsts.groupSubHeader),
+          const SizedBox(height: 24),
+          const Text("Invited", style: StyleConsts.groupSubHeader),
         ],
       ),
     );
