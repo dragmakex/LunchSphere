@@ -279,6 +279,110 @@ Here are the images of the final prototype:
 
     TODO
 
-## User study
+# User Study Organization
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d024434-ded7-4bee-99b9-d49a5cad48da/98735df5-ef7a-45cd-93d3-50fe78ce0987/Untitled.png)
+
+The A/B testing we want to do in this study, is to look at the accepting of groups feature. 
+NH 1: The swiping feature instead of the button accept feature has no impact on SUS value from the user.
+NH 2: The swiping feature instead of the button accept feature has no impact has no impact on the time needed to select a group.
+NH3: The swiping feature instead of the button accept feature has no impact on the amount of interactions (i.e., taps/swipes) the user has to do.
+
+## Goal of the Study
+
+- What are we investigating and why?
+
+The aim of this study is to assess the impact of a swiping interface for accepting group meal appointments in our LunchSphere app. Specifically, we are interested in understanding whether this swiping feature affects the User's System Usability Scale (SUS) score, the time required to select a group, and the number of interactions (taps/swipes) users need to perform. We have chosen to conduct an A/B test on this feature as we believe that simplicity and efficiency in planning are key qualities for a planning app, based on feedback received.
+
+- Is your investigation inspired by your low-fi/mid-fi?
+
+While our investigation is not directly inspired by our low-fi/mid-fi prototypes, we acknowledge that we haven't fully developed or given extensive consideration to the accepting feature. Therefore, we are conducting this A/B test to gather insights into this specific aspect of our app.
+
+We put more emphasis on different parts of the prototype.
+
+- How will A/B variants help you achieve your goal?
+
+A/B testing helps us to systematically evaluate the impact of the swiping feature on SUS values, efficiency, and user interactions. The data collected from A/B testing will inform our decision-making process, helping us determine the most user-friendly and effective approach for accepting group meal appointments in our app.
+
+What is A: In this variant, our LunchSphere app displays groups with clear buttons for accepting and other available options. There is no decline button, and users can see who has already joined the group. Users can join the group that suits their lunch schedule.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d024434-ded7-4bee-99b9-d49a5cad48da/1a53c2ff-63f5-4a55
+
+What is B: In this variant, groups are presented in a Tinder-like manner. Users can swipe right to accept a group, and unlike the A variant, they also have the option to decline, which allows them to see more groups. Swiping up enables users to reschedule the group if needed. Additionally, users are presented with an overview after swiping through all the events, in case they didn't find a suitable group or made a mistake while swiping.
+
+## Hypotheses
+
+NH1: The swiping feature instead of the button accept feature has no impact on the SUS value of the user
+
+NH2: The swiping feature instead of the button accept feature has no impact on the time needed to select a group
+
+NH3: The swiping feature instead of the button accept feature has no impact on the amount of interactions (i.e., taps/swipes) the user has to do. 
+
+## What data to collect?
+
+1. **Participant Information (Before the Test)**
+    - **Unique ID**: [Assigned by the study]
+    - **Demographics**: Age, Gender
+    - **App Usage Background**: Familiarity with swiping apps like Tinder
+    - **Lunch Planning Habits**: Frequency of planning lunches via group chats and in-person, and propensity to initiate lunch plans
+2. **User Satisfaction Measurement**
+    - **SUS Scale**: To gauge the perceived usability and satisfaction with the app interface
+3. **App Interaction Metrics**
+    - **Task Completion Time**: How long it takes to select a group using the app
+    - **Interaction Count**: The number of taps/swipes needed to complete the group selection task
+4. **Post-Test Subjective Insights**
+    - **User Preferences**: At the end of the session, participants will discuss their preferred interface and explain their choices, providing insight into the quantitative data
+
+## **Experiment Procedure**
+
+### **Participant Data Collection**
+
+1. Begin by having participants complete a pre-questionnaire to gather some initial information.
+
+### **Introduction to the Experiment**
+
+1. Welcome the participant to the user study of "LunchSphere" and explain that you will guide them through an experiment involving the use of our lunch planner app.
+2. Let them know that they will be presented with two different versions of the app, and they do not need any prior knowledge about the app.
+
+### **Scenario: Scheduling a Lunch, Step 1:**
+
+1. Present the following scenario to the participant:
+    
+    *Imagine it's around 10 am, and you're at home feeling quite hungry. You have a meeting scheduled until 12:00, and you want to have lunch at the university's cafeteria (mensa) with your friends. However, you're unsure if your friends are planning to eat before or after the meeting. You know that most of your friends use the "LunchSphere" app, and you're part of some lunch groups. You decide to open the app and search for a lunch reservation after 12:00.*
+    
+
+### **Scenario: Scheduling a Lunch, Step 2: (Practical)**
+
+1. Provide the participant with a smartphone with the "LunchSphere" app installed and have them use it to schedule a lunch based on Step 1.
+
+### **Scenario: Rescheduling a Lunch, Step 1:**
+
+1. Present the following scenario to the participant:
+    
+    *After using the app to schedule lunch, your supervisor informs you that the meeting will run longer than expected, likely until 12:20. This means you cannot make it to lunch with your friends as initially planned. However, there's a reschedule feature on the app. You know your friends are flexible with their schedules, so you decide to try and reschedule the lunch with them.*
+    
+
+### **Scenario: Rescheduling a Lunch, Step 2 (Practical)**
+
+1. Provide the participant with the smartphone with the "LunchSphere" app again and instruct them to use the reschedule feature to adjust their lunch plans based on Step 1.
+
+### Subjective Ratings
+
+- We give the user the SUS rating scheme to fill out.
+
+### Performance
+
+- While the participant performs the tasks, we measure the time he needs with a timer implemented in our App. We also log the swaps/taps the participant performed in our App. 
+We use both of these measures for our performance assessment.
+
+### Qualitative feedback
+
+- **Post task interview**:
+    - "What were your thoughts when using the app for scheduling/rescheduling?"
+    - "Were there any aspects of the app that confused you or that you found difficult to use?"
+    - "What did you like or dislike about the user interface and design?"
+    - "Did you encounter any issues or unexpected behaviors?"
+- **Comparative Analysis:** Since participants will interact with two different versions of the app, ask them to compare the two versions and express their preferences. This can help you understand which version performs better in terms of user experience.
+- **Think-Aloud Protocol:** Encourage participants to verbalize their thoughts, feelings, and actions as they interact with the app. This allows you to gain insights into their decision-making process, frustrations, and satisfaction in real time. (maybe this I’m not sure, this could also impact our measurements and lead to noise)
 
     TODO
