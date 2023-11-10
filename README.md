@@ -281,7 +281,6 @@ Here are the images of the final prototype:
 
 # User Study Organization
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d024434-ded7-4bee-99b9-d49a5cad48da/98735df5-ef7a-45cd-93d3-50fe78ce0987/Untitled.png)
 
 The A/B testing we want to do in this study, is to look at the accepting of groups feature. 
 NH 1: The swiping feature instead of the button accept feature has no impact on SUS value from the user.
@@ -306,9 +305,11 @@ A/B testing helps us to systematically evaluate the impact of the swiping featur
 
 What is A: In this variant, our LunchSphere app displays groups with clear buttons for accepting and other available options. There is no decline button, and users can see who has already joined the group. Users can join the group that suits their lunch schedule.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d024434-ded7-4bee-99b9-d49a5cad48da/1a53c2ff-63f5-4a55
+<p align="center"><img src="img/OriginalLunch.png" align="center" title="Original Lunch Schedule" width="300" height="600"/></p>
 
 What is B: In this variant, groups are presented in a Tinder-like manner. Users can swipe right to accept a group, and unlike the A variant, they also have the option to decline, which allows them to see more groups. Swiping up enables users to reschedule the group if needed. Additionally, users are presented with an overview after swiping through all the events, in case they didn't find a suitable group or made a mistake while swiping.
+
+<p align="center"><img src="img/TinderLunch.png" align="center" title="Tinderlike Lunch Schedule" width="300" height="600"/></p>
 
 ## Hypotheses
 
