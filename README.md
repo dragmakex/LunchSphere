@@ -334,7 +334,7 @@ NH3: The swiping feature instead of the button accept feature has no impact on t
 4. **Post-Test Subjective Insights**
     - **User Preferences**: At the end of the session, participants will discuss their preferred interface and explain their choices, providing insight into the quantitative data
 
-## **Experiment Procedure**
+## **Preliminary Experiment Procedure**
 
 ### **Participant Data Collection**
 
