@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/models/profile_model.dart';
+import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
+import 'package:lunchsphere/src/widgets/custom_button.dart';
 
 import '../models/group_schedule_model.dart';
 
@@ -32,6 +34,10 @@ class GroupScheduleDetailCard extends StatelessWidget {
           Text(groupSchedule.groupName, style: StyleConsts.groupTitle),
           const SizedBox(height: 10.0),
           Text(groupSchedule.time, style: StyleConsts.bigTimeStyle),
+          const SizedBox(height: 24),
+          const Text("📍 Place", style: StyleConsts.groupSubHeader),
+          const SizedBox(height: 10.0),
+          Text(groupSchedule.place, style: StyleConsts.textPrimary),
           const SizedBox(height: 24),
           buildProfileGroup(
             "👥 Joining",

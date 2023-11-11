@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lunchsphere/src/components/lunch_link_header.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/components/group_schedule_card.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
@@ -25,7 +26,7 @@ class HomePageA extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: 8),
-                buildHeader(),
+                const LunchLinkHeader(),
                 const SizedBox(height: 32),
                 for (GroupScheduleModel groupSchedule
                     in provider.groupSchedules) ...[
@@ -61,32 +62,6 @@ class HomePageA extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
-  }
-
-  Padding buildHeader() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const Icon(
-            Icons.account_circle,
-            color: StyleConsts.greyDarker,
-            size: 32,
-          ),
-          Image.asset(
-            'assets/images/LunchSphereLogo_154x33.png',
-            fit: BoxFit.cover,
-            height: 32, // Adjust the size to fit your logo design
-          ),
-          Image.asset(
-            'assets/images/avatar1.png',
-            fit: BoxFit.cover,
-            height: 32, // Adjust the size to fit your logo design
-          ),
-        ],
       ),
     );
   }

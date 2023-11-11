@@ -24,59 +24,61 @@ class GroupScheduleDetailPage extends StatelessWidget {
         children: [
           GroupScheduleDetailCard(
             groupSchedule: groupSchedule,
-            bottomWidget: buildActionButtons(context),
+            bottomWidget: CustomButton(
+              width: double.infinity,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  PageRouteBuilder(
+                    transitionsBuilder:
+                        (context, animation, secondaryAnimation, child) {
+                      var begin = const Offset(0.0, 1.0);
+                      var end = Offset.zero;
+                      var tween = Tween(begin: begin, end: end)
+                          .chain(CurveTween(curve: Curves.ease));
+                      return SlideTransition(
+                          position: animation.drive(tween), child: child);
+                    },
+                    pageBuilder: (context, animation, secondaryAnimation) =>
+                        CommittedSchedulePage(
+                      groupSchedule: groupSchedule,
+                    ),
+                  ),
+                );
+              },
+              color: StyleConsts.greenBackground,
+              padding:
+                  const EdgeInsets.symmetric(vertical: 12.0, horizontal: 40.0),
+              child: Center(
+                child: Text(
+                  "Accept",
+                  style: StyleConsts.buttonText
+                      .copyWith(color: StyleConsts.greenPrimary),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 32),
+          CustomButton(
+            width: double.infinity,
+            onPressed: () {
+              Navigator.pushNamed(
+                context,
+                Routes.rescheduleRequestRoute,
+                arguments: groupSchedule,
+              );
+            },
+            color: StyleConsts.purplePrimary,
+            child: Center(
+              child: Text(
+                "Request Reschedule",
+                style:
+                    StyleConsts.buttonText.copyWith(color: StyleConsts.white),
+              ),
+            ),
           ),
         ],
       ),
-    );
-  }
-
-  Column buildActionButtons(BuildContext context) {
-    return Column(
-      children: [
-        CustomButton(
-          width: double.infinity,
-          onPressed: () {
-            Navigator.push(
-              context,
-              CupertinoPageRoute(
-                builder: (context) => CommittedSchedulePage(
-                  groupSchedule: groupSchedule,
-                ),
-              ),
-            );
-          },
-          color: StyleConsts.greenBackground,
-          padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 40.0),
-          child: Center(
-            child: Text(
-              "Accept",
-              style: StyleConsts.buttonText
-                  .copyWith(color: StyleConsts.greenPrimary),
-            ),
-          ),
-        ),
-        const SizedBox(height: 10),
-        CustomButton(
-          width: double.infinity,
-          onPressed: () {
-            Navigator.pushNamed(
-              context,
-              Routes.rescheduleRequestRoute,
-              arguments: groupSchedule,
-            );
-          },
-          color: StyleConsts.purpleLighter,
-          padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 40.0),
-          child: Center(
-            child: Text(
-              "Request Reschedule",
-              style: StyleConsts.buttonText
-                  .copyWith(color: StyleConsts.purplePrimary),
-            ),
-          ),
-        ),
-      ],
     );
   }
 }

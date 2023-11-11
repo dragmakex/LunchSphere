@@ -6,6 +6,7 @@ import 'package:lunchsphere/src/pages/group_schedule_detail_page.dart';
 import 'package:lunchsphere/src/pages/home_page_a.dart';
 import 'package:lunchsphere/src/pages/home_page_b.dart';
 import 'package:lunchsphere/src/pages/reschedule_request_page.dart';
+import 'package:lunchsphere/src/pages/statistics_page.dart';
 
 class Routes {
   static const String homeRoute = '/';
@@ -14,6 +15,7 @@ class Routes {
   static const String rescheduleRequestRoute = '/reschedule_request';
   static const String aTest = '/home_page_A';
   static const String bTest = '/home_page_B';
+  static const String statistics = '/statistics';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -23,6 +25,8 @@ class Routes {
         return CupertinoPageRoute(builder: (_) => HomePageA());
       case bTest:
         return CupertinoPageRoute(builder: (_) => HomePageB());
+      case statistics:
+        return CupertinoPageRoute(builder: (_) => const StatisticsPage());
       case groupScheduleDetailRoute:
         final groupSchedule = settings.arguments as GroupScheduleModel;
         return CupertinoPageRoute(

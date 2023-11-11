@@ -14,6 +14,7 @@ class StyleConsts {
   static const Color purplePrimary = Color(0xFF475AD7);
   static const Color purpleLight = Color(0xFF8A96E5);
   static const Color purpleLighter = Color(0xFFEEF0FB);
+  static const Color purpleDark = Color(0xFF2536A7);
   static const Color redPrimary = Color(0xFFEA0C00);
   static const Color white = Color(0xFFFFFFFF);
 

@@ -3,6 +3,7 @@ import 'package:lunchsphere/src/models/profile_model.dart';
 class GroupScheduleModel {
   final String groupName;
   final String time;
+  final String place;
   final List<ProfileModel> profilesJoining;
   final List<ProfileModel> profilesPending;
   final List<ProfileModel> profilesDeclined;
@@ -11,6 +12,7 @@ class GroupScheduleModel {
   GroupScheduleModel({
     required this.groupName,
     required this.time,
+    required this.place,
     required this.profilesJoining,
     required this.profilesPending,
     required this.profilesDeclined,
@@ -22,6 +24,7 @@ class GroupScheduleModel {
     return GroupScheduleModel(
       groupName: json['groupName'],
       time: json['time'],
+      place: json['place'],
       profilesJoining: _deserializeProfiles(json['profilesJoining']),
       profilesPending: _deserializeProfiles(json['profilesPending']),
       profilesDeclined: _deserializeProfiles(json['profilesDeclined']),
@@ -38,6 +41,7 @@ class GroupScheduleModel {
     return {
       'groupName': groupName,
       'time': time,
+      'place': place,
       'profilesJoining': profilesJoining.map((x) => x.toJson()).toList(),
       'profilesPending': profilesPending.map((x) => x.toJson()).toList(),
       'profilesDeclined': profilesDeclined.map((x) => x.toJson()).toList(),

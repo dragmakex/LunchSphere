@@ -3,6 +3,8 @@
     "id": 1,
     "groupName": "The Bibstreet boys",
     "time": "11:45",
+    "place": "Uni Mensa",
+    "place": "Uni Mensa",
     "profilesJoining": [
       {
         "id": 2,
@@ -22,6 +24,7 @@
     "id": 2,
     "groupName": "HCI Group",
     "time": "12:30",
+    "place": "Uni Mensa",
     "profilesJoining": [
       {
         "id": 4,
@@ -41,6 +44,7 @@
     "id": 3,
     "groupName": "The Lunch Bunch",
     "time": "12:00",
+    "place": "Uni Mensa",
     "profilesJoining": [
       {
         "id": 6,
@@ -60,6 +64,7 @@
     "id": 4,
     "groupName": "The Foodies",
     "time": "13:00",
+    "place": "Uni Mensa",
     "profilesJoining": [
       {
         "id": 8,
@@ -79,6 +84,7 @@
     "id": 5,
     "groupName": "The Gourmet Club",
     "time": "12:15",
+    "place": "Uni Mensa",
     "profilesJoining": [
       {
         "id": 10,

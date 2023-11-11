@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lunchsphere/src/providers/statistics_provider.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
+import 'package:provider/provider.dart';
 
 class CustomButton extends StatelessWidget {
   final VoidCallback onPressed;
@@ -66,7 +68,10 @@ class _TouchableOpacityState extends State<TouchableOpacity> {
       onTapDown: (_) => setState(() => _isPressed = true),
       onTapUp: (_) => setState(() => _isPressed = false),
       onTapCancel: () => setState(() => _isPressed = false),
-      onTap: widget.onPressed,
+      onTap: () {
+        context.read<StatisticsProvider>().incrementCount();
+        widget.onPressed();
+      },
       child: AnimatedOpacity(
           duration: const Duration(milliseconds: 100),
           opacity: _isPressed ? 0.4 : 1,

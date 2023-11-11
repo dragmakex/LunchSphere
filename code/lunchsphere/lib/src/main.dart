@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:lunchsphere/src/pages/ab_chooser.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
+import 'package:lunchsphere/src/providers/statistics_provider.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:provider/provider.dart';
 
@@ -19,8 +20,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
     // wrap with user_provider
-    return ChangeNotifierProvider(
-      create: (context) => DataProvider(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider<DataProvider>(
+          create: (_) => DataProvider(),
+        ),
+        ChangeNotifierProvider<StatisticsProvider>(
+          create: (_) => StatisticsProvider(),
+        ),
+      ],
       child: const CupertinoApp(
         debugShowCheckedModeBanner: false,
         title: 'LunchSphere',
