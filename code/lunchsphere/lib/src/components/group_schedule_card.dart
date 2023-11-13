@@ -96,7 +96,7 @@ class GroupScheduleCard extends StatelessWidget {
             },
             child: Center(
               child: Text(
-                "Options",
+                "Details",
                 style: StyleConsts.buttonText
                     .copyWith(color: StyleConsts.purpleDark),
               ),
