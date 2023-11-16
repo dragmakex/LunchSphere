@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "groupName": "The Bibstreet boys",
+    "groupName": "The Bibstreet Boys",
     "time": "11:45",
     "place": "Uni Mensa",
     "profilesJoining": [
       {
         "id": 2,
-        "name": "Lionel Messi",
-        "avatarUrl": "assets/images/avatar1.png"
+        "name": "Philip Hinterberger",
+        "avatarUrl": "assets/images/avatar03.png"
       },
       {
         "id": 3,
-        "name": "Aitana Bonmati",
-        "avatarUrl": "assets/images/avatar2.png"
+        "name": "Sandro Müller",
+        "avatarUrl": "assets/images/avatar04.png"
       }
     ],
     "profilesPending": [],
@@ -23,17 +23,17 @@
     "id": 2,
     "groupName": "HCI Group",
     "time": "12:30",
-    "place": "Uni Mensa",
+    "place": "Polymensa",
     "profilesJoining": [
       {
         "id": 4,
-        "name": "Frenkie De Jong",
-        "avatarUrl": "assets/images/avatar1.png"
+        "name": "Franklyn Lund",
+        "avatarUrl": "assets/images/avatar05.png"
       },
       {
         "id": 5,
-        "name": "Ferran Torres",
-        "avatarUrl": "assets/images/avatar1.png"
+        "name": "Yasmine Stocker",
+        "avatarUrl": "assets/images/avatar01.png"
       }
     ],
     "profilesPending": [],
@@ -42,18 +42,18 @@
   {
     "id": 3,
     "groupName": "The Lunch Bunch",
-    "time": "12:00",
+    "time": "12:15",
     "place": "Uni Mensa",
     "profilesJoining": [
       {
         "id": 6,
-        "name": "Sergio Aguero",
-        "avatarUrl": "assets/images/avatar1.png"
+        "name": "Benjamin Koch",
+        "avatarUrl": "assets/images/avatar06.png"
       },
       {
         "id": 7,
-        "name": "Jenni Hermoso",
-        "avatarUrl": "assets/images/avatar2.png"
+        "name": "Jenny Moser",
+        "avatarUrl": "assets/images/avatar02.png"
       }
     ],
     "profilesPending": [],
@@ -62,18 +62,18 @@
   {
     "id": 4,
     "groupName": "The Foodies",
-    "time": "13:00",
-    "place": "Uni Mensa",
+    "time": "12:15",
+    "place": "Plattenmensa",
     "profilesJoining": [
       {
         "id": 8,
-        "name": "Gerard Pique",
-        "avatarUrl": "assets/images/avatar1.png"
+        "name": "Michael Schweizer",
+        "avatarUrl": "assets/images/avatar07.png"
       },
       {
         "id": 9,
-        "name": "Alexia Putella",
-        "avatarUrl": "assets/images/avatar2.png"
+        "name": "Alexandra Schönenberger",
+        "avatarUrl": "assets/images/avatar09.png"
       }
     ],
     "profilesPending": [],
@@ -82,18 +82,18 @@
   {
     "id": 5,
     "groupName": "The Gourmet Club",
-    "time": "12:15",
-    "place": "Uni Mensa",
+    "time": "12:45",
+    "place": "Plattenmensa",
     "profilesJoining": [
       {
         "id": 10,
-        "name": "Ansu Fati",
-        "avatarUrl": "assets/images/avatar1.png"
+        "name": "Anna Kirscher",
+        "avatarUrl": "assets/images/avatar10.png"
       },
       {
         "id": 11,
-        "name": "Caroline Graham Hansen",
-        "avatarUrl": "assets/images/avatar2.png"
+        "name": "Mark Fischer",
+        "avatarUrl": "assets/images/avatar08.png"
       }
     ],
     "profilesPending": [],
