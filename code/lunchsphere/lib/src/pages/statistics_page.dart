@@ -21,6 +21,9 @@ class StatisticsPage extends StatelessWidget {
           Text(
               "Time spent between AB Chooser and first committed page enter: ${provider.elapsedTime}s"),
           const SizedBox(height: 20),
+          Text(
+              "Time spent between each card before swiping (in seconds): ${provider.cardTimers}"),
+          const SizedBox(height: 20),
           CustomButton(
             onPressed: () {
               provider.reset();

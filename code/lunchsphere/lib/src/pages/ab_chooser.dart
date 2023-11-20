@@ -34,6 +34,7 @@ class ABChooser extends StatelessWidget {
       children: [
         CustomButton(
           onPressed: () {
+            context.read<StatisticsProvider>().stopTimer();
             context.read<StatisticsProvider>().startTimer();
             Navigator.pushNamed(
               context,
@@ -53,6 +54,8 @@ class ABChooser extends StatelessWidget {
         ),
         CustomButton(
           onPressed: () {
+            context.read<StatisticsProvider>().stopTimer();
+            context.read<StatisticsProvider>().startTimer();
             Navigator.pushNamed(
               context,
               Routes.bTest,

@@ -35,6 +35,10 @@ class TinderScheduleBody extends StatelessWidget {
           const SizedBox(height: 10.0),
           Text(groupSchedule.time, style: StyleConsts.bigTimeStyle),
           const SizedBox(height: 24),
+          const Text("📍 Place", style: StyleConsts.groupSubHeader),
+          const SizedBox(height: 10.0),
+          Text(groupSchedule.place, style: StyleConsts.textPrimary),
+          const SizedBox(height: 17.0),
           buildProfileGroup(
             "👥 Joining",
             groupSchedule.profilesJoining,
@@ -65,7 +69,7 @@ class TinderScheduleBody extends StatelessWidget {
             ProfilePictureTextComponent(profile: p),
             const SizedBox(height: 4),
           ],
-        const SizedBox(height: 20),
+        const SizedBox(height: 17),
       ],
     );
   }
