@@ -9,6 +9,7 @@ import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
 import 'package:provider/provider.dart';
+import 'package:lunchsphere/src/components/lunch_link_header.dart';
 
 class HomePageB extends StatelessWidget {
   HomePageB({super.key});
@@ -26,10 +27,11 @@ class HomePageB extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(height: 8),
-              buildHeader(),
-              const SizedBox(height: 50),
+              const LunchLinkHeader(),
+              const SizedBox(height: 30),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.5,
+                // make height flexible
+                height: MediaQuery.of(context).size.height * 0.6,
                 child: AppinioSwiper(
                   controller: controller,
                   cardsCount: provider.groupSchedules.length,
@@ -40,7 +42,7 @@ class HomePageB extends StatelessWidget {
                       Navigator.pushNamed(
                         context,
                         Routes.committedScheduleRoute,
-                        arguments: provider.groupSchedules[index],
+                        arguments: provider.groupSchedules[index - 1],
                       );
                     }
                   },
@@ -51,7 +53,7 @@ class HomePageB extends StatelessWidget {
                   },
                 ),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -87,32 +89,6 @@ class HomePageB extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  Padding buildHeader() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const Icon(
-            Icons.account_circle,
-            color: StyleConsts.greyDarker,
-            size: 32,
-          ),
-          Image.asset(
-            'assets/images/LunchSphereLogo_154x33.png',
-            fit: BoxFit.cover,
-            height: 32, // Adjust the size to fit your logo design
-          ),
-          Image.asset(
-            'assets/images/avatar1.png',
-            fit: BoxFit.cover,
-            height: 32, // Adjust the size to fit your logo design
-          ),
-        ],
       ),
     );
   }

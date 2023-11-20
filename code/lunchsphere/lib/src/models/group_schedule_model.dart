@@ -6,7 +6,6 @@ class GroupScheduleModel {
   final String place;
   final List<ProfileModel> profilesJoining;
   final List<ProfileModel> profilesPending;
-  final List<ProfileModel> profilesDeclined;
   final int id;
 
   GroupScheduleModel({
@@ -15,7 +14,6 @@ class GroupScheduleModel {
     required this.place,
     required this.profilesJoining,
     required this.profilesPending,
-    required this.profilesDeclined,
     required this.id,
   });
 
@@ -27,7 +25,6 @@ class GroupScheduleModel {
       place: json['place'],
       profilesJoining: _deserializeProfiles(json['profilesJoining']),
       profilesPending: _deserializeProfiles(json['profilesPending']),
-      profilesDeclined: _deserializeProfiles(json['profilesDeclined']),
       id: json['id'],
     );
   }
@@ -44,7 +41,6 @@ class GroupScheduleModel {
       'place': place,
       'profilesJoining': profilesJoining.map((x) => x.toJson()).toList(),
       'profilesPending': profilesPending.map((x) => x.toJson()).toList(),
-      'profilesDeclined': profilesDeclined.map((x) => x.toJson()).toList(),
       'id': id,
     };
   }

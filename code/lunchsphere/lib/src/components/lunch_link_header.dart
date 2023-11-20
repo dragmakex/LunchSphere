@@ -23,7 +23,7 @@ class LunchLinkHeader extends StatelessWidget {
             height: 32, // Adjust the size to fit your logo design
           ),
           Image.asset(
-            'assets/images/avatar1.png',
+            'assets/images/avatar01.png',
             fit: BoxFit.cover,
             height: 32, // Adjust the size to fit your logo design
           ),

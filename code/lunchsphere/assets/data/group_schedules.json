@@ -1,9 +1,74 @@
 [
   {
     "id": 1,
-    "groupName": "The Bibstreet Boys",
-    "time": "11:45",
-    "place": "Uni Mensa",
+    "groupName": "Bibstreet boys",
+    "time": "11:00",
+    "place": "Food men",
+    "profilesJoining": [
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "avatarUrl": "assets/images/avatar03.png"
+      },
+      {
+        "id": 9,
+        "name": "Alex Jost",
+        "avatarUrl": "assets/images/avatar09.png"
+      },
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "avatarUrl": "assets/images/avatar10.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "avatarUrl": "assets/images/avatar05.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "groupName": "HCI Group",
+    "time": "12:00",
+    "place": "Clausius bar",
+    "profilesJoining": [
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "avatarUrl": "assets/images/avatar05.png"
+      },
+      {
+        "id": 8,
+        "name": "Marie Weber",
+        "avatarUrl": "assets/images/avatar02.png"
+      },
+      {
+        "id": 9,
+        "name": "Alex Jost",
+        "avatarUrl": "assets/images/avatar09.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 5,
+        "name": "Yasmine Stocker",
+        "avatarUrl": "assets/images/avatar01.png"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "avatarUrl": "assets/images/avatar08.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "groupName": "ETH and CO",
+    "time": "12:15",
+    "place": "UZH Mensa",
     "profilesJoining": [
       {
         "id": 2,
@@ -12,17 +77,127 @@
       },
       {
         "id": 3,
-        "name": "Sandro Müller",
+        "name": "Sandro M\u00fcller",
         "avatarUrl": "assets/images/avatar04.png"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "avatarUrl": "assets/images/avatar08.png"
       }
     ],
-    "profilesPending": [],
-    "profilesDeclined": []
+    "profilesPending": [
+      {
+        "id": 5,
+        "name": "Yasmine Stocker",
+        "avatarUrl": "assets/images/avatar01.png"
+      }
+    ]
   },
   {
-    "id": 2,
-    "groupName": "HCI Group",
-    "time": "12:30",
+    "id": 4,
+    "groupName": "Dancers",
+    "time": "14:00",
+    "place": "Döner",
+    "profilesJoining": [
+      {
+        "id": 6,
+        "name": "Lena Schmidt",
+        "avatarUrl": "assets/images/avatar06.png"
+      },
+      {
+        "id": 7,
+        "name": "Tim Neumann",
+        "avatarUrl": "assets/images/avatar07.png"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "avatarUrl": "assets/images/avatar08.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "avatarUrl": "assets/images/avatar10.png"
+      },
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "avatarUrl": "assets/images/avatar05.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "groupName": "Coolios",
+    "time": "12:40",
+    "place": "Zahnmedizin Mensa",
+    "profilesJoining": [
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "avatarUrl": "assets/images/avatar03.png"
+      },
+      {
+        "id": 8,
+        "name": "Marie Weber",
+        "avatarUrl": "assets/images/avatar02.png"
+      },
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "avatarUrl": "assets/images/avatar10.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 3,
+        "name": "Sandro M\u00fcller",
+        "avatarUrl": "assets/images/avatar04.png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "groupName": "Crackheads",
+    "time": "11:30",
+    "place": "Your mom",
+    "profilesJoining": [
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "avatarUrl": "assets/images/avatar03.png"
+      },
+      {
+        "id": 3,
+        "name": "Sandro M\u00fcller",
+        "avatarUrl": "assets/images/avatar04.png"
+      },
+      {
+        "id": 7,
+        "name": "Tim Neumann",
+        "avatarUrl": "assets/images/avatar07.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 6,
+        "name": "Lena Schmidt",
+        "avatarUrl": "assets/images/avatar06.png"
+      },
+      {
+        "id": 5,
+        "name": "Yasmine Stocker",
+        "avatarUrl": "assets/images/avatar01.png"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "groupName": "Junkies",
+    "time": "11:45",
     "place": "Polymensa",
     "profilesJoining": [
       {
@@ -31,60 +206,35 @@
         "avatarUrl": "assets/images/avatar05.png"
       },
       {
-        "id": 5,
-        "name": "Yasmine Stocker",
-        "avatarUrl": "assets/images/avatar01.png"
-      }
-    ],
-    "profilesPending": [],
-    "profilesDeclined": []
-  },
-  {
-    "id": 3,
-    "groupName": "The Lunch Bunch",
-    "time": "12:15",
-    "place": "Uni Mensa",
-    "profilesJoining": [
-      {
         "id": 6,
-        "name": "Benjamin Koch",
+        "name": "Lena Schmidt",
         "avatarUrl": "assets/images/avatar06.png"
       },
       {
         "id": 7,
-        "name": "Jenny Moser",
-        "avatarUrl": "assets/images/avatar02.png"
+        "name": "Tim Neumann",
+        "avatarUrl": "assets/images/avatar07.png"
       }
     ],
-    "profilesPending": [],
-    "profilesDeclined": []
-  },
-  {
-    "id": 4,
-    "groupName": "The Foodies",
-    "time": "12:15",
-    "place": "Plattenmensa",
-    "profilesJoining": [
+    "profilesPending": [
       {
         "id": 8,
-        "name": "Michael Schweizer",
-        "avatarUrl": "assets/images/avatar07.png"
-      },
-      {
-        "id": 9,
-        "name": "Alexandra Schönenberger",
-        "avatarUrl": "assets/images/avatar09.png"
+        "name": "Marie Weber",
+        "avatarUrl": "assets/images/avatar02.png"
       }
-    ],
-    "profilesPending": [],
-    "profilesDeclined": []
+    ]
   },
   {
-    "id": 5,
-    "groupName": "The Gourmet Club",
-    "time": "12:45",
-    "place": "Plattenmensa",
+    "id": 8,
+    "groupName": "666",
+    "time": "12:00",
+    "place": "FoodLab",
     "profilesJoining": [
+      {
+        "id": 5,
+        "name": "Yasmine Stocker",
+        "avatarUrl": "assets/images/avatar01.png"
+      },
       {
         "id": 10,
         "name": "Anna Kirscher",
@@ -96,7 +246,17 @@
         "avatarUrl": "assets/images/avatar08.png"
       }
     ],
-    "profilesPending": [],
-    "profilesDeclined": []
+    "profilesPending": [
+      {
+        "id": 8,
+        "name": "Marie Weber",
+        "avatarUrl": "assets/images/avatar02.png"
+      },
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "avatarUrl": "assets/images/avatar05.png"
+      }
+    ]
   }
 ]

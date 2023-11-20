@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:appinio_swiper/appinio_swiper.dart';
+import 'package:lunchsphere/src/util/style_consts.dart';
 
 class ExampleButton extends StatelessWidget {
   final Function onTap;
@@ -30,7 +31,7 @@ Widget swipeRightButton(AppinioSwiperController controller) {
       height: 60,
       width: 60,
       decoration: BoxDecoration(
-        color: CupertinoColors.activeGreen,
+        color: StyleConsts.greenConfirm,
         borderRadius: BorderRadius.circular(50),
         boxShadow: [
           BoxShadow(
@@ -59,7 +60,7 @@ Widget swipeLeftButton(AppinioSwiperController controller) {
       height: 60,
       width: 60,
       decoration: BoxDecoration(
-        color: const Color(0xFFFF3868),
+        color: Color.fromARGB(255, 236, 17, 68),
         borderRadius: BorderRadius.circular(50),
         boxShadow: [
           BoxShadow(

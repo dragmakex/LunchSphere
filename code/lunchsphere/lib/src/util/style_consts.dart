@@ -17,7 +17,7 @@ class StyleConsts {
   static const Color purpleDark = Color(0xFF2536A7);
   static const Color redPrimary = Color(0xFFEA0C00);
   static const Color white = Color(0xFFFFFFFF);
-
+  static const Color greenConfirm = Color(0xFF0A9618);
   static const TextStyle groupTitle = TextStyle(
     color: Color(0xFF7C81A1),
     fontSize: 16,

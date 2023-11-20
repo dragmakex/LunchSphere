@@ -49,11 +49,6 @@ class GroupScheduleDetailCard extends StatelessWidget {
             groupSchedule.profilesPending,
             "No one is pending",
           ),
-          buildProfileGroup(
-            "👥 Declined",
-            groupSchedule.profilesDeclined,
-            "No one has declined yet",
-          ),
           bottomWidget,
         ],
       ),
@@ -70,7 +65,7 @@ class GroupScheduleDetailCard extends StatelessWidget {
         if (profiles.isEmpty)
           Text(emptyListMessage, style: StyleConsts.textPrimary)
         else
-          for (ProfileModel p in groupSchedule.profilesJoining) ...[
+          for (ProfileModel p in profiles) ...[
             ProfilePictureTextComponent(profile: p),
             const SizedBox(height: 4),
           ],
