@@ -386,4 +386,15 @@ We use both of these measures for our performance assessment.
 - **Comparative Analysis:** Since participants will interact with two different versions of the app, ask them to compare the two versions and express their preferences. This can help you understand which version performs better in terms of user experience.
 - **Think-Aloud Protocol:** Encourage participants to verbalize their thoughts, feelings, and actions as they interact with the app. This allows you to gain insights into their decision-making process, frustrations, and satisfaction in real time. (maybe this I’m not sure, this could also impact our measurements and lead to noise)
 
-    TODO
+## Insights and changes from preliminary user study
+The experiment, all in all, went as expected. There were no bugs or unexpected behaviors in our app that we'd have to change. The users understood their tasks pretty quickly. I had the feeling that both users saw it almost like a test, meaning they were very careful not to press any wrong buttons. The task completion time and interaction count metrics worked well and can give us a good sense of how fast the user can adapt to the two versions of our feature.
+
+**Things we need to change**
+ - Both users thought that the listed groups were ordered chronologically. When using both variants, this is indeed the case up to the group they needed to select. After that, they figured they didn't have to keep on swiping/scrolling, since the time of the next groups would not fit the description. We thus need to either order all the groups chronologically or completely mix them up in the beginning, so that they look at all proposed options.
+ - For the swiping feature, the first user swiped incorrectly at the beginning and accidentally committed to the wrong group. From there, he did not know if he could go back to swiping and commit to another group. The second user did not realize the swiping feature at all and just used the red and green buttons at the bottom of our app. As a change, we should put small arrows or other aids to help the user correctly utilize our feature.
+
+
+
+
+
+
