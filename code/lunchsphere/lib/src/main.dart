@@ -29,6 +29,23 @@ class MyApp extends StatelessWidget {
           create: (_) => StatisticsProvider(),
         ),
       ],
+      child: AppWrapper(),
+    );
+  }
+}
+
+class AppWrapper extends StatelessWidget {
+  const AppWrapper({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Listener(
+      // onPointerDown: (event) => print("down"),
+      onPointerUp: (event) {
+        context.read<StatisticsProvider>().incrementGestureCount();
+      },
       child: const CupertinoApp(
         debugShowCheckedModeBanner: false,
         title: 'LunchSphere',

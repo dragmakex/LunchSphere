@@ -16,6 +16,8 @@ class StatisticsPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text("Gesture Count: ${provider.gestureCount}"),
+          const SizedBox(height: 20),
           Text("Button presses: ${provider.buttonPressCount}"),
           const SizedBox(height: 20),
           Text(

@@ -9,11 +9,18 @@ class StatisticsProvider with ChangeNotifier {
   final _cardTimers = <int, int>{};
   Timer? _timer;
   Timer? _cardTimer;
+  int _gestureCount = 0;
 
   int get buttonPressCount => _buttonPressCount;
   int get elapsedTime => _elapsedTime;
   int get cardTimerDuration => _cardTimerDuration;
   Map<int, int> get cardTimers => _cardTimers;
+  int get gestureCount => _gestureCount;
+
+  void incrementGestureCount() {
+    _gestureCount++;
+    notifyListeners();
+  }
 
   void incrementCount() {
     _buttonPressCount++;
@@ -27,6 +34,7 @@ class StatisticsProvider with ChangeNotifier {
     _cardTimer?.cancel();
     _timer?.cancel();
     _elapsedTime = 0;
+    _gestureCount = 0;
     notifyListeners();
   }
 
