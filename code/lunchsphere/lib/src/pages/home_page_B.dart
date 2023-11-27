@@ -26,8 +26,6 @@ class _HomePageBState extends State<HomePageB> {
     Provider.of<StatisticsProvider>(context, listen: false).startCardTimer();
   }
 
-  final ApiService apiService = ApiService();
-
   final AppinioSwiperController controller = AppinioSwiperController();
   bool displaySwiper = true;
   @override

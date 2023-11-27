@@ -57,11 +57,6 @@
         "id": 6,
         "name": "Lena Schmidt",
         "avatarUrl": "assets/images/avatar06.png"
-      },
-      {
-        "id": 5,
-        "name": "Yasmine Stocker",
-        "avatarUrl": "assets/images/avatar01.png"
       }
     ]
   },
@@ -119,11 +114,6 @@
     ],
     "profilesPending": [
       {
-        "id": 8,
-        "name": "Marie Weber",
-        "avatarUrl": "assets/images/avatar02.png"
-      },
-      {
         "id": 4,
         "name": "Franklyn Lund",
         "avatarUrl": "assets/images/avatar05.png"
@@ -157,11 +147,6 @@
         "id": 5,
         "name": "Yasmine Stocker",
         "avatarUrl": "assets/images/avatar01.png"
-      },
-      {
-        "id": 11,
-        "name": "Mark Fischer",
-        "avatarUrl": "assets/images/avatar08.png"
       }
     ]
   },
@@ -222,11 +207,6 @@
         "id": 10,
         "name": "Anna Kirscher",
         "avatarUrl": "assets/images/avatar10.png"
-      },
-      {
-        "id": 4,
-        "name": "Franklyn Lund",
-        "avatarUrl": "assets/images/avatar05.png"
       }
     ]
   },

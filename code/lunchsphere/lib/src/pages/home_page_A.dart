@@ -4,15 +4,12 @@ import 'package:lunchsphere/src/components/lunch_link_header.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/components/group_schedule_card.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
-import 'package:lunchsphere/src/services/api_service.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
 import 'package:provider/provider.dart';
 
 class HomePageA extends StatelessWidget {
   HomePageA({super.key});
-
-  final ApiService apiService = ApiService();
 
   @override
   Widget build(BuildContext context) {
