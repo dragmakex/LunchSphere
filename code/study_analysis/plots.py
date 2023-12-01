@@ -20,7 +20,7 @@ number_of_bins = 20
 # A
 plt.hist(df['sus_a'], range=(40,100), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
 plt.xticks(np.arange(40,101,5))
-plt.yticks(np.arange(0, 4, 1)) 
+plt.yticks(np.arange(0, 5, 1)) 
 plt.xlabel('SUS Value')
 plt.ylabel('Frequency')
 plt.title(f'Histogram of SUS Values of A (Bin Size: {number_of_bins})')
@@ -31,7 +31,7 @@ plt.close()
 # B
 plt.hist(df['sus_b'], range=(40,100), bins=number_of_bins, color='red', edgecolor='black', alpha=0.7)
 plt.xticks(np.arange(40,101,5))
-plt.yticks(np.arange(0, 4, 1)) 
+plt.yticks(np.arange(0, 5, 1)) 
 plt.xlabel('SUS Value')
 plt.ylabel('Frequency')
 plt.title(f'Histogram of SUS Values of B (Bin Size: {number_of_bins})')
@@ -57,7 +57,7 @@ number_of_bins = 24
 # A
 plt.hist(df['time_a'], range=(0,120), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
 plt.xticks(np.arange(0,121,5))
-plt.yticks(np.arange(0, 4, 1)) 
+plt.yticks(np.arange(0, 5, 1)) 
 plt.xlabel('Time Needed to Select a Group')
 plt.ylabel('Frequency')
 plt.title(f'Histogram of Time Needed to Select a Group in A Test (Bin Size: {number_of_bins})')
@@ -68,7 +68,7 @@ plt.close()
 # B
 plt.hist(df['time_b'], range=(0,120), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
 plt.xticks(np.arange(0,121,5))
-plt.yticks(np.arange(0, 4, 1)) 
+plt.yticks(np.arange(0, 5, 1)) 
 plt.xlabel('Time Needed to Select a Group')
 plt.ylabel('Frequency')
 plt.title(f'Histogram of Time Needed to Select a Group in B Test (Bin Size: {number_of_bins})')
@@ -111,7 +111,7 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('### Result of Shapiro-Wilke Test B\n')
     file.write('p-value: ' + str(round(shapiro_res_b[1],3)) + '\n')
     if (shapiro_res_b[1] > 0.05): file.write('-> We can assume a normal distribution.\n') 
-    else: file.write('-> We cannot assume a normal distribution.')
+    else: file.write('-> We cannot assume a normal distribution.\n')
 
 
     file.write('### Distribution of Time Needed to Select a Group in A Test\n')
