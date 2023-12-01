@@ -50,4 +50,9 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('### Distribution of SUS Values in A Test\n')
     html_img_txt = '<img src="histogram_sus_values_A.png" alt="Distribution of SUS Values in A Test" width="500"/>'
     file.write(html_img_txt + '\n')
+
+    file.write('### Distribution of SUS Values in B Test\n')
+    html_img_txt = '<img src="histogram_sus_values_B.png" alt="Distribution of SUS Values in B Test" width="500"/>'
+    file.write(html_img_txt + '\n')
     
+
