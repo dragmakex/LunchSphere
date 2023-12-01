@@ -49,6 +49,6 @@ with open(path_to_analysis + '/results.md', 'w') as file:
 
     file.write('### Distribution of SUS Values in A Test\n')
     img_url = f'{path_to_analysis}/histogram_sus_values_A'
-    html_img_txt = f'<img src="{img_url}" alt="Distribution of SUS Values in A Test" width="500"'
+    html_img_txt = f'<img src="{img_url}" alt="Distribution of SUS Values in A Test" width="500"/>'
     file.write(html_img_txt + '\n')
     
