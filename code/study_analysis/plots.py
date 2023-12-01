@@ -46,7 +46,9 @@ shapiro_res_b = shapiro(df['sus_b'])
 with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('# Data Analysis Results\n')
     file.write('## Properties of Data\n')
+
     file.write('### Distribution of SUS Values in A Test\n')
-    file.write(f'![Distribution of SUS Values in A Test]({path_to_analysis}/histogram_sus_values_A.png)')
-    file.write('\n')
-    file.write('### Distribution of SUS Values in B Test\n')
+    img_url = f'{path_to_analysis}/histogram_sus_values_A'
+    html_img_txt = f'<img src="{img_url}" alt="Distribution of SUS Values in A Test" width="500"'
+    file.write(html_img_txt + '\n')
+    
