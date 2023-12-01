@@ -45,4 +45,7 @@ shapiro_res_b = shapiro(df['sus_b'])
 # Write Results to Markdown File
 with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('# Data Analysis Results\n')
-    file.write('\n## Properties of Data\n')
+    file.write('## Properties of Data\n')
+    file.write('### Distribution of SUS Values in A Test')
+    file.write(f'![Distribution of SUS Values in A Test]({path_to_analysis}/histogram_sus_values_A.png)')
+    file.write('### Distribution of SUS Values in B Test')
