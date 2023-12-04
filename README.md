@@ -414,7 +414,7 @@ Provide the participant with a smartphone with the "LunchSphere" app installed l
 
 It's around 10 am, and you're at home feeling quite hungry. You have a meeting at ETH Zentrum scheduled until 12:05, and you want to have lunch at the university's cafeteria (Mensa) with your friends. However, you're unsure if your friends are planning to eat before or after the meeting. You know most of your friends use the 'LunchSphere' app, and you're part of some lunch groups. You decide to open the app and search for a lunch group after 12:05. Being picky, you don't like Polymensa because their food is usually a bit bland, your favorites would be Plattenmensa or Uni Mensa. You also prefer not to eat lunch with Yasmine Stocker and Benjamin Koch for personal reasons. You hope to get something as close to 12:10 as possible because, at 1:00, you have a lecture you want to attend, so you cannot spend too much time on lunch. 
 
-### Action**: Scheduling a Lunch**
+### Action: Scheduling a Lunch
 
 - Let the participant use the app to schedule a lunch based on the scenario given. (Make sure that you reset the statistics on the app.)
 
