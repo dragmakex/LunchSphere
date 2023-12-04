@@ -77,3 +77,36 @@ Average time_b: 32.667 and standard deviation: 10.43
 
 <img src="mean_times.png" alt="Mean Times" width="400"/>
 
+### Third Dependent Variable: Gesture Count
+NH3: The swiping feature instead of the button accept feature has no impact on the amount of interactions (i.e., taps/swipes) the user has to do.
+
+#### Distribution of Gesture Counts in A Test
+<img src="histogram_gesture_count_A.png" alt="Distribution of Gesute Counts in A Test" width="400"/>
+
+Result of Shapiro-Wilke Test A
+p-value: 0.022
+#### Distribution of Gesture Counts in B Test
+<img src="histogram_gesture_count_B.png" alt="Distribution of Gesture Counts in B Test" width="400"/>
+
+Result of Shapiro-Wilke Test B
+p-value: 0.329
+#### Results of Levene Tests:
+
+p val of Levene test for gesture_count_a (started with A vs started with B): 0.31
+
+p val of Levene test for gesture_count_b (started with A vs started with B): 0.694
+
+p val of Levene test for gesture_count_a vs gesture_count_b: 0.093
+
+#### Result of Wilcoxon Signed Rank Test:
+
+p val of Wilcoxon Test on gesture_count_a vs gesture_count_b: 0.052
+
+#### Other Useful Metrics:
+
+Average gesture_count_a: 28.583 and standard deviation: 20.002
+
+Average gesture_count_b: 17.0 and standard deviation: 6.252
+
+<img src="mean_gesture_count.png" alt="Mean Gesture Counts" width="400"/>
+

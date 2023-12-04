@@ -155,7 +155,7 @@ plt.savefig(path_to_analysis + '/histogram_time_A')
 plt.close()
 
 # B
-plt.hist(df['time_b'], range=(0,120), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
+plt.hist(df['time_b'], range=(0,120), bins=number_of_bins, color='red', edgecolor='black', alpha=0.7)
 plt.xticks(np.arange(0,121,5))
 plt.yticks(np.arange(0, 5, 1)) 
 plt.xlabel('Time Needed to Select a Group')
@@ -207,7 +207,67 @@ plt.close()
 
 ##### 3. Dependent variable: Amount of interactions the user has to do ()
 
-# to do
+number_of_bins = 18
+
+# A
+plt.hist(df['gesture_count_a'], range=(0,91), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
+plt.xticks(np.arange(0,90,5))
+plt.yticks(np.arange(0, 6, 1)) 
+plt.xlabel('Gesture Count')
+plt.ylabel('Frequency')
+plt.title(f'Histogram of Gesture Count in A Test (Bin Size: {number_of_bins})')
+
+plt.savefig(path_to_analysis + '/histogram_gesture_count_A')
+plt.close()
+
+# B
+plt.hist(df['gesture_count_b'], range=(0,91), bins=number_of_bins, color='red', edgecolor='black', alpha=0.7)
+plt.xticks(np.arange(0,90,5))
+plt.yticks(np.arange(0, 6, 1)) 
+plt.xlabel('Gesture Count')
+plt.ylabel('Frequency')
+plt.title(f'Histogram of Gesture Count in B Test (Bin Size: {number_of_bins})')
+
+plt.savefig(path_to_analysis + '/histogram_gesture_count_B')
+plt.close()
+
+
+# Do Shapiro-Wilke Test
+shapiro_res_gesture_count_a = shapiro(df['gesture_count_a'])
+shapiro_res_gesture_count_b = shapiro(df['gesture_count_b'])
+
+
+# Do Levene Test
+# Separate the data into the groups
+group_a = df[df['a_or_b'] == 'a']
+group_b = df[df['a_or_b'] == 'b']
+
+# Perform Levene's test for 'sus_a'
+levene_test_gesture_count_a = levene(group_a['gesture_count_a'], group_b['gesture_count_a'])
+
+# Perform Levene's test for 'sus_b'
+levene_test_gesture_count_b = levene(group_a['gesture_count_b'], group_b['gesture_count_b'])
+
+# Perform levene test differently:
+levene_test_gesture_count_both = levene(df['gesture_count_a'],df['gesture_count_b'])
+
+
+# Do Wilcoxon Signed Rank Test
+wilcoxon_res_gesture_count = wilcoxon(df['gesture_count_a'], df['gesture_count_b'])
+
+
+# Calculate useful metrics
+avg_gesture_count_value_a = df['gesture_count_a'].mean()
+avg_gesture_count_value_b = df['gesture_count_b'].mean()
+std_gesture_count_value_a = df['gesture_count_a'].std()
+std_gesture_count_value_b = df['gesture_count_b'].std()
+
+mean_gesture_counts = [avg_gesture_count_value_a, avg_gesture_count_value_b]
+plt.bar(['mean gesturecount a', 'mean gesture count b'], mean_gesture_counts, color=['blue', 'red'])
+plt.ylabel('completion time in seconds')
+plt.savefig(path_to_analysis + '/mean_gesture_count.png')
+plt.close()
+
 
 
 
@@ -289,4 +349,37 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('Average time_a: ' + str(np.round(avg_time_value_a,3)) + ' and standard deviation: ' + str(np.round(std_time_value_a,3)) + '\n\n')
     file.write('Average time_b: ' + str(np.round(avg_time_value_b,3)) + ' and standard deviation: ' + str(np.round(std_time_value_b,3)) + '\n\n')
     html_img_txt = '<img src="mean_times.png" alt="Mean Times" width="400"/>'
+    file.write(html_img_txt + '\n\n')
+
+
+
+    file.write('### Third Dependent Variable: Gesture Count\n')
+    file.write('NH3: The swiping feature instead of the button accept feature has no impact on the amount of interactions (i.e., taps/swipes) the user has to do.\n\n')
+
+    file.write('#### Distribution of Gesture Counts in A Test\n')
+    html_img_txt = '<img src="histogram_gesture_count_A.png" alt="Distribution of Gesute Counts in A Test" width="400"/>'
+    file.write(html_img_txt + '\n\n')
+
+    file.write('Result of Shapiro-Wilke Test A\n')
+    file.write('p-value: ' + str(round(shapiro_res_gesture_count_a[1],3)) + '\n')
+
+    file.write('#### Distribution of Gesture Counts in B Test\n')
+    html_img_txt = '<img src="histogram_gesture_count_B.png" alt="Distribution of Gesture Counts in B Test" width="400"/>'
+    file.write(html_img_txt + '\n\n')
+
+    file.write('Result of Shapiro-Wilke Test B\n')
+    file.write('p-value: ' + str(round(shapiro_res_time_b[1],3)) + '\n')
+    
+    file.write('#### Results of Levene Tests:\n\n')
+    file.write('p val of Levene test for gesture_count_a (started with A vs started with B): ' + str(np.round(levene_test_gesture_count_a[1],3)) + '\n\n')
+    file.write('p val of Levene test for gesture_count_b (started with A vs started with B): ' + str(np.round(levene_test_gesture_count_b[1],3)) + '\n\n')
+    file.write('p val of Levene test for gesture_count_a vs gesture_count_b: ' + str(np.round(levene_test_gesture_count_both[1],3)) + '\n\n')
+
+    file.write('#### Result of Wilcoxon Signed Rank Test:\n\n')
+    file.write('p val of Wilcoxon Test on gesture_count_a vs gesture_count_b: ' + str(np.round(wilcoxon_res_gesture_count[1],3)) + '\n\n')
+    
+    file.write('#### Other Useful Metrics:\n\n')
+    file.write('Average gesture_count_a: ' + str(np.round(avg_gesture_count_value_a,3)) + ' and standard deviation: ' + str(np.round(std_gesture_count_value_a,3)) + '\n\n')
+    file.write('Average gesture_count_b: ' + str(np.round(avg_gesture_count_value_b,3)) + ' and standard deviation: ' + str(np.round(std_gesture_count_value_b,3)) + '\n\n')
+    html_img_txt = '<img src="mean_gesture_count.png" alt="Mean Gesture Counts" width="400"/>'
     file.write(html_img_txt + '\n\n')
