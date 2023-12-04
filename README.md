@@ -393,7 +393,65 @@ The experiment, all in all, went as expected. There were no bugs or unexpected b
  - Both users thought that the listed groups were ordered chronologically. When using both variants, this is indeed the case up to the group they needed to select. After that, they figured they didn't have to keep on swiping/scrolling, since the time of the next groups would not fit the description. We thus need to either order all the groups chronologically or completely mix them up in the beginning, so that they look at all proposed options.
  - For the swiping feature, the first user swiped incorrectly at the beginning and accidentally committed to the wrong group. From there, he did not know if he could go back to swiping and commit to another group. The second user did not realize the swiping feature at all and just used the red and green buttons at the bottom of our app. As a change, we should put small arrows or other aids to help the user correctly utilize our feature. And additionally a training phase to get the user familiar with the app such that things like that don't happen. We forgot to include that in the preliminary user protocol.
 
+## Final User Study Protocol
+### **Participant Data Collection**
 
+- Begin by having participants complete a pre-questionnaire to gather some initial information.
+
+### **Introduction to the Experiment**
+
+- Welcome the participant to the user study of "LunchSphere" and explain that you will guide them through an experiment involving the use of our lunch planner app.
+- Let them know that they will be presented with two different versions of the app, and they do not need any prior knowledge about the app.
+- Show one user the A version first and the other the B version first.
+
+### Training phase
+
+Provide the participant with a smartphone with the "LunchSphere" app installed let the participant play around in the app for approximately 1 minute to get him or her familiar with the interface.
+
+### **Scenario: Scheduling a Lunch:**
+
+- Present the following scenario to the participant:
+
+It's around 10 am, and you're at home feeling quite hungry. You have a meeting at ETH Zentrum scheduled until 12:05, and you want to have lunch at the university's cafeteria (Mensa) with your friends. However, you're unsure if your friends are planning to eat before or after the meeting. You know most of your friends use the 'LunchSphere' app, and you're part of some lunch groups. You decide to open the app and search for a lunch group after 12:05. Being picky, you don't like Polymensa because their food is usually a bit bland, your favorites would be Plattenmensa or Uni Mensa. You also prefer not to eat lunch with Yasmine Stocker and Benjamin Koch for personal reasons. You hope to get something as close to 12:10 as possible because, at 1:00, you have a lecture you want to attend, so you cannot spend too much time on lunch. 
+
+### Action: Scheduling a Lunch
+
+- Let the participant use the app to schedule a lunch based on the scenario given. (Make sure that you reset the statistics on the app.)
+
+**Cheatsheet**
+
+Don’t like to eat with: Yasmine Stocker, Benjamin Koch
+
+Next lecture starting: 13:00
+
+Meeting finished: 12:05
+
+Preferred food: NOT Polymensa
+
+### Subjective Ratings
+
+- We give the user the SUS rating scheme to fill out.
+
+### Performance
+
+- While the participant performs the tasks, we measure the time he/she needs with a timer implemented in our App. The timer starts when the user taps on the button ‘A Test’ or ‘B Test’ and ends when the user successfully accepted the lunch group they were given. We also log how many button presses the user performs. Additionally, the total number of gestures is tracked, quantifying the instances when the user lifts their finger from the screen therefore recording swipes and button taps.
+We use both of these measures for our performance assessment.
+
+### Qualitative feedback after each A and B
+
+- Post task interview:
+    - "What were your thoughts when using the app for scheduling/rescheduling?"
+    - "Were there any aspects of the app that confused you or that you found difficult to use?"
+    - "What did you like or dislike about the user interface and design?"
+    - "Did you encounter any issues or unexpected behaviors?
+
+### Switch prototype
+
+- Tell the participant that we now do the same procedure but with a different prototype. Then got to the training phase step again in this protocol with the other prototype in hand.
+
+### Qualitative Feedback after both A and B
+
+- **Comparative Analysis:** Since participants will interact with two different versions of the app, ask them to compare the two versions and express their preferences. This can help you understand which version performs better in terms of user experience.
 
 
 
