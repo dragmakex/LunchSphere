@@ -1,32 +1,75 @@
 # Data Analysis Results
 ## Properties of Data
-### First dependent variable: SUS Values
+### Demographics
+<img src="demographics_plots.png" alt="Distribution of SUS Values in A Test" width="400"/>
+
+Average Age: 22.9
+
+Median Age: 23.0
+
+Average Tinder Familiarity: 2.6
+
+Average Planning Frequency: 3.1
+
+Average self-initiated lunch frequency: 2.8
+
+### First Dependent Variable: SUS Values
 NH1: The swiping feature instead of the button accept feature has no impact on the SUS value of the user.
 
 #### Distribution of SUS Values in A Test
-Result of Shapiro-Wilke Test A: p-value: 0.091
--> We can assume a normal distribution.
-
+Result of Shapiro-Wilke Test A: p-value: 0.217
 <img src="histogram_sus_values_A.png" alt="Distribution of SUS Values in A Test" width="400"/>
 
 #### Distribution of SUS Values in B Test
-Result of Shapiro-Wilke Test B: p-value: 0.329
--> We can assume a normal distribution.
-
+Result of Shapiro-Wilke Test B: p-value: 0.576
 <img src="histogram_sus_values_B.png" alt="Distribution of SUS Values in B Test" width="400"/>
 
-### Result of Levene Test on Distribution of SUS Values
-p-value: 0.006
--> We can assume the variances of the SUS values are not equal for the groups A and B
-### Distribution of Time Needed to Select a Group in A Test
+#### Results of Levene Tests:
+
+p val of Levene test for sus_a (started with A vs started with B): 0.795
+
+p val of Levene test for sus_b (started with A vs started with B): 1.0
+
+p val of Levene test for sus_a vs sus_b: 0.006
+
+#### Result of Wilcoxon Signed Rank Test:
+
+p val of Wilcoxon Test on sus_a vs sus_b: 0.009
+
+#### Other Useful Metrics:
+
+Average sus_a: 84.583 and standard deviation: 7.217
+
+Average sus_b: 64.5 and standard deviation: 17.129
+
+### Second Dependent Variable: Time Needed to Select a Group
+NH2: The swiping feature instead of the button accept feature has no impact on the time needed to select a group.
+
+#### Distribution of Time Needed to Select a Group in A Test
 <img src="histogram_time_A.png" alt="Distribution of Time Needed to Select a Group in A Test" width="400"/>
 
-#### Result of Shapiro-Wilke Test A
+Result of Shapiro-Wilke Test A
 p-value: 0.091
--> We can assume a normal distribution.
-### Distribution of Time Needed to Select a Group in B Test
+#### Distribution of Time Needed to Select a Group in B Test
 <img src="histogram_time_B.png" alt="Distribution of Time Needed to Select a Group in B Test" width="400"/>
 
-#### Result of Shapiro-Wilke Test B
+Result of Shapiro-Wilke Test B
 p-value: 0.329
--> We can assume a normal distribution.
+#### Results of Levene Tests:
+
+p val of Levene test for sus_a (started with A vs started with B): 0.013
+
+p val of Levene test for sus_b (started with A vs started with B): 0.214
+
+p val of Levene test for sus_a vs sus_b: 0.078
+
+#### Result of Wilcoxon Signed Rank Test:
+
+p val of Wilcoxon Test on time_a vs time_b: 1.0
+
+#### Other Useful Metrics:
+
+Average time_a: 39.75 and standard deviation: 30.317
+
+Average time_b: 32.667 and standard deviation: 10.43
+

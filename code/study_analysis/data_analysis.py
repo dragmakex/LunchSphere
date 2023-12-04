@@ -4,6 +4,7 @@ import numpy as np
 
 from scipy.stats import shapiro
 from scipy.stats import levene
+from scipy.stats import wilcoxon
 
 path_to_analysis = 'C:/Users/nisha/OneDrive/Desktop/ETH/human_computer_interaction/hci-project-hci2023-group-16/code/study_analysis'
 
@@ -69,7 +70,8 @@ avg_self_init_frequency = df['self_initiated_lunch'].mean()
 
 fig.delaxes(axs[1, 2])
 plt.savefig(path_to_analysis + '/demographics_plots.png')
-plt.show()
+plt.close()
+
 
 
 ##### 1. Dependent variable: SUS values #####
@@ -100,12 +102,40 @@ plt.close()
 
 
 # Do Shapiro-Wilke Test
-shapiro_res_a = shapiro(df['sus_a'])
-shapiro_res_b = shapiro(df['sus_b'])
+shapiro_res_sus_a = shapiro(df['sus_a'])
+shapiro_res_sus_b = shapiro(df['sus_b'])
 
 
 # Do Levene Test
-levene_res_a = levene(df['sus_a'], df['sus_b'])
+# Separate the data into the groups
+group_a = df[df['a_or_b'] == 'a']
+group_b = df[df['a_or_b'] == 'b']
+
+# Perform Levene's test for 'sus_a'
+levene_test_sus_a = levene(group_a['sus_a'], group_b['sus_a'])
+
+# Perform Levene's test for 'sus_b'
+levene_test_sus_b = levene(group_a['sus_b'], group_b['sus_b'])
+
+# Perform levene test differently:
+levene_test_sus_both = levene(df['sus_a'],df['sus_b'])
+
+
+# Do Wilcoxon Signed Rank Test
+wilcoxon_res_sus = wilcoxon(df['sus_a'], df['sus_b'])
+
+
+# Calculate useful metrics
+avg_sus_value_a = df['sus_a'].mean()
+avg_sus_value_b = df['sus_b'].mean()
+std_sus_value_a = df['sus_a'].std()
+std_sus_value_b = df['sus_b'].std()
+
+mean_sus = [avg_sus_value_a, avg_sus_value_b]
+plt.bar(['mean sus a', 'mean sus b'], mean_sus, color=['blue', 'red'])
+plt.ylabel('sus value')
+plt.savefig(path_to_analysis + '/mean_sus.png')
+plt.close()
 
 
 
@@ -137,12 +167,41 @@ plt.close()
 
 
 # Do Shapiro-Wilke Test
-shapiro_res_a = shapiro(df['time_a'])
-shapiro_res_b = shapiro(df['time_b'])
+shapiro_res_time_a = shapiro(df['time_a'])
+shapiro_res_time_b = shapiro(df['time_b'])
 
 
 # Do Levene Test
-# ...
+# Separate the data into the groups
+group_a = df[df['a_or_b'] == 'a']
+group_b = df[df['a_or_b'] == 'b']
+
+# Perform Levene's test for 'sus_a'
+levene_test_time_a = levene(group_a['time_a'], group_b['time_a'])
+
+# Perform Levene's test for 'sus_b'
+levene_test_time_b = levene(group_a['time_b'], group_b['time_b'])
+
+#perform levene test differently:
+levene_test_time_both = levene(df['time_a'],df['time_b'])
+
+
+# Do Wilcoxon Signed Rank Test
+wilcoxon_res_time = wilcoxon(df['time_a'], df['time_b'])
+
+
+# Calculate useful metrics
+avg_time_value_a = df['time_a'].mean()
+avg_time_value_b = df['time_b'].mean()
+std_time_value_a = df['time_a'].std()
+std_time_value_b = df['time_b'].std()
+
+mean_times = [avg_time_value_a, avg_time_value_b]
+plt.bar(['mean time a', 'mean time b'], mean_times, color=['blue', 'red'])
+plt.ylabel('completion time in seconds')
+plt.savefig(path_to_analysis + '/mean_times.png')
+plt.close()
+
 
 
 
@@ -158,49 +217,72 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('# Data Analysis Results\n')
     file.write('## Properties of Data\n')
 
-    file.write('### First dependent variable: SUS Values\n')
+
+    file.write('### Demographics\n')
+    html_img_txt = '<img src="demographics_plots.png" alt="Distribution of SUS Values in A Test" width="400"/>'
+    file.write(html_img_txt + '\n\n')
+    file.write('Average Age: ' + str(np.round(avg_age,1)) + '\n\n')
+    file.write('Median Age: ' + str(med_age) + '\n\n')
+    file.write('Average Tinder Familiarity: ' + str(np.round(avg_tinder_familiarity,1)) + '\n\n')
+    file.write('Average Planning Frequency: ' + str(np.round(avg_planning_frequency,1)) + '\n\n')
+    file.write('Average self-initiated lunch frequency: ' + str(np.round(avg_self_init_frequency,1)) + '\n\n') 
+
+
+
+    file.write('### First Dependent Variable: SUS Values\n')
     file.write('NH1: The swiping feature instead of the button accept feature has no impact on the SUS value of the user.\n\n')
 
     file.write('#### Distribution of SUS Values in A Test\n')
     file.write('Result of Shapiro-Wilke Test A: ')
-    file.write('p-value: ' + str(round(shapiro_res_a[1],3)) + '\n')
-    if (shapiro_res_a[1] > 0.05): file.write('-> We can assume a normal distribution.\n\n') 
-    else: file.write('-> We cannot assume a normal distribution.\n\n')
+    file.write('p-value: ' + str(round(shapiro_res_sus_a[1],3)) + '\n')
     html_img_txt = '<img src="histogram_sus_values_A.png" alt="Distribution of SUS Values in A Test" width="400"/>'
     file.write(html_img_txt + '\n\n')
 
     file.write('#### Distribution of SUS Values in B Test\n')
     file.write('Result of Shapiro-Wilke Test B: ')
-    file.write('p-value: ' + str(round(shapiro_res_b[1],3)) + '\n')
-    if (shapiro_res_b[1] > 0.05): file.write('-> We can assume a normal distribution.\n\n') 
-    else: file.write('-> We cannot assume a normal distribution.\n\n')
+    file.write('p-value: ' + str(round(shapiro_res_sus_b[1],3)) + '\n')
     html_img_txt = '<img src="histogram_sus_values_B.png" alt="Distribution of SUS Values in B Test" width="400"/>'
     file.write(html_img_txt + '\n\n')
 
+    file.write('#### Results of Levene Tests:\n\n')
+    file.write('p val of Levene test for sus_a (started with A vs started with B): ' + str(np.round(levene_test_sus_a[1],3)) + '\n\n')
+    file.write('p val of Levene test for sus_b (started with A vs started with B): ' + str(np.round(levene_test_sus_b[1],3)) + '\n\n')
+    file.write('p val of Levene test for sus_a vs sus_b: ' + str(np.round(levene_test_sus_both[1],3)) + '\n\n')
+
+    file.write('#### Result of Wilcoxon Signed Rank Test:\n\n')
+    file.write('p val of Wilcoxon Test on sus_a vs sus_b: ' + str(np.round(wilcoxon_res_sus[1],3)) + '\n\n')
     
-
-    file.write('### Result of Levene Test on Distribution of SUS Values\n')
-    file.write('p-value: ' + str(round(levene_res_a[1],3)) + '\n')
-    if (levene_res_a[1] > 0.05): file.write('-> We can assume the variances of the SUS values are equal for the groups A and B\n')
-    else: file.write('-> We can assume the variances of the SUS values are not equal for the groups A and B\n')
+    file.write('#### Other Useful Metrics:\n\n')
+    file.write('Average sus_a: ' + str(np.round(avg_sus_value_a,3)) + ' and standard deviation: ' + str(np.round(std_sus_value_a,3)) + '\n\n')
+    file.write('Average sus_b: ' + str(np.round(avg_sus_value_b,3)) + ' and standard deviation: ' + str(np.round(std_sus_value_b,3)) + '\n\n')
 
 
-    file.write('### Distribution of Time Needed to Select a Group in A Test\n')
+
+    file.write('### Second Dependent Variable: Time Needed to Select a Group\n')
+    file.write('NH2: The swiping feature instead of the button accept feature has no impact on the time needed to select a group.\n\n')
+
+    file.write('#### Distribution of Time Needed to Select a Group in A Test\n')
     html_img_txt = '<img src="histogram_time_A.png" alt="Distribution of Time Needed to Select a Group in A Test" width="400"/>'
     file.write(html_img_txt + '\n\n')
 
-    file.write('#### Result of Shapiro-Wilke Test A\n')
-    file.write('p-value: ' + str(round(shapiro_res_a[1],3)) + '\n')
-    if (shapiro_res_a[1] > 0.05): file.write('-> We can assume a normal distribution.\n') 
-    else: file.write('-> We cannot assume a normal distribution.')
+    file.write('Result of Shapiro-Wilke Test A\n')
+    file.write('p-value: ' + str(round(shapiro_res_time_a[1],3)) + '\n')
 
-    file.write('### Distribution of Time Needed to Select a Group in B Test\n')
+    file.write('#### Distribution of Time Needed to Select a Group in B Test\n')
     html_img_txt = '<img src="histogram_time_B.png" alt="Distribution of Time Needed to Select a Group in B Test" width="400"/>'
     file.write(html_img_txt + '\n\n')
 
-    file.write('#### Result of Shapiro-Wilke Test B\n')
-    file.write('p-value: ' + str(round(shapiro_res_b[1],3)) + '\n')
-    if (shapiro_res_b[1] > 0.05): file.write('-> We can assume a normal distribution.\n') 
-    else: file.write('-> We cannot assume a normal distribution.')
+    file.write('Result of Shapiro-Wilke Test B\n')
+    file.write('p-value: ' + str(round(shapiro_res_time_b[1],3)) + '\n')
     
+    file.write('#### Results of Levene Tests:\n\n')
+    file.write('p val of Levene test for sus_a (started with A vs started with B): ' + str(np.round(levene_test_time_a[1],3)) + '\n\n')
+    file.write('p val of Levene test for sus_b (started with A vs started with B): ' + str(np.round(levene_test_time_b[1],3)) + '\n\n')
+    file.write('p val of Levene test for sus_a vs sus_b: ' + str(np.round(levene_test_time_both[1],3)) + '\n\n')
 
+    file.write('#### Result of Wilcoxon Signed Rank Test:\n\n')
+    file.write('p val of Wilcoxon Test on time_a vs time_b: ' + str(np.round(wilcoxon_res_time[1],3)) + '\n\n')
+    
+    file.write('#### Other Useful Metrics:\n\n')
+    file.write('Average time_a: ' + str(np.round(avg_time_value_a,3)) + ' and standard deviation: ' + str(np.round(std_time_value_a,3)) + '\n\n')
+    file.write('Average time_b: ' + str(np.round(avg_time_value_b,3)) + ' and standard deviation: ' + str(np.round(std_time_value_b,3)) + '\n\n')
