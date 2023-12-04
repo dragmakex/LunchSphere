@@ -255,6 +255,8 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('#### Other Useful Metrics:\n\n')
     file.write('Average sus_a: ' + str(np.round(avg_sus_value_a,3)) + ' and standard deviation: ' + str(np.round(std_sus_value_a,3)) + '\n\n')
     file.write('Average sus_b: ' + str(np.round(avg_sus_value_b,3)) + ' and standard deviation: ' + str(np.round(std_sus_value_b,3)) + '\n\n')
+    html_img_txt = '<img src="mean_sus.png" alt="Mean SUS Values" width="400"/>'
+    file.write(html_img_txt + '\n\n')
 
 
 
@@ -286,3 +288,5 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('#### Other Useful Metrics:\n\n')
     file.write('Average time_a: ' + str(np.round(avg_time_value_a,3)) + ' and standard deviation: ' + str(np.round(std_time_value_a,3)) + '\n\n')
     file.write('Average time_b: ' + str(np.round(avg_time_value_b,3)) + ' and standard deviation: ' + str(np.round(std_time_value_b,3)) + '\n\n')
+    html_img_txt = '<img src="mean_times.png" alt="Mean Times" width="400"/>'
+    file.write(html_img_txt + '\n\n')

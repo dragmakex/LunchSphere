@@ -42,6 +42,8 @@ Average sus_a: 84.583 and standard deviation: 7.217
 
 Average sus_b: 64.5 and standard deviation: 17.129
 
+<img src="mean_sus.png" alt="Mean SUS Values" width="400"/>
+
 ### Second Dependent Variable: Time Needed to Select a Group
 NH2: The swiping feature instead of the button accept feature has no impact on the time needed to select a group.
 
@@ -72,4 +74,6 @@ p val of Wilcoxon Test on time_a vs time_b: 1.0
 Average time_a: 39.75 and standard deviation: 30.317
 
 Average time_b: 32.667 and standard deviation: 10.43
+
+<img src="mean_times.png" alt="Mean Times" width="400"/>
 
