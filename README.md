@@ -439,7 +439,7 @@ We use both of these measures for our performance assessment.
 
 ### Qualitative feedback after each A and B
 
-- **Post task interview**:
+- Post task interview:
     - "What were your thoughts when using the app for scheduling/rescheduling?"
     - "Were there any aspects of the app that confused you or that you found difficult to use?"
     - "What did you like or dislike about the user interface and design?"
