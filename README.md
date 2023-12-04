@@ -391,7 +391,7 @@ The experiment, all in all, went as expected. There were no bugs or unexpected b
 
 **Things we need to change**
  - Both users thought that the listed groups were ordered chronologically. When using both variants, this is indeed the case up to the group they needed to select. After that, they figured they didn't have to keep on swiping/scrolling, since the time of the next groups would not fit the description. We thus need to either order all the groups chronologically or completely mix them up in the beginning, so that they look at all proposed options.
- - For the swiping feature, the first user swiped incorrectly at the beginning and accidentally committed to the wrong group. From there, he did not know if he could go back to swiping and commit to another group. The second user did not realize the swiping feature at all and just used the red and green buttons at the bottom of our app. As a change, we should put small arrows or other aids to help the user correctly utilize our feature.
+ - For the swiping feature, the first user swiped incorrectly at the beginning and accidentally committed to the wrong group. From there, he did not know if he could go back to swiping and commit to another group. The second user did not realize the swiping feature at all and just used the red and green buttons at the bottom of our app. As a change, we should put small arrows or other aids to help the user correctly utilize our feature. And additionally a training phase to get the user familiar with the app such that things like that don't happen. We forgot to include that in the preliminary user protocol.
 
 
 
