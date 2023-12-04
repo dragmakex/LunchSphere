@@ -12,6 +12,69 @@ file_path = path_to_analysis + '/user_study_data.csv'
 df = pd.read_csv(file_path)
 
 
+
+##### Demographics
+
+# Set up subplots
+fig, axs = plt.subplots(2, 3, figsize=(12, 10))
+plt.subplots_adjust(wspace=1.2, hspace=0.4)
+
+# Plot 1: Age Distribution
+axs[0, 0].hist(df['age'], bins=[age - 0.5 for age in set(df['age'])], edgecolor='black', alpha=0.7)
+axs[0, 0].set_yticks(np.arange(0, 5, 1))
+axs[0, 0].set_xlabel('Age')
+axs[0, 0].set_ylabel('Count')
+axs[0, 0].set_title('Age Distribution')
+
+avg_age = df['age'].mean()
+med_age = df['age'].median()
+
+
+# Plot 2: Gender Distribution
+gender_counts = df['gender'].value_counts()
+axs[1, 0].pie(gender_counts.values, labels=gender_counts.index, autopct='%1.1f%%', startangle=90, colors=['skyblue', 'lightcoral'])
+axs[1, 0].set_title('Gender Distribution')
+
+
+# Plot 3: Tinder Familiarity
+familiarity_counts = df['tinder_frequency'].value_counts().sort_index()
+axs[0, 1].bar(familiarity_counts.index, familiarity_counts, color='skyblue')
+axs[0, 1].set_xticks(np.arange(1, 6, 1))
+axs[0, 1].set_xlabel('Familiarity with Swiping Apps like Tinder (1: low, 5: high)')
+axs[0, 1].set_ylabel('Count')
+axs[0, 1].set_title('Familiarity with Swiping Apps like Tinder')
+
+avg_tinder_frequency = df['tinder_frequency'].mean()
+
+
+# Plot 4: Frequency of Planning Lunches
+frequency_counts = df['group_chat_frequency'].value_counts().sort_index()
+axs[1, 1].bar(frequency_counts.index, frequency_counts, color='skyblue')
+axs[1, 1].set_xticks(np.arange(1, 6, 1))
+axs[1, 1].set_yticks(np.arange(0, 5, 1))
+axs[1, 1].set_xlabel('Frequency of Planning Lunches via Group Chats and in Person (1: low, 5: high)')
+axs[1, 1].set_ylabel('Count')
+axs[1, 1].set_title('Frequency of Planning Lunches via Group Chats and in Person')
+
+avg_planning_frequency = df['group_chat_frequency'].mean()
+
+
+# Frequency of Self-Initiated Lunch
+si_frequency_counts = df['self_initiated_lunch'].value_counts().sort_index()
+axs[0, 2].bar(si_frequency_counts.index, si_frequency_counts, color='skyblue')
+axs[0, 2].set_xticks(np.arange(1,6,1))
+axs[0, 2].set_xlabel('Frequency of Self-Initiated Lunches (1: low, 5: high)')
+axs[0, 2].set_ylabel('Count')
+axs[0, 2].set_title('Frequency of Self-Initiated Lunches')
+
+avg_self_init_frequency = df['self_initiated_lunch'].mean()
+
+
+#plt.tight_layout()
+plt.savefig(path_to_analysis + '/demographics_plots.png')
+plt.show()
+
+
 ##### 1. Dependent variable: SUS values #####
 
 number_of_bins = 20
