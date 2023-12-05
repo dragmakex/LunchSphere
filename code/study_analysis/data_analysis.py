@@ -5,6 +5,7 @@ import numpy as np
 from scipy.stats import shapiro
 from scipy.stats import levene
 from scipy.stats import wilcoxon
+from scipy.stats import ttest_rel
 
 path_to_analysis = 'C:/Users/nisha/OneDrive/Desktop/ETH/human_computer_interaction/hci-project-hci2023-group-16/code/study_analysis'
 
@@ -132,10 +133,7 @@ std_sus_value_a = df['sus_a'].std()
 std_sus_value_b = df['sus_b'].std()
 
 mean_sus = [avg_sus_value_a, avg_sus_value_b]
-plt.bar(['mean sus a', 'mean sus b'], mean_sus, color=['blue', 'red'])
-plt.ylabel('sus value')
-plt.savefig(path_to_analysis + '/mean_sus.png')
-plt.close()
+stddev_sus = [std_sus_value_a, std_sus_value_b]
 
 
 
@@ -186,8 +184,8 @@ levene_test_time_b = levene(group_a['time_b'], group_b['time_b'])
 levene_test_time_both = levene(df['time_a'],df['time_b'])
 
 
-# Do Wilcoxon Signed Rank Test
-wilcoxon_res_time = wilcoxon(df['time_a'], df['time_b'])
+# Do paired t-test
+paired_ttest_time = ttest_rel(df['time_a'], df['time_b'])
 
 
 # Calculate useful metrics
@@ -197,11 +195,7 @@ std_time_value_a = df['time_a'].std()
 std_time_value_b = df['time_b'].std()
 
 mean_times = [avg_time_value_a, avg_time_value_b]
-plt.bar(['mean time a', 'mean time b'], mean_times, color=['blue', 'red'])
-plt.ylabel('completion time in seconds')
-plt.savefig(path_to_analysis + '/mean_times.png')
-plt.close()
-
+stddev_time = [std_time_value_a, std_time_value_b]
 
 
 
@@ -252,8 +246,8 @@ levene_test_gesture_count_b = levene(group_a['gesture_count_b'], group_b['gestur
 levene_test_gesture_count_both = levene(df['gesture_count_a'],df['gesture_count_b'])
 
 
-# Do Wilcoxon Signed Rank Test
-wilcoxon_res_gesture_count = wilcoxon(df['gesture_count_a'], df['gesture_count_b'])
+# Do paired t-test
+paired_ttest_gesture_count = ttest_rel(df['gesture_count_a'], df['gesture_count_b'])
 
 
 # Calculate useful metrics
@@ -263,9 +257,23 @@ std_gesture_count_value_a = df['gesture_count_a'].std()
 std_gesture_count_value_b = df['gesture_count_b'].std()
 
 mean_gesture_counts = [avg_gesture_count_value_a, avg_gesture_count_value_b]
-plt.bar(['mean gesturecount a', 'mean gesture count b'], mean_gesture_counts, color=['blue', 'red'])
-plt.ylabel('completion time in seconds')
-plt.savefig(path_to_analysis + '/mean_gesture_count.png')
+stddev_gesture_counts = [std_gesture_count_value_a, std_gesture_count_value_b]
+
+
+
+
+
+fig2, ax2 = plt.subplots(1, 3, figsize=(12, 10))
+plt.subplots_adjust(wspace=0.6, hspace=0.4)
+ax2[0].bar(['Mean SUS Value \nand Standard Deviation \nin Test A', 'Mean SUS Value \nand Standard Deviation \nin Test B'], mean_sus, yerr=stddev_sus, color=['blue', 'red'], width=0.4)
+ax2[0].set_ylabel('SUS value')
+
+ax2[1].bar(['Mean Time Value \nand Standard Deviation \nin Test A', 'Mean Time Value \nand Standard Deviation \nin Test B'], mean_times, yerr=stddev_time, color=['blue', 'red'], width=0.4)
+ax2[1].set_ylabel('Time in seconds')
+
+ax2[2].bar(['Mean Gesture Count \nand Standard Deviation \nin Test A', 'Mean Gesture Count \nand Standard Deviation \nin Test B'], mean_gesture_counts, yerr=stddev_gesture_counts, color=['blue', 'red'], width=0.4)
+ax2[2].set_ylabel('Gesture Count')
+plt.savefig(path_to_analysis + '/all_means_plots.png')
 plt.close()
 
 
@@ -310,13 +318,13 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('p val of Levene test for sus_a vs sus_b: ' + str(np.round(levene_test_sus_both[1],3)) + '\n\n')
 
     file.write('#### Result of Wilcoxon Signed Rank Test:\n\n')
+    file.write('Z val of Wilcoxon Signed Rank Test on sus_a vs sus_b: ' + str(np.round(wilcoxon_res_sus[0],3)) + '\n\n')
     file.write('p val of Wilcoxon Test on sus_a vs sus_b: ' + str(np.round(wilcoxon_res_sus[1],3)) + '\n\n')
     
     file.write('#### Other Useful Metrics:\n\n')
     file.write('Average sus_a: ' + str(np.round(avg_sus_value_a,3)) + ' and standard deviation: ' + str(np.round(std_sus_value_a,3)) + '\n\n')
     file.write('Average sus_b: ' + str(np.round(avg_sus_value_b,3)) + ' and standard deviation: ' + str(np.round(std_sus_value_b,3)) + '\n\n')
-    html_img_txt = '<img src="mean_sus.png" alt="Mean SUS Values" width="400"/>'
-    file.write(html_img_txt + '\n\n')
+    
 
 
 
@@ -342,14 +350,14 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('p val of Levene test for sus_b (started with A vs started with B): ' + str(np.round(levene_test_time_b[1],3)) + '\n\n')
     file.write('p val of Levene test for sus_a vs sus_b: ' + str(np.round(levene_test_time_both[1],3)) + '\n\n')
 
-    file.write('#### Result of Wilcoxon Signed Rank Test:\n\n')
-    file.write('p val of Wilcoxon Test on time_a vs time_b: ' + str(np.round(wilcoxon_res_time[1],3)) + '\n\n')
+    file.write('#### Result of Paired Students t-test:\n\n')
+    file.write('DOF val of Paired Students t-test on time_a vs time_b: ' + str(np.round(paired_ttest_time[0],3)) + '\n\n')
+    file.write('p val of Paired Students t-test on time_a vs time_b: ' + str(np.round(paired_ttest_time[1],3)) + '\n\n')
     
     file.write('#### Other Useful Metrics:\n\n')
     file.write('Average time_a: ' + str(np.round(avg_time_value_a,3)) + ' and standard deviation: ' + str(np.round(std_time_value_a,3)) + '\n\n')
     file.write('Average time_b: ' + str(np.round(avg_time_value_b,3)) + ' and standard deviation: ' + str(np.round(std_time_value_b,3)) + '\n\n')
-    html_img_txt = '<img src="mean_times.png" alt="Mean Times" width="400"/>'
-    file.write(html_img_txt + '\n\n')
+    
 
 
 
@@ -375,11 +383,15 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('p val of Levene test for gesture_count_b (started with A vs started with B): ' + str(np.round(levene_test_gesture_count_b[1],3)) + '\n\n')
     file.write('p val of Levene test for gesture_count_a vs gesture_count_b: ' + str(np.round(levene_test_gesture_count_both[1],3)) + '\n\n')
 
-    file.write('#### Result of Wilcoxon Signed Rank Test:\n\n')
-    file.write('p val of Wilcoxon Test on gesture_count_a vs gesture_count_b: ' + str(np.round(wilcoxon_res_gesture_count[1],3)) + '\n\n')
+    file.write('#### Result of Paired Students t-test:\n\n')
+    file.write('DOF val of Paired Students t-test on gesutre_count_a vs gesture_count_b: ' + str(np.round(paired_ttest_gesture_count[0],3)) + '\n\n')
+    file.write('p val of Paired Students t-test on gesture_count_a vs gesture_count_b: ' + str(np.round(paired_ttest_gesture_count[1],3)) + '\n\n')
     
     file.write('#### Other Useful Metrics:\n\n')
     file.write('Average gesture_count_a: ' + str(np.round(avg_gesture_count_value_a,3)) + ' and standard deviation: ' + str(np.round(std_gesture_count_value_a,3)) + '\n\n')
     file.write('Average gesture_count_b: ' + str(np.round(avg_gesture_count_value_b,3)) + ' and standard deviation: ' + str(np.round(std_gesture_count_value_b,3)) + '\n\n')
-    html_img_txt = '<img src="mean_gesture_count.png" alt="Mean Gesture Counts" width="400"/>'
+    
+    
+    
+    html_img_txt = '<img src="all_means_plots.png" alt="All Means" width="400"/>'
     file.write(html_img_txt + '\n\n')
