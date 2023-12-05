@@ -265,13 +265,13 @@ stddev_gesture_counts = [std_gesture_count_value_a, std_gesture_count_value_b]
 
 fig2, ax2 = plt.subplots(1, 3, figsize=(12, 10))
 plt.subplots_adjust(wspace=0.6, hspace=0.4)
-ax2[0].bar(['Mean SUS Value \nand Standard Deviation \nin Test A', 'Mean SUS Value \nand Standard Deviation \nin Test B'], mean_sus, yerr=stddev_sus, color=['blue', 'red'], width=0.4)
+ax2[0].bar(['Mean and Std Dev \n(A)', 'Mean and Std Dev \n(B)'], mean_sus, yerr=stddev_sus, color=['blue', 'red'], width=0.4)
 ax2[0].set_ylabel('SUS value')
 
-ax2[1].bar(['Mean Time Value \nand Standard Deviation \nin Test A', 'Mean Time Value \nand Standard Deviation \nin Test B'], mean_times, yerr=stddev_time, color=['blue', 'red'], width=0.4)
+ax2[1].bar(['Mean and Std Dev \n(A)', 'Mean and Std Dev \n(B)'], mean_times, yerr=stddev_time, color=['blue', 'red'], width=0.4)
 ax2[1].set_ylabel('Time in seconds')
 
-ax2[2].bar(['Mean Gesture Count \nand Standard Deviation \nin Test A', 'Mean Gesture Count \nand Standard Deviation \nin Test B'], mean_gesture_counts, yerr=stddev_gesture_counts, color=['blue', 'red'], width=0.4)
+ax2[2].bar(['Mean and Std Dev \n(A)', 'Mean and Std Dev \n(B)'], mean_gesture_counts, yerr=stddev_gesture_counts, color=['blue', 'red'], width=0.4)
 ax2[2].set_ylabel('Gesture Count')
 plt.savefig(path_to_analysis + '/all_means_plots.png')
 plt.close()
@@ -393,5 +393,5 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     
     
     
-    html_img_txt = '<img src="all_means_plots.png" alt="All Means" width="600"/>'
+    html_img_txt = '<img src="all_means_plots.png" alt="All Means" width="400"/>'
     file.write(html_img_txt + '\n\n')
