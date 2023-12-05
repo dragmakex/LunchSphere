@@ -110,5 +110,5 @@ Average gesture_count_a: 28.583 and standard deviation: 20.002
 
 Average gesture_count_b: 17.0 and standard deviation: 6.252
 
-<img src="all_means_plots.png" alt="All Means" width="400"/>
+#### Means and Standard Deviations of the 3 Variables<img src="all_means_plots.png" alt="All Means" width="400"/>
 
