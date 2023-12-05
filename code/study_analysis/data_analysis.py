@@ -392,6 +392,6 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('Average gesture_count_b: ' + str(np.round(avg_gesture_count_value_b,3)) + ' and standard deviation: ' + str(np.round(std_gesture_count_value_b,3)) + '\n\n')
     
     
-    file.write('#### Means and Standard Deviations of the 3 Variables')
+    file.write('#### Means and Standard Deviations of the 3 Variables\n')
     html_img_txt = '<img src="all_means_plots.png" alt="All Means" width="400"/>'
     file.write(html_img_txt + '\n\n')
