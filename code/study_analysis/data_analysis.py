@@ -393,5 +393,5 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     
     
     
-    html_img_txt = '<img src="all_means_plots.png" alt="All Means" width="400"/>'
+    html_img_txt = '<img src="all_means_plots.png" alt="All Means" width="500"/>'
     file.write(html_img_txt + '\n\n')
