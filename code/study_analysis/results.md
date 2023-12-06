@@ -100,9 +100,9 @@ p val of Levene test for gesture_count_a vs gesture_count_b: 0.093
 
 #### Result of Paired Students t-test:
 
-DOF val of Paired Students t-test on gesutre_count_a vs gesture_count_b: 2.002
+Z val of Wilcoxon Signed Rank Test on gesutre_count_a vs gesture_count_b: 13.5
 
-p val of Paired Students t-test on gesture_count_a vs gesture_count_b: 0.071
+p val of Wilcoxon Signed Rank Test on gesture_count_a vs gesture_count_b: 0.052
 
 #### Other Useful Metrics:
 

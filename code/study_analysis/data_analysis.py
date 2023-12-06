@@ -247,7 +247,7 @@ levene_test_gesture_count_both = levene(df['gesture_count_a'],df['gesture_count_
 
 
 # Do paired t-test
-paired_ttest_gesture_count = ttest_rel(df['gesture_count_a'], df['gesture_count_b'])
+wilcoxon_res_gesture_count = wilcoxon(df['gesture_count_a'], df['gesture_count_b'])
 
 
 # Calculate useful metrics
@@ -384,8 +384,8 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('p val of Levene test for gesture_count_a vs gesture_count_b: ' + str(np.round(levene_test_gesture_count_both[1],3)) + '\n\n')
 
     file.write('#### Result of Paired Students t-test:\n\n')
-    file.write('DOF val of Paired Students t-test on gesutre_count_a vs gesture_count_b: ' + str(np.round(paired_ttest_gesture_count[0],3)) + '\n\n')
-    file.write('p val of Paired Students t-test on gesture_count_a vs gesture_count_b: ' + str(np.round(paired_ttest_gesture_count[1],3)) + '\n\n')
+    file.write('Z val of Wilcoxon Signed Rank Test on gesutre_count_a vs gesture_count_b: ' + str(np.round(wilcoxon_res_gesture_count[0],3)) + '\n\n')
+    file.write('p val of Wilcoxon Signed Rank Test on gesture_count_a vs gesture_count_b: ' + str(np.round(wilcoxon_res_gesture_count[1],3)) + '\n\n')
     
     file.write('#### Other Useful Metrics:\n\n')
     file.write('Average gesture_count_a: ' + str(np.round(avg_gesture_count_value_a,3)) + ' and standard deviation: ' + str(np.round(std_gesture_count_value_a,3)) + '\n\n')
