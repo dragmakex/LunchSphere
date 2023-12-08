@@ -13,7 +13,7 @@ import 'package:lunchsphere/src/components/lunch_link_header.dart';
 import 'package:lunchsphere/src/providers/statistics_provider.dart';
 
 class HomePageB extends StatefulWidget {
-  HomePageB({super.key});
+  const HomePageB({super.key});
 
   @override
   State<HomePageB> createState() => _HomePageBState();
@@ -47,14 +47,17 @@ class _HomePageBState extends State<HomePageB> {
                   height: MediaQuery.of(context).size.height * 0.64,
                   child: AppinioSwiper(
                     controller: controller,
-                    unlimitedUnswipe: true,
-                    cardsCount: provider.groupSchedules.length,
-                    swipeOptions: const AppinioSwipeOptions.all(),
+                    allowUnlimitedUnSwipe: true,
+                    cardCount: provider.groupSchedules.length,
+                    swipeOptions: const SwipeOptions.all(),
                     // on right swipe: route to committed schedule
-                    onSwipe: (index, direction) {
+                    onSwipeEnd: (previousIndex, targetIndex, activity) =>
+                        _swipeEnd(
+                            previousIndex, targetIndex, activity, context),
+                    /* on: (index, direction) {
                       Provider.of<StatisticsProvider>(context, listen: false)
                           .stopCardTimer(index - 1);
-                      if (direction == AppinioSwiperDirection.right) {
+                      if (direction == const SwipeOptions.all().right) {
                         Navigator.pushNamed(
                           context,
                           Routes.committedScheduleRoute,
@@ -64,7 +67,7 @@ class _HomePageBState extends State<HomePageB> {
                         Provider.of<StatisticsProvider>(context, listen: false)
                             .startCardTimer();
                       }
-                    },
+                    }, */
                     // define onEnd a collapsing this SizedBox
                     onEnd: () {
                       setState(() {
@@ -73,7 +76,7 @@ class _HomePageBState extends State<HomePageB> {
                         displaySwiper = false;
                       });
                     },
-                    cardsBuilder: (context, index) {
+                    cardBuilder: (context, index) {
                       return TinderScheduleBody(
                         groupSchedule: provider.groupSchedules[index],
                       );
@@ -127,5 +130,24 @@ class _HomePageBState extends State<HomePageB> {
         ),
       ),
     );
+  }
+}
+
+void _swipeEnd(int previousIndex, int targetIndex, SwiperActivity activity,
+    BuildContext context) {
+  switch (activity) {
+    case Swipe():
+      if (activity.direction == AxisDirection.right) {
+        Navigator.pushNamed(
+          context,
+          Routes.committedScheduleRoute,
+          arguments: Provider.of<DataProvider>(context, listen: false)
+              .groupSchedules[previousIndex],
+        );
+      }
+      // default: do nothing
+      break;
+    default:
+      break;
   }
 }

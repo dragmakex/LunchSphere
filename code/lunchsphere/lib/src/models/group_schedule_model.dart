@@ -20,6 +20,7 @@ class GroupScheduleModel {
   // Deserializing (or 'decoding') JSON to GroupScheduleModel
   factory GroupScheduleModel.fromJson(Map<String, dynamic> json) {
     return GroupScheduleModel(
+      // sort items by time
       groupName: json['groupName'],
       time: json['time'],
       place: json['place'],
