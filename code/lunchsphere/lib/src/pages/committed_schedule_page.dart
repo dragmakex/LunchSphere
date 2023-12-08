@@ -23,7 +23,9 @@ class _CommittedSchedulePageState extends State<CommittedSchedulePage> {
   @override
   void initState() {
     super.initState();
-    Provider.of<StatisticsProvider>(context, listen: false).stopTimer();
+    if (widget.groupSchedule.id == 3) {
+      Provider.of<StatisticsProvider>(context, listen: false).stopTimer();
+    }
   }
 
   @override
@@ -41,7 +43,22 @@ class _CommittedSchedulePageState extends State<CommittedSchedulePage> {
                 const LunchLinkHeader(),
                 const SizedBox(height: 40),
                 const CommittedIndicatorWidget(),
-                const SizedBox(height: 20),
+                CustomButton(
+                  onPressed: () {
+                    Navigator.pushNamed(
+                      context,
+                      Routes.statistics,
+                    );
+                  },
+                  color: StyleConsts.backgroundPrimary,
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 16.0, horizontal: 40.0),
+                  child: Text(
+                    "Statistics",
+                    style: StyleConsts.buttonText
+                        .copyWith(color: StyleConsts.greyLight),
+                  ),
+                ),
                 GroupScheduleDetailCard(groupSchedule: widget.groupSchedule),
                 const SizedBox(height: 32),
                 CustomButton(

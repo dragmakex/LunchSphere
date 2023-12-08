@@ -181,36 +181,6 @@
     ]
   },
   {
-    "id": 4,
-    "groupName": "Dancers",
-    "time": "14:00",
-    "place": "Döner",
-    "profilesJoining": [
-      {
-        "id": 6,
-        "name": "Lena Schmidt",
-        "avatarUrl": "assets/images/avatar06.png"
-      },
-      {
-        "id": 7,
-        "name": "Tim Neumann",
-        "avatarUrl": "assets/images/avatar07.png"
-      },
-      {
-        "id": 11,
-        "name": "Mark Fischer",
-        "avatarUrl": "assets/images/avatar08.png"
-      }
-    ],
-    "profilesPending": [
-      {
-        "id": 10,
-        "name": "Anna Kirscher",
-        "avatarUrl": "assets/images/avatar10.png"
-      }
-    ]
-  },
-  {
     "id": 5,
     "groupName": "Coolios",
     "time": "12:40",
@@ -237,6 +207,36 @@
         "id": 3,
         "name": "Sandro M\u00fcller",
         "avatarUrl": "assets/images/avatar04.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "groupName": "Dancers",
+    "time": "14:00",
+    "place": "Döner",
+    "profilesJoining": [
+      {
+        "id": 6,
+        "name": "Lena Schmidt",
+        "avatarUrl": "assets/images/avatar06.png"
+      },
+      {
+        "id": 7,
+        "name": "Tim Neumann",
+        "avatarUrl": "assets/images/avatar07.png"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "avatarUrl": "assets/images/avatar08.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "avatarUrl": "assets/images/avatar10.png"
       }
     ]
   }

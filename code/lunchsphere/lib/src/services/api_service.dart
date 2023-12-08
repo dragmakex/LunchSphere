@@ -11,6 +11,7 @@ class ApiService {
 
   Future<List<GroupScheduleModel>> getGroupSchedules() async {
     final jsonString =
+        // await rootBundle.loadString('assets/data/group_schedules.json');
         await rootBundle.loadString('assets/data/group_schedules.json');
     final jsonResponse = jsonDecode(jsonString) as List;
     return jsonResponse

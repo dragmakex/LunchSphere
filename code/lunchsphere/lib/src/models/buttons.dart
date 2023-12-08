@@ -86,12 +86,16 @@ Widget unswipeButton(AppinioSwiperController controller) {
   return ExampleButton(
     onTap: () => controller.unswipe(),
     child: Container(
+      decoration: BoxDecoration(
+        color: StyleConsts.purpleLight,
+        borderRadius: BorderRadius.circular(50),
+      ),
       height: 60,
       width: 60,
       alignment: Alignment.center,
       child: const Icon(
         Icons.rotate_left_rounded,
-        color: CupertinoColors.systemGrey2,
+        color: StyleConsts.purpleDark,
         size: 40,
       ),
     ),

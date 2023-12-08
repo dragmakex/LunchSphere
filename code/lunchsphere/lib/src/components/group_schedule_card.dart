@@ -31,19 +31,42 @@ class GroupScheduleCard extends StatelessWidget {
           Text(groupSchedule.time, style: StyleConsts.bigTimeStyle),
           const SizedBox(height: 24),
           const Text("📍 Place", style: StyleConsts.groupSubHeader),
-          const SizedBox(height: 10.0),
-          Text(groupSchedule.place, style: StyleConsts.textPrimary),
+          const SizedBox(height: 8.0),
+          Text(groupSchedule.place, style: StyleConsts.pageTitle),
           const SizedBox(height: 24),
-          const Text("👥 Joining", style: StyleConsts.groupSubHeader),
-          const SizedBox(height: 10.0),
-          for (ProfileModel p in groupSchedule.profilesJoining) ...[
-            ProfilePictureTextComponent(profile: p),
-            const SizedBox(height: 4),
-          ],
+          buildProfileGroup(
+            "👥 Joining",
+            groupSchedule.profilesJoining,
+            "No one is joining yet",
+          ),
+          buildProfileGroup(
+            "👥 Pending",
+            groupSchedule.profilesPending,
+            "No one is pending",
+          ),
           const SizedBox(height: 24),
           buildButtonRow(context),
         ],
       ),
+    );
+  }
+
+  Column buildProfileGroup(
+      String title, List<ProfileModel> profiles, String emptyListMessage) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(title, style: StyleConsts.groupSubHeader),
+        const SizedBox(height: 10.0),
+        if (profiles.isEmpty)
+          Text(emptyListMessage, style: StyleConsts.textPrimary)
+        else
+          for (ProfileModel p in profiles) ...[
+            ProfilePictureTextComponent(profile: p),
+            const SizedBox(height: 4),
+          ],
+        const SizedBox(height: 17),
+      ],
     );
   }
 
@@ -83,26 +106,26 @@ class GroupScheduleCard extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(width: 20),
-        Expanded(
-          child: CustomButton(
-            color: StyleConsts.purpleLighter,
-            onPressed: () {
-              Navigator.pushNamed(
-                context,
-                Routes.groupScheduleDetailRoute,
-                arguments: groupSchedule,
-              );
-            },
-            child: Center(
-              child: Text(
-                "Details",
-                style: StyleConsts.buttonText
-                    .copyWith(color: StyleConsts.purpleDark),
-              ),
-            ),
-          ),
-        ),
+        // const SizedBox(width: 20),
+        // Expanded(
+        //   child: CustomButton(
+        //     color: StyleConsts.purpleLighter,
+        //     onPressed: () {
+        //       Navigator.pushNamed(
+        //         context,
+        //         Routes.groupScheduleDetailRoute,
+        //         arguments: groupSchedule,
+        //       );
+        //     },
+        //     child: Center(
+        //       child: Text(
+        //         "Details",
+        //         style: StyleConsts.buttonText
+        //             .copyWith(color: StyleConsts.purpleDark),
+        //       ),
+        //     ),
+        //   ),
+        // ),
       ],
     );
   }

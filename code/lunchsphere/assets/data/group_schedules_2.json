@@ -1,0 +1,140 @@
+[
+  {
+    "id": 12,
+    "groupName": "Quantum Coders",
+    "time": "11:45",
+    "place": "Tech Park",
+    "profilesJoining": [
+      {
+        "id": 1,
+        "name": "Emily Clarke",
+        "avatarUrl": "assets/images/avatar01.png"
+      },
+      {
+        "id": 2,
+        "name": "John Smith",
+        "avatarUrl": "assets/images/avatar02.png"
+      },
+      {
+        "id": 3,
+        "name": "Maria Garcia",
+        "avatarUrl": "assets/images/avatar03.png"
+      }
+    ],
+    "profilesPending": []
+  },
+  {
+    "id": 13,
+    "groupName": "Data Wizards",
+    "time": "12:30",
+    "place": "Library Café",
+    "profilesJoining": [
+      {
+        "id": 5,
+        "name": "Sarah Wilson",
+        "avatarUrl": "assets/images/avatar05.png"
+      },
+      {
+        "id": 6,
+        "name": "Michael Brown",
+        "avatarUrl": "assets/images/avatar06.png"
+      },
+      {
+        "id": 7,
+        "name": "Linda Martinez",
+        "avatarUrl": "assets/images/avatar07.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 8,
+        "name": "Chris Davis",
+        "avatarUrl": "assets/images/avatar08.png"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "groupName": "AI Explorers",
+    "time": "12:30",
+    "place": "Innovation Hub",
+    "profilesJoining": [
+      {
+        "id": 9,
+        "name": "Lisa Miller",
+        "avatarUrl": "assets/images/avatar09.png"
+      },
+      {
+        "id": 10,
+        "name": "Kevin Wilson",
+        "avatarUrl": "assets/images/avatar10.png"
+      },
+      {
+        "id": 1,
+        "name": "Emily Clarke",
+        "avatarUrl": "assets/images/avatar01.png"
+      }
+    ],
+    "profilesPending": []
+  },
+  {
+    "id": 15,
+    "groupName": "Network Ninjas",
+    "time": "13:00",
+    "place": "Cyber Café",
+    "profilesJoining": [
+      {
+        "id": 3,
+        "name": "Maria Garcia",
+        "avatarUrl": "assets/images/avatar03.png"
+      },
+      {
+        "id": 4,
+        "name": "David Johnson",
+        "avatarUrl": "assets/images/avatar04.png"
+      },
+      {
+        "id": 5,
+        "name": "Sarah Wilson",
+        "avatarUrl": "assets/images/avatar05.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 6,
+        "name": "Michael Brown",
+        "avatarUrl": "assets/images/avatar06.png"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "groupName": "Code Masters",
+    "time": "13:10",
+    "place": "Tech Lab",
+    "profilesJoining": [
+      {
+        "id": 7,
+        "name": "Linda Martinez",
+        "avatarUrl": "assets/images/avatar07.png"
+      },
+      {
+        "id": 8,
+        "name": "Chris Davis",
+        "avatarUrl": "assets/images/avatar08.png"
+      },
+      {
+        "id": 9,
+        "name": "Lisa Miller",
+        "avatarUrl": "assets/images/avatar09.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 10,
+        "name": "Kevin Wilson",
+        "avatarUrl": "assets/images/avatar10.png"
+      }
+    ]
+  }
+]

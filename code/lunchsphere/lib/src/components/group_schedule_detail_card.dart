@@ -37,7 +37,7 @@ class GroupScheduleDetailCard extends StatelessWidget {
           const SizedBox(height: 24),
           const Text("📍 Place", style: StyleConsts.groupSubHeader),
           const SizedBox(height: 10.0),
-          Text(groupSchedule.place, style: StyleConsts.textPrimary),
+          Text(groupSchedule.place, style: StyleConsts.pageTitle),
           const SizedBox(height: 24),
           buildProfileGroup(
             "👥 Joining",
