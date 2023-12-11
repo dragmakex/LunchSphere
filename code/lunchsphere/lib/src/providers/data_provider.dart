@@ -10,16 +10,14 @@ class DataProvider with ChangeNotifier {
   DataProvider() {
     _loadGroupSchedules();
   }
+  double toDouble(String myTime) =>
+      double.parse(myTime.split(":")[0]) +
+      double.parse(myTime.split(":")[1]) / 60.0;
+
   Future<void> _loadGroupSchedules() async {
     groupSchedules = await apiService.getGroupSchedules();
     // sort group schedules by time, time is in format "hh:mm", compare hours then minutes
-    groupSchedules.sort((a, b) => int.parse(a.time.split(":")[0])
-                .compareTo(int.parse(b.time.split(":")[0])) ==
-            0
-        ? int.parse(a.time.split(":")[1])
-            .compareTo(int.parse(b.time.split(":")[1]))
-        : int.parse(a.time.split(":")[0])
-            .compareTo(int.parse(b.time.split(":")[0])));
+    groupSchedules.sort((a, b) => toDouble(a.time).compareTo(toDouble(b.time)));
     isLoading = false;
     notifyListeners();
   }

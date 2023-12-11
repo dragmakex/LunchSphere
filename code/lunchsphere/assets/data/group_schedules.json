@@ -2,7 +2,7 @@
   {
     "id": 1,
     "groupName": "Bibstreet boys",
-    "time": "11:00",
+    "time": "12:05",
     "place": "Food men",
     "profilesJoining": [
       {
@@ -27,9 +27,9 @@
         "name": "Franklyn Lund",
         "avatarUrl": "assets/images/avatar05.png"
       }
-    ]
+    ],
+    "code": "ZHFSQ"
   },
-
   {
     "id": 6,
     "groupName": "The bugheads",
@@ -58,7 +58,8 @@
         "name": "Lena Schmidt",
         "avatarUrl": "assets/images/avatar06.png"
       }
-    ]
+    ],
+    "code": "STCIX"
   },
   {
     "id": 7,
@@ -88,7 +89,8 @@
         "name": "Marie Weber",
         "avatarUrl": "assets/images/avatar02.png"
       }
-    ]
+    ],
+    "code": "RQPHX"
   },
   {
     "id": 8,
@@ -96,11 +98,6 @@
     "time": "12:00",
     "place": "FoodLab",
     "profilesJoining": [
-      {
-        "id": 5,
-        "name": "Yasmine Stocker",
-        "avatarUrl": "assets/images/avatar01.png"
-      },
       {
         "id": 10,
         "name": "Anna Kirscher",
@@ -118,7 +115,8 @@
         "name": "Franklyn Lund",
         "avatarUrl": "assets/images/avatar05.png"
       }
-    ]
+    ],
+    "code": "KEEMV"
   },
   {
     "id": 2,
@@ -145,10 +143,11 @@
     "profilesPending": [
       {
         "id": 5,
-        "name": "Yasmine Stocker",
-        "avatarUrl": "assets/images/avatar01.png"
+        "name": "Philip Hinterberger",
+        "avatarUrl": "assets/images/avatar03.png"
       }
-    ]
+    ],
+    "code": "OPEVU"
   },
   {
     "id": 3,
@@ -174,11 +173,12 @@
     ],
     "profilesPending": [
       {
-        "id": 5,
-        "name": "Yasmine Stocker",
-        "avatarUrl": "assets/images/avatar01.png"
+        "id": 10,
+        "name": "Anna Kirscher",
+        "avatarUrl": "assets/images/avatar10.png"
       }
-    ]
+    ],
+    "code": "IUENR"
   },
   {
     "id": 4,
@@ -208,7 +208,8 @@
         "name": "Anna Kirscher",
         "avatarUrl": "assets/images/avatar10.png"
       }
-    ]
+    ],
+    "code": "ALOKJ"
   },
   {
     "id": 5,
@@ -238,6 +239,7 @@
         "name": "Sandro M\u00fcller",
         "avatarUrl": "assets/images/avatar04.png"
       }
-    ]
+    ],
+    "code": "QPJNV"
   }
 ]

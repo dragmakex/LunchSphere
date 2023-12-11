@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lunchsphere/src/util/routes.dart';
 
 import '../util/style_consts.dart';
 
@@ -12,20 +13,36 @@ class LunchLinkHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Icon(
-            Icons.account_circle,
-            color: StyleConsts.greyDarker,
-            size: 32,
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(
+                context,
+                Routes.groupSettings,
+              );
+            },
+            child: const Icon(
+              Icons.group,
+              color: StyleConsts.greyDarker,
+              size: 32,
+            ),
           ),
           Image.asset(
             'assets/images/LunchSphereLogo_154x33.png',
             fit: BoxFit.cover,
             height: 32, // Adjust the size to fit your logo design
           ),
-          Image.asset(
-            'assets/images/avatar01.png',
-            fit: BoxFit.cover,
-            height: 32, // Adjust the size to fit your logo design
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(
+                context,
+                Routes.profileSettings,
+              );
+            },
+            child: Image.asset(
+              'assets/images/main.png',
+              fit: BoxFit.cover,
+              height: 32, // Adjust the size to fit your logo design
+            ),
           ),
         ],
       ),

@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "groupName": "Bibstreet boys",
+    "time": "12:05",
+    "place": "Food men",
+    "profilesJoining": [
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "avatarUrl": "assets/images/avatar03.png"
+      },
+      {
+        "id": 9,
+        "name": "Alex Jost",
+        "avatarUrl": "assets/images/avatar09.png"
+      },
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "avatarUrl": "assets/images/avatar10.png"
+      }
+    ],
+    "profilesPending": [
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "avatarUrl": "assets/images/avatar05.png"
+      }
+    ],
+    "code": "POYZC"
+  }
+]

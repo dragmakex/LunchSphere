@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lunchsphere/src/pages/ab_chooser.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/providers/statistics_provider.dart';
+import 'package:lunchsphere/src/services/notificatino_services.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:provider/provider.dart';
 
@@ -28,15 +30,39 @@ class MyApp extends StatelessWidget {
           create: (_) => StatisticsProvider(),
         ),
       ],
-      child: AppWrapper(),
+      child: const AppWrapper(),
     );
   }
 }
 
-class AppWrapper extends StatelessWidget {
+class AppWrapper extends StatefulWidget {
   const AppWrapper({
     super.key,
   });
+
+  @override
+  State<StatefulWidget> createState() {
+    return _AppWrapperState();
+  }
+}
+
+class _AppWrapperState extends State<AppWrapper> {
+  late final NotificationService notificationService;
+  @override
+  void initState() {
+    notificationService = NotificationService();
+    listenToNotificationStream();
+    notificationService.initializePlatformNotifications();
+    super.initState();
+  }
+
+  void listenToNotificationStream() =>
+      notificationService.behaviorSubject.listen((payload) {
+        Navigator.pushNamed(
+          context,
+          Routes.aTest,
+        );
+      });
 
   @override
   Widget build(BuildContext context) {

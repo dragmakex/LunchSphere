@@ -7,6 +7,8 @@ class GroupScheduleModel {
   final List<ProfileModel> profilesJoining;
   final List<ProfileModel> profilesPending;
   final int id;
+  final String code;
+  final List<ProfileModel> members;
 
   GroupScheduleModel({
     required this.groupName,
@@ -15,6 +17,8 @@ class GroupScheduleModel {
     required this.profilesJoining,
     required this.profilesPending,
     required this.id,
+    required this.code,
+    required this.members,
   });
 
   // Deserializing (or 'decoding') JSON to GroupScheduleModel
@@ -27,7 +31,14 @@ class GroupScheduleModel {
       profilesJoining: _deserializeProfiles(json['profilesJoining']),
       profilesPending: _deserializeProfiles(json['profilesPending']),
       id: json['id'],
+      code: json['code'],
+      members: _deserializeProfiles(json['profilesJoining']) +
+          _deserializeProfiles(json['profilesPending']),
     );
+  }
+  // return the join of the two lists
+  static List<ProfileModel> getMembers(GroupScheduleModel groupSchedule) {
+    return groupSchedule.profilesJoining + groupSchedule.profilesPending;
   }
 
   static List<ProfileModel> _deserializeProfiles(List<dynamic> jsonProfiles) {
@@ -43,6 +54,7 @@ class GroupScheduleModel {
       'profilesJoining': profilesJoining.map((x) => x.toJson()).toList(),
       'profilesPending': profilesPending.map((x) => x.toJson()).toList(),
       'id': id,
+      'code': code,
     };
   }
 }
