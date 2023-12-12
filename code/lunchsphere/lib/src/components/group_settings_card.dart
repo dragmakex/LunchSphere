@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lunchsphere/src/pages/group_settings_detail_page.dart';
 import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/models/profile_model.dart';
 import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
@@ -26,7 +27,7 @@ class GroupSettingsCard extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => GroupScheduleDetailPage(
+              builder: (context) => GroupSettingsDetailPage(
                 groupSchedule: groupSchedule,
               ),
             ),
@@ -102,14 +103,16 @@ class GroupSettingsCard extends StatelessWidget {
         else
         // if there is more than 3 profiles, show the first 3 and then ... and the number of remaining profiles
         if (profiles.length > 3)
-          for (ProfileModel p in profiles.sublist(0, 3)) ...[
-            ProfilePictureTextComponent(profile: p),
+          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            for (ProfileModel p in profiles.sublist(0, 3)) ...[
+              ProfilePictureTextComponent(profile: p),
+              const SizedBox(height: 4),
+            ],
             const SizedBox(height: 4),
-          ],
-        const SizedBox(height: 4),
-        Text("... and ${profiles.length - 3} more",
-            style: StyleConsts.textPrimary),
-        if (profiles.length <= 3)
+            Text("... and ${profiles.length - 3} more",
+                style: StyleConsts.textPrimary),
+          ])
+        else
           for (ProfileModel p in profiles) ...[
             ProfilePictureTextComponent(profile: p),
             const SizedBox(height: 4),

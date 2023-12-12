@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/models/profile_model.dart';
 import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
@@ -35,19 +36,38 @@ class GroupSettingsDetailCard extends StatelessWidget {
           const SizedBox(height: 10.0),
           Text(groupSchedule.time, style: StyleConsts.bigTimeStyle),
           const SizedBox(height: 24),
-          const Text("📍 Place", style: StyleConsts.groupSubHeader),
-          const SizedBox(height: 10.0),
-          Text(groupSchedule.place, style: StyleConsts.textPrimary),
-          const SizedBox(height: 24),
-          buildProfileGroup(
-            "👥 Joining",
-            groupSchedule.profilesJoining,
-            "No one is joining yet",
-          ),
-          buildProfileGroup(
-            "👥 Pending",
-            groupSchedule.profilesPending,
-            "No one is pending",
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text("📍 Place", style: StyleConsts.groupSubHeader),
+                  Text(groupSchedule.place,
+                      style: StyleConsts.textPrimary
+                          .copyWith(fontSize: 20, fontWeight: FontWeight.bold)),
+                ],
+              ),
+              CustomButton(
+                color: StyleConsts.white,
+                onPressed: () async {
+                  await Clipboard.setData(
+                      ClipboardData(text: groupSchedule.code));
+                },
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      "🔑 Group Code",
+                      style: StyleConsts.groupSubHeader,
+                    ),
+                    Text(groupSchedule.code,
+                        style: StyleConsts.textPrimary.copyWith(
+                            fontSize: 20, fontWeight: FontWeight.bold)),
+                  ],
+                ),
+              )
+            ],
           ),
           bottomWidget,
         ],
@@ -69,7 +89,6 @@ class GroupSettingsDetailCard extends StatelessWidget {
             ProfilePictureTextComponent(profile: p),
             const SizedBox(height: 4),
           ],
-        const SizedBox(height: 20),
       ],
     );
   }

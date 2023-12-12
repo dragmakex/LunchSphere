@@ -27,52 +27,29 @@ class GroupScheduleDetailCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-      // wrap the column in a box to make the whole thing clickable
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(groupSchedule.groupName,
-                  style: StyleConsts.groupTitle.copyWith(fontSize: 20)),
-              Text(groupSchedule.time, style: StyleConsts.bigTimeStyle),
-            ],
-          ),
+          const SizedBox(height: 4),
+          Text(groupSchedule.groupName, style: StyleConsts.groupTitle),
           const SizedBox(height: 10.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              // insert key emoji
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text("📍 Place", style: StyleConsts.groupSubHeader),
-                  Text(groupSchedule.place,
-                      style: StyleConsts.textPrimary
-                          .copyWith(fontSize: 16, fontWeight: FontWeight.bold)),
-                ],
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    "🔑 Group Code",
-                    style: StyleConsts.groupSubHeader,
-                  ),
-                  Text(groupSchedule.code,
-                      style: StyleConsts.textPrimary
-                          .copyWith(fontSize: 16, fontWeight: FontWeight.bold)),
-                ],
-              ),
-            ],
-          ),
+          Text(groupSchedule.time, style: StyleConsts.bigTimeStyle),
+          const SizedBox(height: 24),
+          const Text("📍 Place", style: StyleConsts.groupSubHeader),
+          const SizedBox(height: 10.0),
+          Text(groupSchedule.place, style: StyleConsts.pageTitle),
           const SizedBox(height: 24),
           buildProfileGroup(
-            "👥 Members",
-            groupSchedule.members,
+            "👥 Joining",
+            groupSchedule.profilesJoining,
             "No one is joining yet",
           ),
+          buildProfileGroup(
+            "👥 Pending",
+            groupSchedule.profilesPending,
+            "No one is pending",
+          ),
+          bottomWidget,
         ],
       ),
     );

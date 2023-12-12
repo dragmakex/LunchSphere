@@ -20,7 +20,7 @@ class GroupSettings extends StatelessWidget {
       child: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Column(
               children: [
                 const SizedBox(height: 8),

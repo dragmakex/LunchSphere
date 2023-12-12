@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:appinio_swiper/appinio_swiper.dart';
+import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 
 class ExampleButton extends StatelessWidget {
@@ -97,3 +98,57 @@ Widget unswipeButton(AppinioSwiperController controller) {
     ),
   );
 }
+
+/* class ProfileSettingsButton extends StatelessWidget {
+  const ProfileSettingsButton(
+      {super.key,
+      required this.text,
+      required this.toggle,
+      required this.onPressed});
+
+  final String text;
+  final bool toggle;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8.0),
+        child: CupertinoButton(
+          color: StyleConsts.white,
+          padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+          onPressed: onPressed,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(text,
+                  style: StyleConsts.buttonText.copyWith(
+                      color: StyleConsts.greyDarker,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18)),
+              // if text == "Notifications" then show the toggle switch
+              // if text == "Log Out" then show the log out button
+              if (text == "Notifications")
+                CupertinoSwitch(
+                  value: true,
+                  onChanged: (value) {},
+                  activeColor: StyleConsts.purplePrimary,
+                )
+              else if (text == "Log Out")
+                const Icon(
+                  Icons.logout,
+                  color: StyleConsts.greyDarker,
+                  size: 20,
+                )
+              else
+                const Icon(
+                  Icons.arrow_forward_ios,
+                  color: StyleConsts.greyDarker,
+                  size: 20,
+                ),
+            ],
+          ),
+        ));
+  }
+}
+ */
