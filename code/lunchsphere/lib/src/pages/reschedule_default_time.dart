@@ -62,11 +62,12 @@ class _RescheduleRequestPageState extends State<RescheduleGroupTime> {
                 ),
                 const Spacer(),
                 CustomButton(
-                  color: StyleConsts.purplePrimary,
+                  color: const Color.fromRGBO(71, 90, 215, 1),
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
                   width: double.infinity,
                   onPressed: () {
                     // BACKEND: INSERT LOGIC HERE
+                    widget.groupSchedule.time = _timeTicker.toString();
                     Navigator.pop(context);
                   },
                   child: Center(

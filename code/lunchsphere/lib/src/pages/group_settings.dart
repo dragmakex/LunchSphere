@@ -15,76 +15,47 @@ class GroupSettings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = context.watch<DataProvider>();
-    return CupertinoPageScaffold(
-      backgroundColor: StyleConsts.backgroundPrimary,
-      child: SingleChildScrollView(
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: Column(
-              children: [
-                const SizedBox(height: 8),
-                Row(
-                  // have the children at the start and end of the row
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text("Manage Groups",
-                        style: StyleConsts.pageTitle,
-                        textAlign: TextAlign.left),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.pop(context);
-                      },
-                      child: const Icon(
-                        Icons.arrow_back_ios,
-                        color: StyleConsts.greyDarker,
-                        size: 25,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 32),
-                for (GroupScheduleModel groupSchedule
-                    in provider.groupSchedules) ...[
-                  GroupSettingsCard(
-                    groupSchedule: groupSchedule,
-                  ),
-                  const SizedBox(height: 10),
-                ],
-                CustomButton(
-                  color: StyleConsts.backgroundPrimary,
-                  padding: const EdgeInsets.symmetric(vertical: 20.0),
-                  width: double.infinity,
-                  onPressed: () {},
-                  child: Center(
-                    child: Text(
-                      "Enter Group Code",
-                      style: StyleConsts.buttonText.copyWith(
-                          color: StyleConsts.purplePrimary,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 10),
-                CustomButton(
-                  color: StyleConsts.purplePrimary,
-                  padding: const EdgeInsets.symmetric(vertical: 20.0),
-                  width: double.infinity,
-                  onPressed: () {},
-                  child: Center(
-                    child: Text(
-                      "Create New Group",
-                      style: StyleConsts.buttonText.copyWith(
-                          color: StyleConsts.white,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 64),
-              ],
+    return PageWidgetScrollable(
+      title: "Manage Groups",
+      canPop: true,
+      child: Column(
+        children: [
+          for (GroupScheduleModel groupSchedule in provider.groupSchedules) ...[
+            GroupSettingsCard(
+              groupSchedule: groupSchedule,
+            ),
+            const SizedBox(height: 10),
+          ],
+          CustomButton(
+            color: StyleConsts.backgroundPrimary,
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            width: double.infinity,
+            onPressed: () {},
+            child: Center(
+              child: Text(
+                "Enter Group Code",
+                style: StyleConsts.buttonText.copyWith(
+                    color: StyleConsts.purplePrimary,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
           ),
-        ),
+          const SizedBox(height: 10),
+          CustomButton(
+            color: StyleConsts.purplePrimary,
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            width: double.infinity,
+            onPressed: () {},
+            child: Center(
+              child: Text(
+                "Create New Group",
+                style: StyleConsts.buttonText.copyWith(
+                    color: StyleConsts.white, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ),
+          const SizedBox(height: 64),
+        ],
       ),
     );
   }

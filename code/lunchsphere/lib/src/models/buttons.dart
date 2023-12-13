@@ -99,56 +99,48 @@ Widget unswipeButton(AppinioSwiperController controller) {
   );
 }
 
-/* class ProfileSettingsButton extends StatelessWidget {
-  const ProfileSettingsButton(
-      {super.key,
-      required this.text,
-      required this.toggle,
-      required this.onPressed});
-
-  final String text;
-  final bool toggle;
-  final VoidCallback onPressed;
+// create a new "notifications" button, with a Switch widget
+// ignore: camel_case_types
+class notificationsButton extends StatefulWidget {
+  const notificationsButton({super.key});
 
   @override
+  State<notificationsButton> createState() => _SwitchExampleState();
+}
+
+class _SwitchExampleState extends State<notificationsButton> {
+  bool light = true;
+  @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8.0),
-        child: CupertinoButton(
+    return ExampleButton(
+      onTap: () {},
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+        decoration: BoxDecoration(
           color: StyleConsts.white,
-          padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-          onPressed: onPressed,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(text,
-                  style: StyleConsts.buttonText.copyWith(
-                      color: StyleConsts.greyDarker,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18)),
-              // if text == "Notifications" then show the toggle switch
-              // if text == "Log Out" then show the log out button
-              if (text == "Notifications")
-                CupertinoSwitch(
-                  value: true,
-                  onChanged: (value) {},
-                  activeColor: StyleConsts.purplePrimary,
-                )
-              else if (text == "Log Out")
-                const Icon(
-                  Icons.logout,
-                  color: StyleConsts.greyDarker,
-                  size: 20,
-                )
-              else
-                const Icon(
-                  Icons.arrow_forward_ios,
-                  color: StyleConsts.greyDarker,
-                  size: 20,
-                ),
-            ],
-          ),
-        ));
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("Notifications",
+                style: StyleConsts.buttonText.copyWith(
+                    color: StyleConsts.greyDarker,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18)),
+            CupertinoSwitch(
+              value: light,
+              onChanged: (bool value) {
+                // This is called when the user toggles the switch.
+                setState(() {
+                  light = value;
+                });
+              },
+              activeColor: StyleConsts.greenConfirm,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
- */

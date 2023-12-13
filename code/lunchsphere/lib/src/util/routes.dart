@@ -24,7 +24,7 @@ class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case homeRoute:
-        return CupertinoPageRoute(builder: (_) => const ABChooser());
+        return CupertinoPageRoute(builder: (_) => HomePageA());
       case aTest:
         return CupertinoPageRoute(builder: (_) => HomePageA());
       case bTest:
@@ -57,7 +57,7 @@ class Routes {
       case profileSettings:
         return CupertinoPageRoute(builder: (_) => const ProfileSettings());
       default:
-        return CupertinoPageRoute(builder: (_) => const ABChooser());
+        return CupertinoPageRoute(builder: (_) => HomePageA());
     }
   }
 }

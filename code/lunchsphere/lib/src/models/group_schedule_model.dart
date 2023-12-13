@@ -2,7 +2,7 @@ import 'package:lunchsphere/src/models/profile_model.dart';
 
 class GroupScheduleModel {
   final String groupName;
-  final String time;
+  String time;
   final String place;
   final List<ProfileModel> profilesJoining;
   final List<ProfileModel> profilesPending;

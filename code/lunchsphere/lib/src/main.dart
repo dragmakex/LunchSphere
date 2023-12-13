@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lunchsphere/src/pages/ab_chooser.dart';
+import 'package:lunchsphere/src/pages/home_page_a.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/providers/statistics_provider.dart';
 import 'package:lunchsphere/src/services/notificatino_services.dart';
@@ -71,16 +72,16 @@ class _AppWrapperState extends State<AppWrapper> {
       onPointerUp: (event) {
         context.read<StatisticsProvider>().incrementGestureCount();
       },
-      child: const CupertinoApp(
+      child: CupertinoApp(
         debugShowCheckedModeBanner: false,
         title: 'LunchSphere',
-        theme: CupertinoThemeData(
+        theme: const CupertinoThemeData(
           primaryColor: CupertinoColors.activeBlue,
           brightness: Brightness.light,
         ),
         initialRoute: Routes.homeRoute,
         onGenerateRoute: Routes.generateRoute,
-        home: ABChooser(),
+        home: HomePageA(),
       ),
     );
   }
