@@ -6,6 +6,7 @@ from scipy.stats import shapiro
 from scipy.stats import levene
 from scipy.stats import wilcoxon
 from scipy.stats import ttest_rel
+from scipy.stats import pearsonr
 
 path_to_analysis = 'C:/Users/nisha/OneDrive/Desktop/ETH/human_computer_interaction/hci-project-hci2023-group-16/code/study_analysis'
 
@@ -14,6 +15,9 @@ file_path = path_to_analysis + '/user_study_2_data.csv'
 df = pd.read_csv(file_path)
 
 
+
+# Set global font size
+plt.rcParams['font.size'] = 16
 
 ##### Demographics
 
@@ -31,8 +35,8 @@ med_age = df['age'].median()
 familiarity_counts = df['tinder_frequency'].value_counts().sort_index()
 axs[0].bar(familiarity_counts.index, familiarity_counts, color='grey')
 axs[0].set_xticks(np.arange(1, 6, 1))
-axs[0].set_xlabel('Familiarity with Swiping Apps like Tinder \n(1: low, 5: high)')
-axs[0].set_ylabel('Count')
+axs[0].set_xlabel('Familiarity with Swiping \nApps like Tinder \n(1: low, 5: high)', fontsize=16)
+axs[0].set_ylabel('Count', fontsize=16)
 
 avg_tinder_familiarity = df['tinder_frequency'].mean()
 
@@ -42,8 +46,8 @@ frequency_counts = df['group_chat_frequency'].value_counts().sort_index()
 axs[1].bar(frequency_counts.index, frequency_counts, color='grey')
 axs[1].set_xticks(np.arange(1, 6, 1))
 axs[1].set_yticks(np.arange(0, 8, 1))
-axs[1].set_xlabel('Frequency of Planning Lunches via Group Chats\n and in Person (1: low, 5: high)')
-axs[1].set_ylabel('Count')
+axs[1].set_xlabel('Frequency of Planning Lunches \nvia Group Chats and in Person \n(1: low, 5: high)', fontsize=16)
+axs[1].set_ylabel('Count', fontsize=16)
 
 avg_planning_frequency = df['group_chat_frequency'].mean()
 
@@ -52,8 +56,8 @@ avg_planning_frequency = df['group_chat_frequency'].mean()
 si_frequency_counts = df['self_initiated_lunch'].value_counts().sort_index()
 axs[2].bar(si_frequency_counts.index, si_frequency_counts, color='grey')
 axs[2].set_xticks(np.arange(1,6,1))
-axs[2].set_xlabel('Frequency of Self-Initiated Lunches \n(1: low, 5: high)')
-axs[2].set_ylabel('Count')
+axs[2].set_xlabel('Frequency of Self-Initiated \nLunches (1: low, 5: high)', fontsize=16)
+axs[2].set_ylabel('Count', fontsize=16)
 
 avg_self_init_frequency = df['self_initiated_lunch'].mean()
 
@@ -72,7 +76,7 @@ plt.xticks(np.arange(40,101,5))
 plt.yticks(np.arange(0, 6, 1)) 
 plt.xlabel('SUS Value')
 plt.ylabel('Frequency')
-plt.title(f'Histogram of SUS Values of A (Bin Size: {number_of_bins})')
+plt.title(f'Histogram of SUS Values of A')
 
 plt.savefig(path_to_analysis + '/histogram_sus_values_A')
 plt.close()
@@ -83,7 +87,7 @@ plt.xticks(np.arange(40,101,5))
 plt.yticks(np.arange(0, 6, 1)) 
 plt.xlabel('SUS Value')
 plt.ylabel('Frequency')
-plt.title(f'Histogram of SUS Values of B (Bin Size: {number_of_bins})')
+plt.title(f'Histogram of SUS Values of B')
 
 plt.savefig(path_to_analysis + '/histogram_sus_values_B')
 plt.close()
@@ -134,7 +138,7 @@ plt.xticks(np.arange(0,61,5))
 plt.yticks(np.arange(0, 5, 1)) 
 plt.xlabel('Time Needed to Select a Group')
 plt.ylabel('Frequency')
-plt.title(f'Histogram of Time Needed to Select a Group in A Test (Bin Size: {number_of_bins})')
+plt.title(f'Histogram of Time Needed to Select a Group in A Test')
 
 plt.savefig(path_to_analysis + '/histogram_time_A')
 plt.close()
@@ -145,7 +149,7 @@ plt.xticks(np.arange(0,61,5))
 plt.yticks(np.arange(0, 5, 1)) 
 plt.xlabel('Time Needed to Select a Group')
 plt.ylabel('Frequency')
-plt.title(f'Histogram of Time Needed to Select a Group in B Test (Bin Size: {number_of_bins})')
+plt.title(f'Histogram of Time Needed to Select a Group in B Test')
 
 plt.savefig(path_to_analysis + '/histogram_time_B')
 plt.close()
@@ -196,7 +200,7 @@ plt.xticks(np.arange(0,35,5))
 plt.yticks(np.arange(0, 10, 1)) 
 plt.xlabel('Gesture Count')
 plt.ylabel('Frequency')
-plt.title(f'Histogram of Gesture Count in A Test (Bin Size: {number_of_bins})')
+plt.title(f'Histogram of Gesture Count in A Test')
 
 plt.savefig(path_to_analysis + '/histogram_gesture_count_A')
 plt.close()
@@ -207,7 +211,7 @@ plt.xticks(np.arange(0,35,5))
 plt.yticks(np.arange(0, 10, 1)) 
 plt.xlabel('Gesture Count')
 plt.ylabel('Frequency')
-plt.title(f'Histogram of Gesture Count in B Test (Bin Size: {number_of_bins})')
+plt.title(f'Histogram of Gesture Count in B Test')
 
 plt.savefig(path_to_analysis + '/histogram_gesture_count_B')
 plt.close()
@@ -251,19 +255,28 @@ stddev_gesture_counts = [std_gesture_count_value_a, std_gesture_count_value_b]
 
 
 fig2, ax2 = plt.subplots(1, 3, figsize=(12, 10))
+
 plt.subplots_adjust(wspace=0.6, hspace=0.4)
-ax2[0].bar(['Mean and Std Dev \n(A)', 'Mean and Std Dev \n(B)'], mean_sus, yerr=stddev_sus, color=['blue', 'red'], width=0.4)
-ax2[0].set_ylabel('SUS value')
+ax2[0].bar(['A', 'B'], mean_sus, yerr=stddev_sus, color=['blue', 'red'], width=0.4)
+ax2[0].set_ylabel('SUS value',fontsize=18)
 
-ax2[1].bar(['Mean and Std Dev \n(A)', 'Mean and Std Dev \n(B)'], mean_times, yerr=stddev_time, color=['blue', 'red'], width=0.4)
-ax2[1].set_ylabel('Time in seconds')
+ax2[1].bar(['A', 'B'], mean_times, yerr=stddev_time, color=['blue', 'red'], width=0.4)
+ax2[1].set_ylabel('Time in seconds',fontsize=18)
 
-ax2[2].bar(['Mean and Std Dev \n(A)', 'Mean and Std Dev \n(B)'], mean_gesture_counts, yerr=stddev_gesture_counts, color=['blue', 'red'], width=0.4)
-ax2[2].set_ylabel('Gesture Count')
+ax2[2].bar(['A', 'B'], mean_gesture_counts, yerr=stddev_gesture_counts, color=['blue', 'red'], width=0.4)
+ax2[2].set_ylabel('Gesture Count',fontsize=18)
+
 plt.savefig(path_to_analysis + '/all_means_plots.png')
 plt.close()
 
 
+
+
+### Calculate corrleation between tinder familiarity and sus_b
+
+correlation_coefficient, p_value = pearsonr(df['tinder_frequency'], df['sus_b'])
+print(correlation_coefficient)
+print(p_value)
 
 
 
