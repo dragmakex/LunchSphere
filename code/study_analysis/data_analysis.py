@@ -18,58 +18,45 @@ df = pd.read_csv(file_path)
 ##### Demographics
 
 # Set up subplots
-fig, axs = plt.subplots(2, 3, figsize=(12, 10))
+fig, axs = plt.subplots(1, 3, figsize=(12, 10))
 plt.subplots_adjust(wspace=0.6, hspace=0.4)
 
-# Plot 1: Age Distribution
-age_counts = df['age'].value_counts()
-axs[0, 0].bar(age_counts.index, age_counts, color='grey')
-axs[0, 0].set_xticks(np.arange(21,27,1))
-axs[0, 0].set_yticks(np.arange(0,5,1))
-axs[0, 0].set_xlabel('Age')
-axs[0, 0].set_ylabel('Count')
+
 
 avg_age = df['age'].mean()
 med_age = df['age'].median()
 
 
-# Plot 2: Gender Distribution
-gender_counts = df['gender'].value_counts()
-axs[1, 0].pie(gender_counts.values, labels=gender_counts.index, autopct='%1.1f%%', startangle=90, colors=['skyblue', 'lightcoral'])
-axs[1, 0].set_title('Gender Distribution')
-
-
-# Plot 3: Tinder Familiarity
+# Plot 1: Tinder Familiarity
 familiarity_counts = df['tinder_frequency'].value_counts().sort_index()
-axs[0, 1].bar(familiarity_counts.index, familiarity_counts, color='grey')
-axs[0, 1].set_xticks(np.arange(1, 6, 1))
-axs[0, 1].set_xlabel('Familiarity with Swiping Apps like Tinder \n(1: low, 5: high)')
-axs[0, 1].set_ylabel('Count')
+axs[0].bar(familiarity_counts.index, familiarity_counts, color='grey')
+axs[0].set_xticks(np.arange(1, 6, 1))
+axs[0].set_xlabel('Familiarity with Swiping Apps like Tinder \n(1: low, 5: high)')
+axs[0].set_ylabel('Count')
 
 avg_tinder_familiarity = df['tinder_frequency'].mean()
 
 
-# Plot 4: Frequency of Planning Lunches
+# Plot 2: Frequency of Planning Lunches
 frequency_counts = df['group_chat_frequency'].value_counts().sort_index()
-axs[1, 1].bar(frequency_counts.index, frequency_counts, color='grey')
-axs[1, 1].set_xticks(np.arange(1, 6, 1))
-axs[1, 1].set_yticks(np.arange(0, 5, 1))
-axs[1, 1].set_xlabel('Frequency of Planning Lunches via Group Chats\n and in Person (1: low, 5: high)')
-axs[1, 1].set_ylabel('Count')
+axs[1].bar(frequency_counts.index, frequency_counts, color='grey')
+axs[1].set_xticks(np.arange(1, 6, 1))
+axs[1].set_yticks(np.arange(0, 8, 1))
+axs[1].set_xlabel('Frequency of Planning Lunches via Group Chats\n and in Person (1: low, 5: high)')
+axs[1].set_ylabel('Count')
 
 avg_planning_frequency = df['group_chat_frequency'].mean()
 
 
-# Plot 5: Frequency of Self-Initiated Lunch
+# Plot 3: Frequency of Self-Initiated Lunch
 si_frequency_counts = df['self_initiated_lunch'].value_counts().sort_index()
-axs[0, 2].bar(si_frequency_counts.index, si_frequency_counts, color='grey')
-axs[0, 2].set_xticks(np.arange(1,6,1))
-axs[0, 2].set_xlabel('Frequency of Self-Initiated Lunches \n(1: low, 5: high)')
-axs[0, 2].set_ylabel('Count')
+axs[2].bar(si_frequency_counts.index, si_frequency_counts, color='grey')
+axs[2].set_xticks(np.arange(1,6,1))
+axs[2].set_xlabel('Frequency of Self-Initiated Lunches \n(1: low, 5: high)')
+axs[2].set_ylabel('Count')
 
 avg_self_init_frequency = df['self_initiated_lunch'].mean()
 
-fig.delaxes(axs[1, 2])
 plt.savefig(path_to_analysis + '/demographics_plots.png')
 plt.close()
 
