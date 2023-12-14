@@ -10,7 +10,7 @@ from scipy.stats import ttest_rel
 path_to_analysis = 'C:/Users/nisha/OneDrive/Desktop/ETH/human_computer_interaction/hci-project-hci2023-group-16/code/study_analysis'
 
 # make dataframe from csv file containing all study results 
-file_path = path_to_analysis + '/user_study_data.csv'
+file_path = path_to_analysis + '/user_study_2_data.csv'
 df = pd.read_csv(file_path)
 
 
@@ -82,7 +82,7 @@ number_of_bins = 20
 # A
 plt.hist(df['sus_a'], range=(40,100), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
 plt.xticks(np.arange(40,101,5))
-plt.yticks(np.arange(0, 5, 1)) 
+plt.yticks(np.arange(0, 6, 1)) 
 plt.xlabel('SUS Value')
 plt.ylabel('Frequency')
 plt.title(f'Histogram of SUS Values of A (Bin Size: {number_of_bins})')
@@ -93,7 +93,7 @@ plt.close()
 # B
 plt.hist(df['sus_b'], range=(40,100), bins=number_of_bins, color='red', edgecolor='black', alpha=0.7)
 plt.xticks(np.arange(40,101,5))
-plt.yticks(np.arange(0, 5, 1)) 
+plt.yticks(np.arange(0, 6, 1)) 
 plt.xlabel('SUS Value')
 plt.ylabel('Frequency')
 plt.title(f'Histogram of SUS Values of B (Bin Size: {number_of_bins})')
@@ -139,11 +139,11 @@ stddev_sus = [std_sus_value_a, std_sus_value_b]
 
 ##### 2. Dependent variable: Time needed to select a group
 
-number_of_bins = 24
+number_of_bins = 12
 
 # A
-plt.hist(df['time_a'], range=(0,120), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
-plt.xticks(np.arange(0,121,5))
+plt.hist(df['time_a'], range=(0,60), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
+plt.xticks(np.arange(0,61,5))
 plt.yticks(np.arange(0, 5, 1)) 
 plt.xlabel('Time Needed to Select a Group')
 plt.ylabel('Frequency')
@@ -153,8 +153,8 @@ plt.savefig(path_to_analysis + '/histogram_time_A')
 plt.close()
 
 # B
-plt.hist(df['time_b'], range=(0,120), bins=number_of_bins, color='red', edgecolor='black', alpha=0.7)
-plt.xticks(np.arange(0,121,5))
+plt.hist(df['time_b'], range=(0,60), bins=number_of_bins, color='red', edgecolor='black', alpha=0.7)
+plt.xticks(np.arange(0,61,5))
 plt.yticks(np.arange(0, 5, 1)) 
 plt.xlabel('Time Needed to Select a Group')
 plt.ylabel('Frequency')
@@ -201,12 +201,12 @@ stddev_time = [std_time_value_a, std_time_value_b]
 
 ##### 3. Dependent variable: Amount of interactions the user has to do ()
 
-number_of_bins = 18
+number_of_bins = 7
 
 # A
-plt.hist(df['gesture_count_a'], range=(0,91), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
-plt.xticks(np.arange(0,90,5))
-plt.yticks(np.arange(0, 6, 1)) 
+plt.hist(df['gesture_count_a'], range=(0,35), bins=number_of_bins, color='blue', edgecolor='black', alpha=0.7)
+plt.xticks(np.arange(0,35,5))
+plt.yticks(np.arange(0, 10, 1)) 
 plt.xlabel('Gesture Count')
 plt.ylabel('Frequency')
 plt.title(f'Histogram of Gesture Count in A Test (Bin Size: {number_of_bins})')
@@ -215,9 +215,9 @@ plt.savefig(path_to_analysis + '/histogram_gesture_count_A')
 plt.close()
 
 # B
-plt.hist(df['gesture_count_b'], range=(0,91), bins=number_of_bins, color='red', edgecolor='black', alpha=0.7)
-plt.xticks(np.arange(0,90,5))
-plt.yticks(np.arange(0, 6, 1)) 
+plt.hist(df['gesture_count_b'], range=(0,35), bins=number_of_bins, color='red', edgecolor='black', alpha=0.7)
+plt.xticks(np.arange(0,35,5))
+plt.yticks(np.arange(0, 10, 1)) 
 plt.xlabel('Gesture Count')
 plt.ylabel('Frequency')
 plt.title(f'Histogram of Gesture Count in B Test (Bin Size: {number_of_bins})')
@@ -247,7 +247,7 @@ levene_test_gesture_count_both = levene(df['gesture_count_a'],df['gesture_count_
 
 
 # Do paired t-test
-wilcoxon_res_gesture_count = wilcoxon(df['gesture_count_a'], df['gesture_count_b'])
+ttest_res_gesture_count = ttest_rel(df['gesture_count_a'], df['gesture_count_b'])
 
 
 # Calculate useful metrics
@@ -384,8 +384,8 @@ with open(path_to_analysis + '/results.md', 'w') as file:
     file.write('p val of Levene test for gesture_count_a vs gesture_count_b: ' + str(np.round(levene_test_gesture_count_both[1],3)) + '\n\n')
 
     file.write('#### Result of Paired Students t-test:\n\n')
-    file.write('Z val of Wilcoxon Signed Rank Test on gesutre_count_a vs gesture_count_b: ' + str(np.round(wilcoxon_res_gesture_count[0],3)) + '\n\n')
-    file.write('p val of Wilcoxon Signed Rank Test on gesture_count_a vs gesture_count_b: ' + str(np.round(wilcoxon_res_gesture_count[1],3)) + '\n\n')
+    file.write('DOF val of paired t-test on gesutre_count_a vs gesture_count_b: ' + str(np.round(ttest_res_gesture_count[0],3)) + '\n\n')
+    file.write('p val of paired t-test on gesture_count_a vs gesture_count_b: ' + str(np.round(ttest_res_gesture_count[1],3)) + '\n\n')
     
     file.write('#### Other Useful Metrics:\n\n')
     file.write('Average gesture_count_a: ' + str(np.round(avg_gesture_count_value_a,3)) + ' and standard deviation: ' + str(np.round(std_gesture_count_value_a,3)) + '\n\n')
