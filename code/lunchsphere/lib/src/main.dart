@@ -8,10 +8,15 @@ import 'package:lunchsphere/src/providers/statistics_provider.dart';
 import 'package:lunchsphere/src/services/notificatino_services.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:lunchsphere/firebase_options.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
+  //await Firebase.initializeApp();
+  await Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
