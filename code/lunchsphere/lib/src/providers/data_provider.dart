@@ -18,7 +18,8 @@ class DataProvider with ChangeNotifier {
       double.parse(myTime.split(":")[1]) / 60.0;
 
   Future<void> _loadGroupSchedules() async {
-    await apiService.loadGroupSchedules();
+    await apiService.tester();
+    await apiService.tester2();
     groupSchedules = await apiService.getGroupSchedules();
     // sort group schedules by time, time is in format "hh:mm", compare hours then minutes
     groupSchedules.sort((a, b) => toDouble(a.time).compareTo(toDouble(b.time)));

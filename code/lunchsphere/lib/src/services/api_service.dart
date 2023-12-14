@@ -9,12 +9,46 @@ import 'package:lunchsphere/src/models/user.dart';
 
 class ApiService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final user = <String, dynamic>{
+    "first": "Ada",
+    "last": "Lovelace",
+    "born": 1815
+  };
+  Future<void> tester() async {
+    try {
+      await _firestore.collection('users').add(user).then(
+          (DocumentReference doc) =>
+              print('DocumentSnapshot added with ID: ${doc.id}'));
+    } catch (error) {
+      if (kDebugMode) {
+        print('Error adding user: $error');
+      }
+    }
+  }
 
-  Future<void> loadGroupSchedules() async {
+  // query for user from  tester function
+  Future<void> tester2() async {
+    try {
+      await _firestore
+          .collection('users')
+          .where('first', isEqualTo: 'Ada')
+          .get()
+          .then((QuerySnapshot querySnapshot) {
+        querySnapshot.docs.forEach((doc) {
+          print(doc["first"]);
+        });
+      });
+    } catch (error) {
+      if (kDebugMode) {
+        print('Error getting user: $error');
+      }
+    }
+  }
+  /* Future<void> loadGroupSchedules() async {
     try {
       // Get the JSON string
       String jsonString =
-          await rootBundle.loadString('assets/data/group_schedules.json');
+          await rootBundle.loadString('assets/data/group_schedules.json ');
       // Decode the JSON string into a list of objects
       List<dynamic> decodedJson = jsonDecode(jsonString);
       // Convert the list of objects into a list of GroupScheduleModel
@@ -31,7 +65,7 @@ class ApiService {
         print('Error loading group schedules: $error');
       }
     }
-  }
+  } */
 
   Future<List<GroupScheduleModel>> getGroupSchedules() async {
     try {
