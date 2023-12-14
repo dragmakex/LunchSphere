@@ -5,7 +5,6 @@ import 'package:lunchsphere/src/pages/ab_chooser.dart';
 import 'package:lunchsphere/src/pages/home_page_a.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/providers/statistics_provider.dart';
-import 'package:lunchsphere/src/services/notificatino_services.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -13,9 +12,9 @@ import 'package:lunchsphere/firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  //await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   await Firebase.initializeApp(
-  options: DefaultFirebaseOptions.currentPlatform,
+    options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(const MyApp());
 }
@@ -53,23 +52,6 @@ class AppWrapper extends StatefulWidget {
 }
 
 class _AppWrapperState extends State<AppWrapper> {
-  late final NotificationService notificationService;
-  @override
-  void initState() {
-    notificationService = NotificationService();
-    listenToNotificationStream();
-    notificationService.initializePlatformNotifications();
-    super.initState();
-  }
-
-  void listenToNotificationStream() =>
-      notificationService.behaviorSubject.listen((payload) {
-        Navigator.pushNamed(
-          context,
-          Routes.aTest,
-        );
-      });
-
   @override
   Widget build(BuildContext context) {
     return Listener(

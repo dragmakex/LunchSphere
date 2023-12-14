@@ -1,13 +1,14 @@
 import 'dart:convert';
 
 // import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/models/user.dart';
 
 class ApiService {
-  // final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<List<GroupScheduleModel>> getGroupSchedules() async {
     final jsonString =

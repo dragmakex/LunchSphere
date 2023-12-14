@@ -5,7 +5,6 @@ import 'package:lunchsphere/src/components/page_widget.dart';
 import 'package:lunchsphere/src/models/buttons.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/providers/data_provider.dart';
-import 'package:lunchsphere/src/services/notificatino_services.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
