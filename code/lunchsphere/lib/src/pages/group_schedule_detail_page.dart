@@ -3,30 +3,41 @@ import 'package:lunchsphere/src/components/group_schedule_detail_card.dart';
 import 'package:lunchsphere/src/components/page_widget.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
+import 'package:lunchsphere/src/providers/data_provider.dart';
+import 'package:lunchsphere/src/services/api_service.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
+import 'package:provider/provider.dart';
 
 class GroupScheduleDetailPage extends StatelessWidget {
   final GroupScheduleModel groupSchedule;
+  final int id;
 
   const GroupScheduleDetailPage({
     super.key,
+    required this.id,
     required this.groupSchedule,
   });
 
   @override
   Widget build(BuildContext context) {
+    final provider = context.watch<DataProvider>();
     return PageWidgetScrollable(
       title: "Schedule Details",
       canPop: true,
       child: Column(
         children: [
           GroupScheduleDetailCard(
-            groupSchedule: groupSchedule,
+            groupSchedule: provider.getGroupScheduleById(id),
             bottomWidget: CustomButton(
               width: double.infinity,
               onPressed: () {
+                int groupId = groupSchedule.id;
+                // add user to joining
+                updateGroupMembersLunch(groupId, provider.user!, true);
+                print("should be updated");
+                context.read<DataProvider>().reloadGroupSchedules();
                 Navigator.push(
                   context,
                   PageRouteBuilder(

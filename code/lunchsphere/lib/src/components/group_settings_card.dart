@@ -5,31 +5,35 @@ import 'package:lunchsphere/src/pages/group_settings_detail_page.dart';
 import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
 import 'package:lunchsphere/src/pages/group_schedule_detail_page.dart';
+import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
+import 'package:provider/provider.dart';
 
 import '../models/group_schedule_model.dart';
 
 class GroupSettingsCard extends StatelessWidget {
-  final GroupScheduleModel groupSchedule;
+  GroupScheduleModel groupSchedule;
+  final int id;
   final Widget bottomWidget;
 
-  const GroupSettingsCard({
+  GroupSettingsCard({
     super.key,
+    required this.id,
     required this.groupSchedule,
     this.bottomWidget = const SizedBox(),
   });
 
   @override
   Widget build(BuildContext context) {
+    final provider = context.watch<DataProvider>();
     return GestureDetector(
         onTap: () {
           Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => GroupSettingsDetailPage(
-                groupSchedule: groupSchedule,
-              ),
+                  groupSchedule: provider.getGroupScheduleById(id)),
             ),
           );
         },

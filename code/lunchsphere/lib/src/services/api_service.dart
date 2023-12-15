@@ -98,7 +98,7 @@ class ApiService {
   }
 
   // Get a single user by ID
-  Future<User?> getUser(int userId) async {
+  Future<User> getUser(int userId) async {
     try {
       /* DocumentSnapshot doc =
           await _firestore.collection('users').doc(userId).get();
@@ -116,12 +116,20 @@ class ApiService {
           return user;
         }
       }
-      return null;
+      return User(
+          id: -1,
+          name: "User not found",
+          email: "User not found",
+          profileImageUrl: "User not found");
     } catch (error) {
       if (kDebugMode) {
         print('Error getting user: $error');
       }
-      return null;
+      return User(
+          id: -1,
+          name: "User not found",
+          email: "User not found",
+          profileImageUrl: "User not found");
     }
   }
 
@@ -173,6 +181,39 @@ class ApiService {
       }
     }
   }
+}
+
+Future<void> updateGroupMembersLunch(int groupId, User user, bool isJoining) {
+  return fetchGroupDocIdByGroupId(groupId).then((docId) {
+    if (docId != null) {
+      var groupScheduleCollection =
+          FirebaseFirestore.instance.collection('groupSchedules');
+      if (!isJoining) {
+        return groupScheduleCollection
+            .doc(docId)
+            .update({
+              'profilesPending': FieldValue.arrayUnion([User.toMapUser(user)]),
+              'profilesJoining': FieldValue.arrayRemove([User.toMapUser(user)])
+            })
+            .then((value) => print("User removed from group"))
+            .catchError(
+                (error) => print("Failed to remove user from group: $error"));
+      }
+      if (isJoining) {
+        return groupScheduleCollection
+            .doc(docId)
+            .update({
+              'profilesJoining': FieldValue.arrayUnion([User.toMapUser(user)]),
+              'profilesPending': FieldValue.arrayRemove([User.toMapUser(user)])
+            })
+            .then((value) => print("User added to group"))
+            .catchError(
+                (error) => print("Failed to add user to group: $error"));
+      }
+    } else {
+      print("No document found for groupId: $groupId");
+    }
+  });
 }
 
 Future<void> updateGroupScheduleTime(int groupId, String newTime) async {

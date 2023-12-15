@@ -15,6 +15,7 @@ class GroupSettings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = context.watch<DataProvider>();
+    print("rebuild");
     return PageWidgetScrollable(
       title: "Manage Groups",
       canPop: true,
@@ -23,6 +24,7 @@ class GroupSettings extends StatelessWidget {
           for (GroupScheduleModel groupSchedule in provider.groupSchedules) ...[
             GroupSettingsCard(
               groupSchedule: groupSchedule,
+              id: groupSchedule.id,
             ),
             const SizedBox(height: 10),
           ],

@@ -3,18 +3,24 @@ import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/models/user.dart';
 import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
+import 'package:lunchsphere/src/providers/data_provider.dart';
+import 'package:lunchsphere/src/services/api_service.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
+import 'package:provider/provider.dart';
 
 class GroupScheduleCard extends StatelessWidget {
   final GroupScheduleModel groupSchedule;
+  final int id;
 
-  const GroupScheduleCard({Key? key, required this.groupSchedule})
+  const GroupScheduleCard(
+      {Key? key, required this.groupSchedule, required this.id})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final provider = context.watch<DataProvider>();
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
@@ -26,17 +32,20 @@ class GroupScheduleCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const SizedBox(height: 4),
-          Text(groupSchedule.groupName, style: StyleConsts.groupTitle),
+          Text(provider.getGroupScheduleById(id).groupName,
+              style: StyleConsts.groupTitle),
           const SizedBox(height: 10.0),
-          Text(groupSchedule.time, style: StyleConsts.bigTimeStyle),
+          Text(provider.getGroupScheduleById(id).time,
+              style: StyleConsts.bigTimeStyle),
           const SizedBox(height: 24),
           const Text("📍 Place", style: StyleConsts.groupSubHeader),
           const SizedBox(height: 10.0),
-          Text(groupSchedule.place, style: StyleConsts.textPrimary),
+          Text(provider.getGroupScheduleById(id).place,
+              style: StyleConsts.textPrimary),
           const SizedBox(height: 24),
           const Text("👥 Joining", style: StyleConsts.groupSubHeader),
           const SizedBox(height: 10.0),
-          for (User p in groupSchedule.profilesJoining) ...[
+          for (User p in provider.getGroupScheduleById(id).profilesJoining) ...[
             ProfilePictureTextComponent(profile: p),
             const SizedBox(height: 4),
           ],
@@ -48,12 +57,20 @@ class GroupScheduleCard extends StatelessWidget {
   }
 
   Widget buildButtonRow(BuildContext context) {
+    final provider = context.watch<DataProvider>();
     return Row(
       mainAxisSize: MainAxisSize.max,
       children: [
         Expanded(
           child: CustomButton(
             onPressed: () {
+              // add
+              int groupId = groupSchedule.id;
+              // add user to joining
+              updateGroupMembersLunch(groupId, provider.user!, true);
+              print("should be updated");
+              context.read<DataProvider>().reloadGroupSchedules();
+              // remove user from pending
               Navigator.push(
                 context,
                 PageRouteBuilder(

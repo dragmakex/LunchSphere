@@ -44,12 +44,6 @@ class _RescheduleRequestPageState extends State<RescheduleGroupTime> {
                     setState(() {
                       _timeTicker = newValue;
                     });
-                    // Call the function to reschedule
-                    int groupId = widget.groupSchedule.id;
-                    String formattedTime = formatTimeFromTicker(_timeTicker);
-                    updateGroupScheduleTime(groupId, formattedTime);
-                    Navigator.pop(context);
-                    context.read<DataProvider>().reloadGroupSchedules();
                   },
                 ),
                 const SizedBox(height: 32),
@@ -77,6 +71,11 @@ class _RescheduleRequestPageState extends State<RescheduleGroupTime> {
                   onPressed: () {
                     // BACKEND: INSERT LOGIC HERE
                     widget.groupSchedule.time = _timeTicker.toString();
+
+                    int groupId = widget.groupSchedule.id;
+                    String formattedTime = formatTimeFromTicker(_timeTicker);
+                    updateGroupScheduleTime(groupId, formattedTime);
+                    context.read<DataProvider>().reloadGroupSchedules();
                     Navigator.pop(context);
                   },
                   child: Center(

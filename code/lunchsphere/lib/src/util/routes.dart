@@ -36,6 +36,7 @@ class Routes {
         return CupertinoPageRoute(
           builder: (context) => GroupScheduleDetailPage(
             groupSchedule: groupSchedule,
+            id: groupSchedule.id,
           ),
         );
       case committedScheduleRoute:

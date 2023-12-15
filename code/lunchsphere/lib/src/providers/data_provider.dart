@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutter/foundation.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
@@ -13,15 +15,18 @@ class DataProvider with ChangeNotifier {
 
   DataProvider() {
     _loadGroupSchedules();
+    Timer.periodic(
+        const Duration(seconds: 1), (Timer t) => _loadGroupSchedules());
   }
   double toDouble(String myTime) =>
       double.parse(myTime.split(":")[0]) +
       double.parse(myTime.split(":")[1]) / 60.0;
 
   Future<void> _loadGroupSchedules() async {
-    // await apiService.cleanDB();
-    // await apiService.setUsers();
+    //await apiService.cleanDB();
+
     //await apiService.setGroupSchedules();
+    //await apiService.setUsers();
     // get user with apiService
     user = await apiService.getUser(1);
     // await apiService.loadGroupSchedules();
@@ -29,6 +34,7 @@ class DataProvider with ChangeNotifier {
     // sort group schedules by time, time is in format "hh:mm", compare hours then minutes
     groupSchedules.sort((a, b) => toDouble(a.time).compareTo(toDouble(b.time)));
     isLoading = false;
+    print("group schedules loaded");
     notifyListeners();
   }
 
@@ -37,5 +43,10 @@ class DataProvider with ChangeNotifier {
     //isLoading = true;
     notifyListeners(); // Notify to show a loading indicator, if needed
     await _loadGroupSchedules();
+  }
+
+  // get group schedule by id
+  GroupScheduleModel getGroupScheduleById(int id) {
+    return groupSchedules.firstWhere((groupSchedule) => groupSchedule.id == id);
   }
 }

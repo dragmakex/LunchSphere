@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:lunchsphere/src/components/group_schedule_detail_card.dart';
 import 'package:lunchsphere/src/components/lunch_link_header.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
+import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/providers/statistics_provider.dart';
+import 'package:lunchsphere/src/services/api_service.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
@@ -28,6 +30,7 @@ class _CommittedSchedulePageState extends State<CommittedSchedulePage> {
 
   @override
   Widget build(BuildContext context) {
+    final provider = context.watch<DataProvider>();
     return CupertinoPageScaffold(
       backgroundColor: StyleConsts.backgroundPrimary,
       child: SingleChildScrollView(
@@ -69,6 +72,10 @@ class _CommittedSchedulePageState extends State<CommittedSchedulePage> {
                     //   context,
                     //   (route) => route.settings.name == Routes.homeRoute,
                     // );
+                    int groupId = widget.groupSchedule.id;
+                    updateGroupMembersLunch(groupId, provider.user!, false);
+                    context.read<DataProvider>().reloadGroupSchedules();
+                    Navigator.pop(context);
                     Navigator.pop(context);
                   },
                   child: Text(

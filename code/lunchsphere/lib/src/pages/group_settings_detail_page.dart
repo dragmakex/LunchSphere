@@ -7,9 +7,11 @@ import 'package:lunchsphere/src/models/buttons.dart';
 import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
 import 'package:lunchsphere/src/pages/group_members.dart';
 import 'package:lunchsphere/src/pages/reschedule_default_time.dart';
+import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/util/routes.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
+import 'package:provider/provider.dart';
 
 import '../models/group_schedule_model.dart';
 
@@ -29,13 +31,15 @@ class GroupSettingsDetailPage extends StatefulWidget {
 class _GroupSettingsState extends State<GroupSettingsDetailPage> {
   @override
   Widget build(BuildContext context) {
+    final provider = context.watch<DataProvider>();
     return PageWidgetScrollable(
       title: "Group Details",
       canPop: true,
       child: Column(
         children: [
           GroupSettingsDetailCard(
-            groupSchedule: widget.groupSchedule,
+            groupSchedule:
+                provider.getGroupScheduleById(widget.groupSchedule.id),
           ),
           const SizedBox(height: 15),
           const notificationsButton(),
@@ -132,17 +136,6 @@ class _GroupSettingsState extends State<GroupSettingsDetailPage> {
                     // make it only take up 75% of the width so that the border doesn't go all the way to the left edge
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8.0),
-                      decoration: BoxDecoration(
-                        border: Border(
-                          bottom: BorderSide(
-                            color:
-                                index == widget.groupSchedule.members.length - 1
-                                    ? Colors.transparent
-                                    : StyleConsts.greyLighter,
-                            width: 0.5,
-                          ),
-                        ),
-                      ),
                       child: ProfilePictureTextComponent(
                         profile: item,
                       ),

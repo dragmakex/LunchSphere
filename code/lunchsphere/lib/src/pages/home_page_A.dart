@@ -28,6 +28,7 @@ class HomePageA extends StatelessWidget {
                 for (GroupScheduleModel groupSchedule
                     in provider.groupSchedules) ...[
                   GroupScheduleCard(
+                    id: groupSchedule.id,
                     groupSchedule: groupSchedule,
                   ),
                   const SizedBox(height: 10),
