@@ -23,23 +23,23 @@ class ProfileSettings extends StatelessWidget {
         children: [
           Row(children: [
             Image.asset(
-              'assets/images/main.png',
+              provider.user!.profileImageUrl,
               fit: BoxFit.cover,
               height: 80, // Adjust the size to fit your logo design
             ),
             const SizedBox(width: 40),
             // create stacked Username and Email
-            const Column(
+            Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "First Name Last Name",
+                  provider.user!.name,
                   // make it bold
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Text(
-                  "youremail@gmail.com",
+                  provider.user!.email,
                   style: StyleConsts.textSecondary,
                 ),
               ],

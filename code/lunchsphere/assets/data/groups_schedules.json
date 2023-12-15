@@ -5,12 +5,58 @@
     "time": "12:05",
     "place": "Food men",
     "profilesJoining": [
-      {"id": 2},
-      {"id": 9},
-      {"id": 10}
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      },
+      {
+        "id": 9,
+        "name": "Alex Jost",
+        "profileImageUrl": "assets/images/avatar09.png",
+        "email": "alex.jost@gmail.com"
+      },
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      }
     ],
     "profilesPending": [
-      {"id": 4}
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "profileImageUrl": "assets/images/avatar05.png",
+        "email": "franklyn.lund@gmail.com"
+      }
+    ],
+    "members": [
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      },
+      {
+        "id": 9,
+        "name": "Alex Jost",
+        "profileImageUrl": "assets/images/avatar09.png",
+        "email": "alex.jost@gmail.com"
+      },
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      },
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "profileImageUrl": "assets/images/avatar05.png",
+        "email": "franklyn.lund@gmail.com"
+      }
     ],
     "code": "ZHFSQ"
   },
@@ -20,12 +66,58 @@
     "time": "11:30",
     "place": "Irchel Mensa",
     "profilesJoining": [
-      {"id": 2},
-      {"id": 3},
-      {"id": 7}
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      },
+      {
+        "id": 3,
+        "name": "Sandro Müller",
+        "profileImageUrl": "assets/images/avatar04.png",
+        "email": "sandro.muller@gmail.com"
+      },
+      {
+        "id": 7,
+        "name": "Tim Neumann",
+        "profileImageUrl": "assets/images/avatar07.png",
+        "email": "tim.neumann@gmail.com"
+      }
     ],
     "profilesPending": [
-      {"id": 6}
+      {
+        "id": 6,
+        "name": "Lena Schmidt",
+        "profileImageUrl": "assets/images/avatar06.png",
+        "email": "lena.schmidt@gmail.com"
+      }
+    ],
+    "members": [
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      },
+      {
+        "id": 3,
+        "name": "Sandro Müller",
+        "profileImageUrl": "assets/images/avatar04.png",
+        "email": "sandro.muller@gmail.com"
+      },
+      {
+        "id": 7,
+        "name": "Tim Neumann",
+        "profileImageUrl": "assets/images/avatar07.png",
+        "email": "tim.neumann@gmail.com"
+      },
+      {
+        "id": 6,
+        "name": "Lena Schmidt",
+        "profileImageUrl": "assets/images/avatar06.png",
+        "email": "lena.schmidt@gmail.com"
+      }
     ],
     "code": "STCIX"
   },
@@ -35,12 +127,58 @@
     "time": "11:45",
     "place": "Polymensa",
     "profilesJoining": [
-      {"id": 4},
-      {"id": 6},
-      {"id": 7}
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "profileImageUrl": "assets/images/avatar05.png",
+        "email": "franklyn.lund@gmail.com"
+      },
+      {
+        "id": 6,
+        "name": "Lena Schmidt",
+        "profileImageUrl": "assets/images/avatar06.png",
+        "email": "lena.schmidt@gmail.com"
+      },
+      {
+        "id": 7,
+        "name": "Tim Neumann",
+        "profileImageUrl": "assets/images/avatar07.png",
+        "email": "tim.neumann@gmail.com"
+      }
     ],
     "profilesPending": [
-      {"id": 8}
+      {
+        "id": 8,
+        "name": "Marie Weber",
+        "profileImageUrl": "assets/images/avatar02.png",
+        "email": "marie.weber@gmail.com"
+      }
+    ],
+    "members": [
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "profileImageUrl": "assets/images/avatar05.png",
+        "email": "franklyn.lund@gmail.com"
+      },
+      {
+        "id": 6,
+        "name": "Lena Schmidt",
+        "profileImageUrl": "assets/images/avatar06.png",
+        "email": "lena.schmidt@gmail.com"
+      },
+      {
+        "id": 7,
+        "name": "Tim Neumann",
+        "profileImageUrl": "assets/images/avatar07.png",
+        "email": "tim.neumann@gmail.com"
+      },
+      {
+        "id": 8,
+        "name": "Marie Weber",
+        "profileImageUrl": "assets/images/avatar02.png",
+        "email": "marie.weber@gmail.com"
+      }
     ],
     "code": "RQPHX"
   },
@@ -50,11 +188,46 @@
     "time": "12:00",
     "place": "FoodLab",
     "profilesJoining": [
-      {"id": 10},
-      {"id": 11}
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "profileImageUrl": "assets/images/avatar08.png",
+        "email": "mark.fischer@gmail.com"
+      }
     ],
     "profilesPending": [
-      {"id": 4}
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "profileImageUrl": "assets/images/avatar05.png",
+        "email": "franklyn.lund@gmail.com"
+      }
+    ],
+    "members": [
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "profileImageUrl": "assets/images/avatar08.png",
+        "email": "mark.fischer@gmail.com"
+      },
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "profileImageUrl": "assets/images/avatar05.png",
+        "email": "franklyn.lund@gmail.com"
+      }
     ],
     "code": "KEEMV"
   },
@@ -64,12 +237,58 @@
     "time": "12:00",
     "place": "Clausius bar",
     "profilesJoining": [
-      {"id": 4},
-      {"id": 8},
-      {"id": 9}
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "profileImageUrl": "assets/images/avatar05.png",
+        "email": "franklyn.lund@gmail.com"
+      },
+      {
+        "id": 8,
+        "name": "Marie Weber",
+        "profileImageUrl": "assets/images/avatar02.png",
+        "email": "marie.weber@gmail.com"
+      },
+      {
+        "id": 9,
+        "name": "Alex Jost",
+        "profileImageUrl": "assets/images/avatar09.png",
+        "email": "alex.jost@gmail.com"
+      }
     ],
     "profilesPending": [
-      {"id": 5}
+      {
+        "id": 5,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      }
+    ],
+    "members": [
+      {
+        "id": 4,
+        "name": "Franklyn Lund",
+        "profileImageUrl": "assets/images/avatar05.png",
+        "email": "franklyn.lund@gmail.com"
+      },
+      {
+        "id": 8,
+        "name": "Marie Weber",
+        "profileImageUrl": "assets/images/avatar02.png",
+        "email": "marie.weber@gmail.com"
+      },
+      {
+        "id": 9,
+        "name": "Alex Jost",
+        "profileImageUrl": "assets/images/avatar09.png",
+        "email": "alex.jost@gmail.com"
+      },
+      {
+        "id": 5,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      }
     ],
     "code": "OPEVU"
   },
@@ -79,12 +298,58 @@
     "time": "12:15",
     "place": "UZH Mensa",
     "profilesJoining": [
-      {"id": 2},
-      {"id": 3},
-      {"id": 11}
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      },
+      {
+        "id": 3,
+        "name": "Sandro Müller",
+        "profileImageUrl": "assets/images/avatar04.png",
+        "email": "sandro.muller@gmail.com"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "profileImageUrl": "assets/images/avatar08.png",
+        "email": "mark.fischer@gmail.com"
+      }
     ],
     "profilesPending": [
-      {"id": 10}
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      }
+    ],
+    "members": [
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      },
+      {
+        "id": 3,
+        "name": "Sandro Müller",
+        "profileImageUrl": "assets/images/avatar04.png",
+        "email": "sandro.muller@gmail.com"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "profileImageUrl": "assets/images/avatar08.png",
+        "email": "mark.fischer@gmail.com"
+      },
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      }
     ],
     "code": "IUENR"
   },
@@ -94,12 +359,58 @@
     "time": "14:00",
     "place": "Döner",
     "profilesJoining": [
-      {"id": 6},
-      {"id": 7},
-      {"id": 11}
+      {
+        "id": 6,
+        "name": "Lena Schmidt",
+        "profileImageUrl": "assets/images/avatar06.png",
+        "email": "lena.schmidt@gmail.com"
+      },
+      {
+        "id": 7,
+        "name": "Tim Neumann",
+        "profileImageUrl": "assets/images/avatar07.png",
+        "email": "tim.neumann@gmail.com"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "profileImageUrl": "assets/images/avatar08.png",
+        "email": "mark.fischer@gmail.com"
+      }
     ],
     "profilesPending": [
-      {"id": 10}
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      }
+    ],
+    "members": [
+      {
+        "id": 6,
+        "name": "Lena Schmidt",
+        "profileImageUrl": "assets/images/avatar06.png",
+        "email": "lena.schmidt@gmail.com"
+      },
+      {
+        "id": 7,
+        "name": "Tim Neumann",
+        "profileImageUrl": "assets/images/avatar07.png",
+        "email": "tim.neumann@gmail.com"
+      },
+      {
+        "id": 11,
+        "name": "Mark Fischer",
+        "profileImageUrl": "assets/images/avatar08.png",
+        "email": "mark.fischer@gmail.com"
+      },
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      }
     ],
     "code": "ALOKJ"
   },
@@ -109,12 +420,58 @@
     "time": "12:40",
     "place": "Zahnmedizin Mensa",
     "profilesJoining": [
-      {"id": 2},
-      {"id": 8},
-      {"id": 10}
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      },
+      {
+        "id": 8,
+        "name": "Marie Weber",
+        "profileImageUrl": "assets/images/avatar02.png",
+        "email": "marie.weber@gmail.com"
+      },
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      }
     ],
     "profilesPending": [
-      {"id": 3}
+      {
+        "id": 3,
+        "name": "Sandro Müller",
+        "profileImageUrl": "assets/images/avatar04.png",
+        "email": "sandro.muller@gmail.com"
+      }
+    ],
+    "members": [
+      {
+        "id": 2,
+        "name": "Philip Hinterberger",
+        "profileImageUrl": "assets/images/avatar03.png",
+        "email": "philip.hinterberger@gmail.com"
+      },
+      {
+        "id": 8,
+        "name": "Marie Weber",
+        "profileImageUrl": "assets/images/avatar02.png",
+        "email": "marie.weber@gmail.com"
+      },
+      {
+        "id": 10,
+        "name": "Anna Kirscher",
+        "profileImageUrl": "assets/images/avatar10.png",
+        "email": "anna.kirscher@gmail.com"
+      },
+      {
+        "id": 3,
+        "name": "Sandro Müller",
+        "profileImageUrl": "assets/images/avatar04.png",
+        "email": "sandro.muller@gmail.com"
+      }
     ],
     "code": "QPJNV"
   }

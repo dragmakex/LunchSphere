@@ -13,7 +13,7 @@ class User {
   // Factory constructor to create a User object from a map (e.g., Firestore document)
   factory User.fromMap(Map<String, dynamic> data, int id) {
     return User(
-      id: id,
+      id: data['id'] ?? -1,
       name: data['name'] ?? '',
       email: data['email'] ?? '',
       profileImageUrl: data['profileImageUrl'],
@@ -29,13 +29,23 @@ class User {
     };
   }
 
+  // from User to Map
+  static Map<String, dynamic> toMapUser(User user) {
+    return {
+      'name': user.name,
+      'email': user.email,
+      'profileImageUrl': user.profileImageUrl,
+    };
+  }
+
   // Deserializing (or 'decoding') JSON to User
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
-      id: json['id'],
-      name: json['name'],
-      email: json['email'],
-      profileImageUrl: json['profileImageUrl'],
+      id: json['id'] ?? 0,
+      name: json['name'] ?? '',
+      email: json['email'] ?? '',
+      // might be profileImageUrl or avatarUrl
+      profileImageUrl: json['profileImageUrl'] ?? json['avatarUrl'] ?? '',
     );
   }
 

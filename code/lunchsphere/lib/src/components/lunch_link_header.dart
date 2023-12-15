@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lunchsphere/src/providers/data_provider.dart';
 import 'package:lunchsphere/src/util/routes.dart';
+import 'package:provider/provider.dart';
 
 import '../util/style_consts.dart';
 
@@ -8,6 +10,7 @@ class LunchLinkHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final provider = context.watch<DataProvider>();
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: Row(
@@ -39,7 +42,7 @@ class LunchLinkHeader extends StatelessWidget {
               );
             },
             child: Image.asset(
-              'assets/images/main.png',
+              provider.user!.profileImageUrl,
               fit: BoxFit.cover,
               height: 32, // Adjust the size to fit your logo design
             ),

@@ -2,8 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:lunchsphere/src/components/page_widget.dart';
 import 'package:lunchsphere/src/components/time_picker_widget.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
+import 'package:lunchsphere/src/providers/data_provider.dart';
+import 'package:lunchsphere/src/services/api_service.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
 import 'package:lunchsphere/src/widgets/custom_button.dart';
+import 'package:provider/provider.dart';
 
 class RescheduleGroupTime extends StatefulWidget {
   final GroupScheduleModel groupSchedule;
@@ -41,6 +44,12 @@ class _RescheduleRequestPageState extends State<RescheduleGroupTime> {
                     setState(() {
                       _timeTicker = newValue;
                     });
+                    // Call the function to reschedule
+                    int groupId = widget.groupSchedule.id;
+                    String formattedTime = formatTimeFromTicker(_timeTicker);
+                    updateGroupScheduleTime(groupId, formattedTime);
+                    Navigator.pop(context);
+                    context.read<DataProvider>().reloadGroupSchedules();
                   },
                 ),
                 const SizedBox(height: 32),

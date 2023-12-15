@@ -8,12 +8,30 @@ import 'package:lunchsphere/src/models/user.dart';
 
 class ApiService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  // clean DB, delete all users and group schedules
+  Future<void> cleanDB() async {
+    try {
+      _firestore.collection('users').get().then((snapshot) {
+        for (DocumentSnapshot ds in snapshot.docs) {
+          ds.reference.delete();
+        }
+      });
+      _firestore.collection('groupSchedules').get().then((snapshot) {
+        for (DocumentSnapshot ds in snapshot.docs) {
+          ds.reference.delete();
+        }
+      });
+    } catch (error) {
+      if (kDebugMode) {
+        print('Error cleaning DB: $error');
+      }
+    }
+  }
 
-  // set all users
   Future<void> setUsers() async {
     try {
       // Get the JSON string
-      String jsonString = await rootBundle.loadString('assets/data/users.json');
+      String jsonString = await rootBundle.loadString('assets/data/user.json');
       // Decode the JSON string into a list of objects
       List<dynamic> decodedJson = jsonDecode(jsonString);
       // Convert the list of objects into a list of User
@@ -36,7 +54,7 @@ class ApiService {
     try {
       // Get the JSON string
       String jsonString =
-          await rootBundle.loadString('assets/json/groups_schedules.json');
+          await rootBundle.loadString('assets/data/groups_schedules.json');
       // Decode the JSON string into a list of objects
       List<dynamic> decodedJson = jsonDecode(jsonString);
       // Convert the list of objects into a list of GroupScheduleModel
@@ -48,7 +66,6 @@ class ApiService {
             .collection('groupSchedules')
             .add(groupSchedule.toJson());
         // print the name + loaded
-        print(groupSchedule.groupName + " set");
       }
     } catch (error) {
       if (kDebugMode) {
@@ -61,13 +78,16 @@ class ApiService {
     try {
       QuerySnapshot querySnapshot =
           await _firestore.collection('groupSchedules').get();
-      querySnapshot.docs.forEach((doc) {
-        print(doc["groupName"]);
-      });
-      return querySnapshot.docs
+      // get all users in group["members"] as a json
+      List<GroupScheduleModel> groupSchedules = querySnapshot.docs
           .map((doc) =>
               GroupScheduleModel.fromJson(doc.data() as Map<String, dynamic>))
           .toList();
+      return groupSchedules;
+      /* return querySnapshot.docs
+          .map((doc) =>
+              GroupScheduleModel.fromJson(doc.data() as Map<String, dynamic>))
+          .toList(); */
       // print the name + loaded
     } catch (error) {
       if (kDebugMode) {
@@ -78,12 +98,23 @@ class ApiService {
   }
 
   // Get a single user by ID
-  Future<User?> getUser(String userId) async {
+  Future<User?> getUser(int userId) async {
     try {
-      DocumentSnapshot doc =
+      /* DocumentSnapshot doc =
           await _firestore.collection('users').doc(userId).get();
       if (doc.exists) {
         return User.fromMap(doc.data() as Map<String, dynamic>, doc.id as int);
+      } */
+      QuerySnapshot querySnapshot = await _firestore.collection('users').get();
+      //only return the user whose id is userId
+      // JANK JANK JANK
+      List<User> users = querySnapshot.docs
+          .map((doc) => User.fromMap(doc.data() as Map<String, dynamic>, 1))
+          .toList();
+      for (User user in users) {
+        if (user.id == userId) {
+          return user;
+        }
       }
       return null;
     } catch (error) {
@@ -147,23 +178,28 @@ class ApiService {
 Future<void> updateGroupScheduleTime(int groupId, String newTime) async {
   var docId = await fetchGroupDocIdByGroupId(groupId);
   if (docId != null) {
-    var groupScheduleCollection = FirebaseFirestore.instance.collection('groupSchedules');
+    var groupScheduleCollection =
+        FirebaseFirestore.instance.collection('groupSchedules');
     return groupScheduleCollection
-      .doc(docId)
-      .update({'time': newTime})
-      .then((value) => print("Group Schedule Updated"))
-      .catchError((error) => print("Failed to update group schedule: $error"));
+        .doc(docId)
+        .update({'time': newTime})
+        .then((value) => print("Group Schedule Updated"))
+        .catchError(
+            (error) => print("Failed to update group schedule: $error"));
   } else {
     print("No document found for groupId: $groupId");
   }
 }
 
 Future<String?> fetchGroupDocIdByGroupId(int groupId) async {
-  var groupScheduleCollection = FirebaseFirestore.instance.collection('groupSchedules');
+  var groupScheduleCollection =
+      FirebaseFirestore.instance.collection('groupSchedules');
   try {
-    var querySnapshot = await groupScheduleCollection.where('id', isEqualTo: groupId).get();
+    var querySnapshot =
+        await groupScheduleCollection.where('id', isEqualTo: groupId).get();
     if (querySnapshot.docs.isNotEmpty) {
-      return querySnapshot.docs.first.id;  // Return the document ID of the first matching document
+      return querySnapshot.docs.first
+          .id; // Return the document ID of the first matching document
     } else {
       print('No group found with name $groupId');
       return null;

@@ -33,8 +33,7 @@ class GroupScheduleModel {
       profilesPending: _deserializeProfiles(json['profilesPending']),
       id: json['id'],
       code: json['code'],
-      members: _deserializeProfiles(json['profilesJoining']) +
-          _deserializeProfiles(json['profilesPending']),
+      members: _deserializeProfiles(json['members']),
     );
   }
   // return the join of the two lists
@@ -42,13 +41,8 @@ class GroupScheduleModel {
     return groupSchedule.profilesJoining + groupSchedule.profilesPending;
   }
 
-  static List<User> _deserializeProfiles(List<dynamic> id) {
-    // the list contains the ID of the user, so we need to fetch the user from the database
-    List users = [];
-    for (var i = 0; i < id.length; i++) {
-      users.add(ApiService().getUser(id[i].toString()));
-    }
-    return users.map((user) => User.fromJson(user)).toList();
+  static List<User> _deserializeProfiles(List<dynamic> jsonProfiles) {
+    return jsonProfiles.map((json) => User.fromJson(json)).toList();
   }
 
   // Serializing (or 'encoding') GroupScheduleModel to JSON
@@ -61,6 +55,7 @@ class GroupScheduleModel {
       'profilesPending': profilesPending.map((x) => x.toJson()).toList(),
       'id': id,
       'code': code,
+      'members': members.map((x) => x.toJson()).toList(),
     };
   }
 }
