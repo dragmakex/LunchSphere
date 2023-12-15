@@ -31,4 +31,11 @@ class DataProvider with ChangeNotifier {
     isLoading = false;
     notifyListeners();
   }
+
+  // Public method to reload group schedules
+  Future<void> reloadGroupSchedules() async {
+    //isLoading = true;
+    notifyListeners(); // Notify to show a loading indicator, if needed
+    await _loadGroupSchedules();
+  }
 }

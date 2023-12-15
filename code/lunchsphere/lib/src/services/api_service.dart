@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-// import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -143,4 +142,50 @@ class ApiService {
       }
     }
   }
+}
+
+Future<void> updateGroupScheduleTime(int groupId, String newTime) async {
+  var docId = await fetchGroupDocIdByGroupId(groupId);
+  if (docId != null) {
+    var groupScheduleCollection = FirebaseFirestore.instance.collection('groupSchedules');
+    return groupScheduleCollection
+      .doc(docId)
+      .update({'time': newTime})
+      .then((value) => print("Group Schedule Updated"))
+      .catchError((error) => print("Failed to update group schedule: $error"));
+  } else {
+    print("No document found for groupId: $groupId");
+  }
+}
+
+Future<String?> fetchGroupDocIdByGroupId(int groupId) async {
+  var groupScheduleCollection = FirebaseFirestore.instance.collection('groupSchedules');
+  try {
+    var querySnapshot = await groupScheduleCollection.where('id', isEqualTo: groupId).get();
+    if (querySnapshot.docs.isNotEmpty) {
+      return querySnapshot.docs.first.id;  // Return the document ID of the first matching document
+    } else {
+      print('No group found with name $groupId');
+      return null;
+    }
+  } catch (e) {
+    print('Error fetching group: $e');
+    return null;
+  }
+}
+
+String formatTimeFromTicker(int ticker) {
+  // Starting time is 11:00 (11 hours and 0 minutes)
+  int baseHour = 11;
+  int baseMinutes = 0;
+
+  // Calculate total minutes from the ticker
+  int totalMinutes = baseMinutes + ticker * 15;
+
+  // Calculate hours and minutes
+  int hours = baseHour + totalMinutes ~/ 60;
+  int minutes = totalMinutes % 60;
+
+  // Format to "HH:MM"
+  return '${hours.toString().padLeft(2, '0')}:${minutes.toString().padLeft(2, '0')}';
 }

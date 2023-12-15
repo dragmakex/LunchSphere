@@ -3,7 +3,10 @@ import 'package:lunchsphere/src/components/page_widget.dart';
 import 'package:lunchsphere/src/components/time_picker_widget.dart';
 import 'package:lunchsphere/src/models/group_schedule_model.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
-import 'package:lunchsphere/src/widgets/custom_button.dart';
+import 'package:lunchsphere/src/widgets/custom_button.dart'; 
+import 'package:lunchsphere/src/services/api_service.dart';
+import 'package:lunchsphere/src/providers/data_provider.dart';
+import 'package:provider/provider.dart';
 
 class RescheduleRequestPage extends StatefulWidget {
   final GroupScheduleModel groupSchedule;
@@ -65,7 +68,14 @@ class _RescheduleRequestPageState extends State<RescheduleRequestPage> {
                   color: StyleConsts.purplePrimary,
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
                   width: double.infinity,
-                  onPressed: () {},
+                  onPressed: () {
+                    // Call the function to reschedule
+                    int groupId = widget.groupSchedule.id;
+                    String formattedTime = formatTimeFromTicker(_timeTicker);
+                    updateGroupScheduleTime(groupId, formattedTime);
+                    Navigator.pop(context);
+                    context.read<DataProvider>().reloadGroupSchedules();
+                  },
                   child: Center(
                     child: Text(
                       "Create Custom Lunchtime",
