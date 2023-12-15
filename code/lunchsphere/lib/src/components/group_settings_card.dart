@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lunchsphere/src/models/user.dart';
 import 'package:lunchsphere/src/pages/group_settings_detail_page.dart';
 import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
-import 'package:lunchsphere/src/models/profile_model.dart';
 import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
 import 'package:lunchsphere/src/pages/group_schedule_detail_page.dart';
 import 'package:lunchsphere/src/util/style_consts.dart';
@@ -92,7 +92,7 @@ class GroupSettingsCard extends StatelessWidget {
   }
 
   Column buildProfileGroup(
-      String title, List<ProfileModel> profiles, String emptyListMessage) {
+      String title, List<User> profiles, String emptyListMessage) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -104,7 +104,7 @@ class GroupSettingsCard extends StatelessWidget {
         // if there is more than 3 profiles, show the first 3 and then ... and the number of remaining profiles
         if (profiles.length > 3)
           Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            for (ProfileModel p in profiles.sublist(0, 3)) ...[
+            for (User p in profiles.sublist(0, 3)) ...[
               ProfilePictureTextComponent(profile: p),
               const SizedBox(height: 4),
             ],
@@ -113,7 +113,7 @@ class GroupSettingsCard extends StatelessWidget {
                 style: StyleConsts.textPrimary),
           ])
         else
-          for (ProfileModel p in profiles) ...[
+          for (User p in profiles) ...[
             ProfilePictureTextComponent(profile: p),
             const SizedBox(height: 4),
           ],

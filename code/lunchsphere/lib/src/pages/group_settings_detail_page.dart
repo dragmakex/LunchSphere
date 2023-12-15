@@ -4,7 +4,6 @@ import 'package:lunchsphere/src/components/group_settings_detail_card.dart';
 import 'package:lunchsphere/src/components/page_widget.dart';
 import 'package:lunchsphere/src/components/profile_picture_text_component.dart';
 import 'package:lunchsphere/src/models/buttons.dart';
-import 'package:lunchsphere/src/models/profile_model.dart';
 import 'package:lunchsphere/src/pages/committed_schedule_page.dart';
 import 'package:lunchsphere/src/pages/group_members.dart';
 import 'package:lunchsphere/src/pages/reschedule_default_time.dart';

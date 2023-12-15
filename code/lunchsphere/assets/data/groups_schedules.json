@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "groupName": "Bibstreet boys",
+    "time": "12:05",
+    "place": "Food men",
+    "profilesJoining": [
+      {"id": 2},
+      {"id": 9},
+      {"id": 10}
+    ],
+    "profilesPending": [
+      {"id": 4}
+    ],
+    "code": "ZHFSQ"
+  },
+  {
+    "id": 6,
+    "groupName": "The bugheads",
+    "time": "11:30",
+    "place": "Irchel Mensa",
+    "profilesJoining": [
+      {"id": 2},
+      {"id": 3},
+      {"id": 7}
+    ],
+    "profilesPending": [
+      {"id": 6}
+    ],
+    "code": "STCIX"
+  },
+  {
+    "id": 7,
+    "groupName": "Food=Love",
+    "time": "11:45",
+    "place": "Polymensa",
+    "profilesJoining": [
+      {"id": 4},
+      {"id": 6},
+      {"id": 7}
+    ],
+    "profilesPending": [
+      {"id": 8}
+    ],
+    "code": "RQPHX"
+  },
+  {
+    "id": 8,
+    "groupName": "The 3 Musketeers",
+    "time": "12:00",
+    "place": "FoodLab",
+    "profilesJoining": [
+      {"id": 10},
+      {"id": 11}
+    ],
+    "profilesPending": [
+      {"id": 4}
+    ],
+    "code": "KEEMV"
+  },
+  {
+    "id": 2,
+    "groupName": "HCI Group",
+    "time": "12:00",
+    "place": "Clausius bar",
+    "profilesJoining": [
+      {"id": 4},
+      {"id": 8},
+      {"id": 9}
+    ],
+    "profilesPending": [
+      {"id": 5}
+    ],
+    "code": "OPEVU"
+  },
+  {
+    "id": 3,
+    "groupName": "ETH and CO",
+    "time": "12:15",
+    "place": "UZH Mensa",
+    "profilesJoining": [
+      {"id": 2},
+      {"id": 3},
+      {"id": 11}
+    ],
+    "profilesPending": [
+      {"id": 10}
+    ],
+    "code": "IUENR"
+  },
+  {
+    "id": 4,
+    "groupName": "Dancers",
+    "time": "14:00",
+    "place": "Döner",
+    "profilesJoining": [
+      {"id": 6},
+      {"id": 7},
+      {"id": 11}
+    ],
+    "profilesPending": [
+      {"id": 10}
+    ],
+    "code": "ALOKJ"
+  },
+  {
+    "id": 5,
+    "groupName": "Coolios",
+    "time": "12:40",
+    "place": "Zahnmedizin Mensa",
+    "profilesJoining": [
+      {"id": 2},
+      {"id": 8},
+      {"id": 10}
+    ],
+    "profilesPending": [
+      {"id": 3}
+    ],
+    "code": "QPJNV"
+  }
+]

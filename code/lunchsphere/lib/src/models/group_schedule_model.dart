@@ -1,14 +1,15 @@
-import 'package:lunchsphere/src/models/profile_model.dart';
+import 'package:lunchsphere/src/models/user.dart';
+import 'package:lunchsphere/src/services/api_service.dart';
 
 class GroupScheduleModel {
   final String groupName;
   String time;
   final String place;
-  final List<ProfileModel> profilesJoining;
-  final List<ProfileModel> profilesPending;
+  final List<User> profilesJoining;
+  final List<User> profilesPending;
   final int id;
   final String code;
-  final List<ProfileModel> members;
+  final List<User> members;
 
   GroupScheduleModel({
     required this.groupName,
@@ -37,12 +38,17 @@ class GroupScheduleModel {
     );
   }
   // return the join of the two lists
-  static List<ProfileModel> getMembers(GroupScheduleModel groupSchedule) {
+  static List<User> getMembers(GroupScheduleModel groupSchedule) {
     return groupSchedule.profilesJoining + groupSchedule.profilesPending;
   }
 
-  static List<ProfileModel> _deserializeProfiles(List<dynamic> jsonProfiles) {
-    return jsonProfiles.map((json) => ProfileModel.fromJson(json)).toList();
+  static List<User> _deserializeProfiles(List<dynamic> id) {
+    // the list contains the ID of the user, so we need to fetch the user from the database
+    List users = [];
+    for (var i = 0; i < id.length; i++) {
+      users.add(ApiService().getUser(id[i].toString()));
+    }
+    return users.map((user) => User.fromJson(user)).toList();
   }
 
   // Serializing (or 'encoding') GroupScheduleModel to JSON

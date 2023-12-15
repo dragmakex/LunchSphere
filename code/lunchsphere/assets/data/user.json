@@ -1,7 +1,63 @@
-{
-    "user": {
-        "username": "alexanderschlieper",
-        "fullName": "Alexander Schlieper",
-        "email": "alexander.schlieper@example.com"
+[
+    {
+        "id": 1,
+        "name": "Alexander Schlieper",
+        "email": "alexander.schlieper@example.com",
+        "avatarUrl": "assets/images/main.png"
+    },
+    {
+      "id": 2,
+      "name": "Philip Hinterberger",
+      "email": "philip.hinterberger@gmail.com",
+      "avatarUrl": "assets/images/avatar03.png"
+    },
+    {
+      "id": 9,
+      "name": "Alex Jost",
+      "email": "alex.jost@gmail.com",
+      "avatarUrl": "assets/images/avatar09.png"
+    },
+    {
+      "id": 10,
+      "name": "Anna Kirscher",
+      "email": "anna.kirscher@gmail.com",
+      "avatarUrl": "assets/images/avatar10.png"
+    },
+    {
+      "id": 4,
+      "name": "Franklyn Lund",
+      "email": "franklyn.lund@gmail.com",
+      "avatarUrl": "assets/images/avatar05.png"
+    },
+    {
+      "id": 3,
+      "name": "Sandro Müller",
+      "email": "sandro.müller@gmail.com",
+      "avatarUrl": "assets/images/avatar04.png"
+    },
+    {
+      "id": 7,
+      "name": "Tim Neumann",
+      "email": "tim.neumann@gmail.com",
+      "avatarUrl": "assets/images/avatar07.png"
+    },
+    {
+      "id": 6,
+      "name": "Lena Schmidt",
+      "email": "lena.schmidt@gmail.com",
+      "avatarUrl": "assets/images/avatar06.png"
+    },
+    {
+      "id": 8,
+      "name": "Marie Weber",
+      "email": "marie.weber@gmail.com",
+      "avatarUrl": "assets/images/avatar02.png"
+    },
+    {
+      "id": 11,
+      "name": "Mark Fischer",
+      "email": "mark.fischer@gmail.com",
+      "avatarUrl": "assets/images/avatar08.png"
     }
-}
+  ]
+  
