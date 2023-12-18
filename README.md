@@ -16,7 +16,7 @@ We conducted and summarized twelve needfinding interviews to gather information 
 #### Interview 1
 
 The student from the University of Zurich prefers lunch with a close-knit group, finding it a refreshing
-break from studies. They frequent a nearby canteen due to convenience and communicate through
+break from studies. They frequently go to a nearby canteen due to convenience and communicate through
 WhatsApp. Queueing time matters, but they're open to sharing their schedule online. Novelty and
 canteen quality aren't major concerns. They're uncomfortable eating alone, highlighting social
 pressure. Improved communication within friend groups is a need.
@@ -160,11 +160,12 @@ Thus it might be beneficial to try to connect people not only with their best fr
 
 We chose the brainstorming approach B, where we first had a 15min idea generation phase on Miro, an online whiteboard tool working marvellously for this job. Afterwards we used the feature to see who created which note in order to have every team member present their idea, making for a very productive discussion. While keeping our judgment towards ideas at a bare minimum, we still observed that mostly two different ways of solving the problem rose to the surface.
 
-The first approach is more similar to Calendly. Each user enters their preferred time on a calendar and the app creates groups automatically that correspond to the respective friend groups.The second approach consists of users seeing the proposed times of their friends and being able to commit them. The difference basically boils down to who should be in charge of creating groups - the app or the users.
+The first approach is more similar to Calendly. Each user enters their preferred time on a calendar and the app creates groups automatically that correspond to the respective friend groups. The second approach consists of users seeing the proposed times of their friends and being able to commit them. The difference basically boils down to who should be in charge of creating groups - the app or the users.
 
 We also discussed the problem of users potentially not committing to their indicated schedule where we found a few interesting solutions.
 
 Overall we are very happy with our brainstorming and the resulting Miro board from which we can draw inspiration in the future.
+https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540
 
 ![Brainstorm Miro](Deliverables/week3/Brainstorming_Miro.jpg)
 ![Affinity diagram from brainstorm](Deliverables/week3/affinity_brainstorm.png)
