@@ -388,6 +388,10 @@ The experiment, all in all, went as expected. There were no bugs or unexpected b
  - For the swiping feature, the first user swiped incorrectly at the beginning and accidentally committed to the wrong group. From there, he did not know if he could go back to swiping and commit to another group. The second user did not realize the swiping feature at all and just used the red and green buttons at the bottom of our app. As a change, we should put small arrows or other aids to help the user correctly utilize our feature. And additionally a training phase to get the user familiar with the app such that things like that don't happen. We forgot to include that in the preliminary user protocol.
 
 ## Final User Study Protocol
+### Fill out the data in the google sheets file
+
+- Click the link [here]
+
 ### **Participant Data Collection**
 
 - Begin by having participants complete a pre-questionnaire to gather some initial information.
@@ -400,27 +404,26 @@ The experiment, all in all, went as expected. There were no bugs or unexpected b
 
 ### Training phase
 
-Provide the participant with a smartphone with the "LunchSphere" app installed let the participant play around in the app for approximately 1 minute to get him or her familiar with the interface.
+- Show the explanation video to the User. If the user starts with prototype B, show them the respective explanation video (B).
 
 ### **Scenario: Scheduling a Lunch:**
 
-- Present the following scenario to the participant:
+- Present the following scenario to the participant. Tell them that they will be given a cheat sheet to perform the task with the necessary information
 
-It's around 10 am, and you're at home feeling quite hungry. You have a meeting at ETH Zentrum scheduled until 12:05, and you want to have lunch at the university's cafeteria (Mensa) with your friends. However, you're unsure if your friends are planning to eat before or after the meeting. You know most of your friends use the 'LunchSphere' app, and you're part of some lunch groups. You decide to open the app and search for a lunch group after 12:05. Being picky, you don't like Polymensa because their food is usually a bit bland, your favorites would be Plattenmensa or Uni Mensa. You also prefer not to eat lunch with Yasmine Stocker and Benjamin Koch for personal reasons. You hope to get something as close to 12:10 as possible because, at 1:00, you have a lecture you want to attend, so you cannot spend too much time on lunch. 
+It's around 10 am, and you're at home feeling quite hungry. You have a meeting at ETH Zentrum scheduled until 12:05, and you want to have lunch at the university's cafeteria (Mensa) with your friends. However, you're unsure if your friends are planning to eat before or after the meeting. You know most of your friends use the 'LunchSphere' app, and you're part of some lunch groups. You decide to open the app and search for a lunch group after 12:05. Being picky, you don't like Polymensa because their food is usually a bit bland, your favorites would be Plattenmensa or Uni Mensa. You also prefer not to eat lunch with Marie Weber and Franklyn Lund for personal reasons. You hope to get something as close to 12:10 as possible because, at 1:00, you have a lecture you want to attend, so you cannot spend too much time on lunch. 
 
-### Action: Scheduling a Lunch
+### Action**: Scheduling a Lunch**
 
-- Let the participant use the app to schedule a lunch based on the scenario given. (Make sure that you reset the statistics on the app.)
+- Let the participant use the app to schedule a lunch based on the scenario given. The timer only stops once the user enters the committed page of the **right** group (ETH and CO, 12:15, UZH Mensa). Once the user enters the committed page, take the device and navigate to statistics. It is important that you don’t touch the screen anywhere except for the statistics button. Note the gesture count and the timer to the sheets.
 
-**Cheatsheet**
+<aside>
+💡 **Cheatsheet**
 
-Don’t like to eat with: Yasmine Stocker, Benjamin Koch
-
-Next lecture starting: 13:00
-
-Meeting finished: 12:05
-
-Preferred food: NOT Polymensa
+- Don’t like to eat with: Marie Weber, Franklyn Lund
+- Next lecture starting: 13:00
+- Meeting finished: 12:05
+- Preferred food: NOT Polymensa
+</aside>
 
 ### Subjective Ratings
 
@@ -428,12 +431,12 @@ Preferred food: NOT Polymensa
 
 ### Performance
 
-- While the participant performs the tasks, we measure the time he/she needs with a timer implemented in our App. The timer starts when the user taps on the button ‘A Test’ or ‘B Test’ and ends when the user successfully accepted the lunch group they were given. We also log how many button presses the user performs. Additionally, the total number of gestures is tracked, quantifying the instances when the user lifts their finger from the screen therefore recording swipes and button taps.
+- While the participant performs the tasks, we measure the time he/she needs with a timer implemented in our App. The timer starts when the user taps on the button ‘A Test’ or ‘B Test’ and ends when the user successfully accepted the lunch group they were given. We also tack the total number of gestures, quantifying the instances when the user lifts their finger from the screen therefore recording swipes and button taps.
 We use both of these measures for our performance assessment.
 
 ### Qualitative feedback after each A and B
 
-- Post task interview:
+- **Post task interview**:
     - "What were your thoughts when using the app for scheduling/rescheduling?"
     - "Were there any aspects of the app that confused you or that you found difficult to use?"
     - "What did you like or dislike about the user interface and design?"
@@ -441,12 +444,8 @@ We use both of these measures for our performance assessment.
 
 ### Switch prototype
 
-- Tell the participant that we now do the same procedure but with a different prototype. Then got to the training phase step again in this protocol with the other prototype in hand.
+- Tell the participant that we now do the same procedure but with a different prototype. Then go to the training phase step again in this protocol with the other prototype in hand. Start by showing them the other explanation video
 
 ### Qualitative Feedback after both A and B
 
 - **Comparative Analysis:** Since participants will interact with two different versions of the app, ask them to compare the two versions and express their preferences. This can help you understand which version performs better in terms of user experience.
-
-
-
-
