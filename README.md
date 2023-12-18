@@ -170,7 +170,7 @@ We also discussed the problem of users potentially not committing to their indic
 Overall we are very happy with our brainstorming and the resulting Miro board from which we can draw inspiration in the future.
 https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540
 
-![Brainstorm Miro](Deliverables/week3/Brainstorming_Miro.jpg)
+<img src="Deliverables/week3/Brainstorming_Miro.jpg" alt="Storyboard Idea A" title="Brainstorm_miro" width="500" height="600" />
 ![Affinity diagram from brainstorm](Deliverables/week3/affinity_brainstorm.png)
 
 ## Low-fidelity Prototype
@@ -455,3 +455,5 @@ The quantitative results show that prototype A has a higher SUS rating on averag
 The qualitative results were quite clear. Participants liked the overview of prototype A and they enjoyed the more 'fun' usage of the B prototype.
 
 In conclusion, the study does not show significant results to confidently decide between both versions. Through qualitative results, we are inclined to use prototype A for the first version of LunchSphere. We plan to repeat the experiment with a larger user base.
+
+Link to full study report: https://github.com/eth-hci-course/hci-project-hci2023-group-16/blob/a8476b291814914793009f09b0424d722643ab82/Deliverables/Study/Study_Report_LunchSphere.pdf
