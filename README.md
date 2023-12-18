@@ -7,6 +7,14 @@
 
 Andri Bernhardsgrütter, Charles Kremer, Nishanth Kumar, Alexander Schlieper, Alexander Staikov, Nicolas Stucki
 
+## Project description
+
+    TODO
+
+Introduction to chosen topic in own words, possibly with a brief motivation
+
+
+
 ## Needfinding
 
 ### Interview summaries
@@ -16,7 +24,7 @@ We conducted and summarized twelve needfinding interviews to gather information 
 #### Interview 1
 
 The student from the University of Zurich prefers lunch with a close-knit group, finding it a refreshing
-break from studies. They frequent a nearby canteen due to convenience and communicate through
+break from studies. They frequently go to a nearby canteen due to convenience and communicate through
 WhatsApp. Queueing time matters, but they're open to sharing their schedule online. Novelty and
 canteen quality aren't major concerns. They're uncomfortable eating alone, highlighting social
 pressure. Improved communication within friend groups is a need.
@@ -160,28 +168,15 @@ Thus it might be beneficial to try to connect people not only with their best fr
 
 We chose the brainstorming approach B, where we first had a 15min idea generation phase on Miro, an online whiteboard tool working marvellously for this job. Afterwards we used the feature to see who created which note in order to have every team member present their idea, making for a very productive discussion. While keeping our judgment towards ideas at a bare minimum, we still observed that mostly two different ways of solving the problem rose to the surface.
 
-The first approach is more similar to Calendly. Each user enters their preferred time on a calendar and the app creates groups automatically that correspond to the respective friend groups.The second approach consists of users seeing the proposed times of their friends and being able to commit them. The difference basically boils down to who should be in charge of creating groups - the app or the users.
+The first approach is more similar to Calendly. Each user enters their preferred time on a calendar and the app creates groups automatically that correspond to the respective friend groups. The second approach consists of users seeing the proposed times of their friends and being able to commit them. The difference basically boils down to who should be in charge of creating groups - the app or the users.
 
 We also discussed the problem of users potentially not committing to their indicated schedule where we found a few interesting solutions.
 
 Overall we are very happy with our brainstorming and the resulting Miro board from which we can draw inspiration in the future.
+https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540
 
 ![Brainstorm Miro](Deliverables/week3/Brainstorming_Miro.jpg)
 ![Affinity diagram from brainstorm](Deliverables/week3/affinity_brainstorm.png)
-
-## Project description
-
-    TODO
-
-Introduction to chosen topic in own words, possibly with a brief motivation
-
-## Ideation
-
-    TODO
-
-## Evaluation
-
-    TODO
 
 ## Low-fidelity Prototype
 
@@ -275,9 +270,8 @@ In essence, our new prototype aims to strike a balance between structure and spo
 Here are the images of the final prototype:
 ![final prototype full](img/finalprototype1.png)
 
-## Hi-fidelity Prototype
-
-    TODO
+#### What Feature For A/B?
+After receiving peer feedback, we decided to A/B test an entirely new interface concept. The key points mentioned were simplicity, convenience, and differentiation from other messaging apps. Consequently, we are planning to implement a swiping-based interface, similar to that of Tinder. This will show available lunches on the home screen one by one, allowing users to swipe through potential lunch times. This interface design aims to address all the points raised in the peer feedback. 
 
 # User Study Organization
 
@@ -394,6 +388,10 @@ The experiment, all in all, went as expected. There were no bugs or unexpected b
  - For the swiping feature, the first user swiped incorrectly at the beginning and accidentally committed to the wrong group. From there, he did not know if he could go back to swiping and commit to another group. The second user did not realize the swiping feature at all and just used the red and green buttons at the bottom of our app. As a change, we should put small arrows or other aids to help the user correctly utilize our feature. And additionally a training phase to get the user familiar with the app such that things like that don't happen. We forgot to include that in the preliminary user protocol.
 
 ## Final User Study Protocol
+### Fill out the data in the google sheets file
+
+- Click the link [here]
+
 ### **Participant Data Collection**
 
 - Begin by having participants complete a pre-questionnaire to gather some initial information.
@@ -406,27 +404,26 @@ The experiment, all in all, went as expected. There were no bugs or unexpected b
 
 ### Training phase
 
-Provide the participant with a smartphone with the "LunchSphere" app installed let the participant play around in the app for approximately 1 minute to get him or her familiar with the interface.
+- Show the explanation video to the User. If the user starts with prototype B, show them the respective explanation video (B).
 
 ### **Scenario: Scheduling a Lunch:**
 
-- Present the following scenario to the participant:
+- Present the following scenario to the participant. Tell them that they will be given a cheat sheet to perform the task with the necessary information
 
-It's around 10 am, and you're at home feeling quite hungry. You have a meeting at ETH Zentrum scheduled until 12:05, and you want to have lunch at the university's cafeteria (Mensa) with your friends. However, you're unsure if your friends are planning to eat before or after the meeting. You know most of your friends use the 'LunchSphere' app, and you're part of some lunch groups. You decide to open the app and search for a lunch group after 12:05. Being picky, you don't like Polymensa because their food is usually a bit bland, your favorites would be Plattenmensa or Uni Mensa. You also prefer not to eat lunch with Yasmine Stocker and Benjamin Koch for personal reasons. You hope to get something as close to 12:10 as possible because, at 1:00, you have a lecture you want to attend, so you cannot spend too much time on lunch. 
+It's around 10 am, and you're at home feeling quite hungry. You have a meeting at ETH Zentrum scheduled until 12:05, and you want to have lunch at the university's cafeteria (Mensa) with your friends. However, you're unsure if your friends are planning to eat before or after the meeting. You know most of your friends use the 'LunchSphere' app, and you're part of some lunch groups. You decide to open the app and search for a lunch group after 12:05. Being picky, you don't like Polymensa because their food is usually a bit bland, your favorites would be Plattenmensa or Uni Mensa. You also prefer not to eat lunch with Marie Weber and Franklyn Lund for personal reasons. You hope to get something as close to 12:10 as possible because, at 1:00, you have a lecture you want to attend, so you cannot spend too much time on lunch. 
 
-### Action: Scheduling a Lunch
+### Action**: Scheduling a Lunch**
 
-- Let the participant use the app to schedule a lunch based on the scenario given. (Make sure that you reset the statistics on the app.)
+- Let the participant use the app to schedule a lunch based on the scenario given. The timer only stops once the user enters the committed page of the **right** group (ETH and CO, 12:15, UZH Mensa). Once the user enters the committed page, take the device and navigate to statistics. It is important that you don’t touch the screen anywhere except for the statistics button. Note the gesture count and the timer to the sheets.
 
-**Cheatsheet**
+<aside>
+💡 **Cheatsheet**
 
-Don’t like to eat with: Yasmine Stocker, Benjamin Koch
-
-Next lecture starting: 13:00
-
-Meeting finished: 12:05
-
-Preferred food: NOT Polymensa
+- Don’t like to eat with: Marie Weber, Franklyn Lund
+- Next lecture starting: 13:00
+- Meeting finished: 12:05
+- Preferred food: NOT Polymensa
+</aside>
 
 ### Subjective Ratings
 
@@ -434,12 +431,12 @@ Preferred food: NOT Polymensa
 
 ### Performance
 
-- While the participant performs the tasks, we measure the time he/she needs with a timer implemented in our App. The timer starts when the user taps on the button ‘A Test’ or ‘B Test’ and ends when the user successfully accepted the lunch group they were given. We also log how many button presses the user performs. Additionally, the total number of gestures is tracked, quantifying the instances when the user lifts their finger from the screen therefore recording swipes and button taps.
+- While the participant performs the tasks, we measure the time he/she needs with a timer implemented in our App. The timer starts when the user taps on the button ‘A Test’ or ‘B Test’ and ends when the user successfully accepted the lunch group they were given. We also tack the total number of gestures, quantifying the instances when the user lifts their finger from the screen therefore recording swipes and button taps.
 We use both of these measures for our performance assessment.
 
 ### Qualitative feedback after each A and B
 
-- Post task interview:
+- **Post task interview**:
     - "What were your thoughts when using the app for scheduling/rescheduling?"
     - "Were there any aspects of the app that confused you or that you found difficult to use?"
     - "What did you like or dislike about the user interface and design?"
@@ -447,12 +444,8 @@ We use both of these measures for our performance assessment.
 
 ### Switch prototype
 
-- Tell the participant that we now do the same procedure but with a different prototype. Then got to the training phase step again in this protocol with the other prototype in hand.
+- Tell the participant that we now do the same procedure but with a different prototype. Then go to the training phase step again in this protocol with the other prototype in hand. Start by showing them the other explanation video
 
 ### Qualitative Feedback after both A and B
 
 - **Comparative Analysis:** Since participants will interact with two different versions of the app, ask them to compare the two versions and express their preferences. This can help you understand which version performs better in terms of user experience.
-
-
-
-
