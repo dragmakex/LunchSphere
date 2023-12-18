@@ -7,6 +7,14 @@
 
 Andri Bernhardsgrütter, Charles Kremer, Nishanth Kumar, Alexander Schlieper, Alexander Staikov, Nicolas Stucki
 
+## Project description
+
+    TODO
+
+Introduction to chosen topic in own words, possibly with a brief motivation
+
+
+
 ## Needfinding
 
 ### Interview summaries
@@ -170,20 +178,6 @@ https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540
 ![Brainstorm Miro](Deliverables/week3/Brainstorming_Miro.jpg)
 ![Affinity diagram from brainstorm](Deliverables/week3/affinity_brainstorm.png)
 
-## Project description
-
-    TODO
-
-Introduction to chosen topic in own words, possibly with a brief motivation
-
-## Ideation
-
-    TODO
-
-## Evaluation
-
-    TODO
-
 ## Low-fidelity Prototype
 
 #### Idea A
@@ -276,9 +270,8 @@ In essence, our new prototype aims to strike a balance between structure and spo
 Here are the images of the final prototype:
 ![final prototype full](img/finalprototype1.png)
 
-## Hi-fidelity Prototype
-
-    TODO
+#### What Feature For A/B?
+After receiving peer feedback, we decided to A/B test an entirely new interface concept. The key points mentioned were simplicity, convenience, and differentiation from other messaging apps. Consequently, we are planning to implement a swiping-based interface, similar to that of Tinder. This will show available lunches on the home screen one by one, allowing users to swipe through potential lunch times. This interface design aims to address all the points raised in the peer feedback. 
 
 # User Study Organization
 
