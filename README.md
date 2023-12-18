@@ -8,12 +8,7 @@
 Andri Bernhardsgrütter, Charles Kremer, Nishanth Kumar, Alexander Schlieper, Alexander Staikov, Nicolas Stucki
 
 ## Project description
-
-    TODO
-
-Introduction to chosen topic in own words, possibly with a brief motivation
-
-
+Our group members often dine at the university cafeteria, but coordinating these lunch outings can be a challenge. Finding companions for the cafeteria isn't always easy, as not everyone is on campus at the same time. On days when friends are available, organizing a group or altering pre-existing plans presents yet another hurdle. Whether we're communicating through group chat or face-to-face, simplifying these arrangements is never straightforward. To streamline this process, we've decided to develop an app. This solution is designed to make planning lunch with friends effortless and enjoyable.
 
 ## Needfinding
 
@@ -454,10 +449,9 @@ We use both of these measures for our performance assessment.
 
 - **Comparative Analysis:** Since participants will interact with two different versions of the app, ask them to compare the two versions and express their preferences. This can help you understand which version performs better in terms of user experience.
 
-##Study Results
-The quantitative results show that prototype A has a higher SUS rating in average than prototype B. However it was not statistically significant (p=0.14). A possible interpretation could be that both interfaces are equally effective in terms of usability. Another explanation could also be that the SUS rating scheme is just not sensitive enough to capture such subtle differences between the particular interfaces. When testing the task completion time A was faster than B but it was also not significant enough (p = 0.11). This might indicate that the tasks we gave the participants were not challenging enough to to see differences in performance between the different groups. The only significant results we found were in the gesture count. To complete the task, the participants needed significantly less gestures in B than in A (p = 0.03). But given the results from the task completion time this result does not have such significant impact. We hypothize that this finding is due to the nature of a swipe versus a scroll. Usually a scroll can be infinitely small and in contrast a swipe is a more definitive action. 
+## Study Results
+The quantitative results show that prototype A has a higher SUS rating on average than prototype B. However, it was not statistically significant (p=0.14). A possible interpretation could be that both interfaces are equally effective in terms of usability. Another explanation could also be that the SUS rating scheme is just not sensitive enough to capture such subtle differences between the particular interfaces. When testing the task completion time, A was faster than B, but it was also not significant enough (p = 0.11). This might indicate that the tasks we gave the participants were not challenging enough to see differences in performance between the different groups. The only significant results we found were in the gesture count. To complete the task, participants needed significantly fewer gestures in B than in A (p = 0.03). But given the results from the task completion time, this result does not have such a significant impact. We hypothesize that this finding is due to the nature of a swipe versus a scroll. Usually, a scroll can be infinitely small, and in contrast, a swipe is a more definitive action.
 
-The qualitative results show were quite clear. Participants like the overview of protoype A and they liked the more 'fun' usage of the B prototype. 
+The qualitative results were quite clear. Participants liked the overview of prototype A and they enjoyed the more 'fun' usage of the B prototype.
 
-
-In conclusion the study does not show significant results to confidently decide between both versions. Through qualitative results, we are inclined to use prototype A for the first version of LunchSphere. We plan to repeat the experiment with a larger userbase.
+In conclusion, the study does not show significant results to confidently decide between both versions. Through qualitative results, we are inclined to use prototype A for the first version of LunchSphere. We plan to repeat the experiment with a larger user base.
