@@ -3,64 +3,75 @@
   <img height="56" src="img/eth-sip-3l.png">     
 </p>
 
+![Poster](img/Poster.jpg)
+
 # LunchLink, Group 16
 
-Andri Bernhardsgrütter, Charles Kremer, Nishanth Kumar, Alexander Schlieper, Alexander Staikov, Nicolas Stucki
+Andri Bernhardsgrütter, Charles Kremer, Nishanth Kumar, Alexander Schlieper, Alexander Staikov,
+Nicolas Stucki
 
 ## Project description
-Our group members often dine at the university cafeteria, but coordinating these lunch outings can be a challenge. Finding companions for the cafeteria isn't always easy, as not everyone is on campus at the same time. On days when friends are available, organizing a group or altering pre-existing plans presents yet another hurdle. Whether we're communicating through group chat or face-to-face, simplifying these arrangements is never straightforward. To streamline this process, we've decided to develop an app. This solution is designed to make planning lunch with friends effortless and enjoyable.
+
+Our group members often have lunch at the university cafeteria, but coordinating these lunch outings
+can be a challenge. Finding companions for the cafeteria isn't always easy, as not everyone is on
+campus at the same time. On days when friends are available, organizing a group or altering
+pre-existing plans presents yet another hurdle. Whether we're communicating through group chat or
+face-to-face, simplifying these arrangements is never straightforward. To streamline this process,
+we've decided to develop an app. This solution is designed to make planning lunch with friends
+effortless and enjoyable.
 
 ## Needfinding
 
 ### Interview summaries
 
-We conducted and summarized twelve needfinding interviews to gather information on how students and workers plan their lunches.
+We conducted and summarized twelve needfinding interviews to gather information on how students and
+workers plan their lunches.
 
 #### Interview 1
 
-The student from the University of Zurich prefers lunch with a close-knit group, finding it a refreshing
-break from studies. They frequently go to a nearby canteen due to convenience and communicate through
-WhatsApp. Queueing time matters, but they're open to sharing their schedule online. Novelty and
-canteen quality aren't major concerns. They're uncomfortable eating alone, highlighting social
-pressure. Improved communication within friend groups is a need.
+The student from the University of Zurich prefers lunch with a close-knit group, finding it a
+refreshing break from studies. They frequently go to a nearby canteen due to convenience and
+communicate through WhatsApp. Queueing time matters, but they're open to sharing their schedule
+online. Novelty and canteen quality aren't major concerns. They're uncomfortable eating alone,
+highlighting social pressure. Improved communication within friend groups is a need.
 
 #### Interview 2
 
-The intern values proximity, familiarity, and price for lunch. They appreciate a mix of familiar and new
-faces. Novelty and venue changes are less crucial. They usually go at 11:30 without prior
+The intern values proximity, familiarity, and price for lunch. They appreciate a mix of familiar and
+new faces. Novelty and venue changes are less crucial. They usually go at 11:30 without prior
 communication, WhatsApp is used for rare plan adjustments. Eating alone provides downtime. They're
-open to selective schedule sharing. They consider sharing availability with close coworkers first. Their
-static work environment suggests less need for scheduling apps, but they could be beneficial in more
-flexible situations.
+open to selective schedule sharing. They consider sharing availability with close coworkers first.
+Their static work environment suggests less need for scheduling apps, but they could be beneficial
+in more flexible situations.
 
 #### Interview 3
 
-A Mathematics student at ETH who frequently switches between three different groups of friends
-based on his class schedule. The organization of these meetups usually takes place through WhatsApp,
-with the same three individuals typically proposing the plans. More often than not, they choose to
-dine at the university cafeteria. The interviewee tends to become nervous if the break exceeds one
-hour. The group often goes for a walk during his lunch break.
+A Mathematics student at ETH who frequently switches between three different groups of friends based
+on his class schedule. The organization of these meetups usually takes place through WhatsApp, with
+the same three individuals typically proposing the plans. More often than not, they choose to dine
+at the university cafeteria. The interviewee tends to become nervous if the break exceeds one hour.
+The group often goes for a walk during his lunch break.
 
 #### Interview 4
 
-Humanities student in London. The individual typically brings their own lunch, as cafeterias are not as
-commonly used as they are in Zurich. This is particularly the case because students at that uni don't
-usually spend their entire day on campus. The interviewee often has lunch with classmates who are in
-the same course that takes place immediately before lunchtime. The timing of lunch can be quite
-flexible.
+Humanities student in London. The individual typically brings their own lunch, as cafeterias are not
+as commonly used as they are in Zurich. This is particularly the case because students at that uni
+don't usually spend their entire day on campus. The interviewee often has lunch with classmates who
+are in the same course that takes place immediately before lunchtime. The timing of lunch can be
+quite flexible.
 
 #### Interview 5
 
-This person is a caregiver and has school at BZZ. They have a very fixed schedule for lunch, which makes
-it more important to have fast decisions and good planning. This person likes to go eat with the same
-people, and prefers smaller groups.
+This person is a caregiver and has school at BZZ. They have a very fixed schedule for lunch, which
+makes it more important to have fast decisions and good planning. This person likes to go eat with
+the same people, and prefers smaller groups.
 
 #### Interview 6
 
-This person works at Credit Suisse and studies IT at ZHAW on the side. This person prefers to with other
-people, and likes big groups. This person does not mind if there are any other people joining, as long
-as some of his good friends are there. For this person, it is important that they can find a place to eat
-as fast as possible, and to be able to have nice long lunchbreaks.
+This person works at Credit Suisse and studies IT at ZHAW on the side. This person prefers to with
+other people, and likes big groups. This person does not mind if there are any other people joining,
+as long as some of his good friends are there. For this person, it is important that they can find a
+place to eat as fast as possible, and to be able to have nice long lunchbreaks.
 
 #### Interview 7
 
@@ -72,32 +83,32 @@ depending on the weekday.
 
 They study communication in the Masters and like to eat with 1-3 people. The price of the lunch is a
 big factor. They usually make plans very spontaneously with eating and do not mind eating alone
-sometimes but prefer to eat with people. Whether they eat with new people or people they know
-does not matter as much.
+sometimes but prefer to eat with people. Whether they eat with new people or people they know does
+not matter as much.
 
 #### Interview 9
 
 The psychology student at the University of Zurich values familiarity in their lunch companions and
-appreciates the availability of vegan options. Their lunchtime usually spans from 11:30 to 12:30. The
-number of people and change of venue aren't major concerns. They use WhatsApp to organize lunch
+appreciates the availability of vegan options. Their lunchtime usually spans from 11:30 to 12:30.
+The number of people and change of venue aren't major concerns. They use WhatsApp to organize lunch
 plans. They're open to sharing their schedule via an app. Their primary need is to have lunch with a
-consistent group of familiar faces. The insight gathered suggests that many prioritize familiarity for
-comfort amid the demands of university life.
+consistent group of familiar faces. The insight gathered suggests that many prioritize familiarity
+for comfort amid the demands of university life.
 
 #### Interview 10
 
 The ETH Master's student prioritizes familiarity in lunch companions and values the social aspect of
 meals. They have a wide lunchtime window between 11:00 and 14:00, lasting 1 to 2 hours. The location
 and novelty of venues aren't significant factors for them. They're comfortable with sharing their
-schedule through an app. Their preference is for a relaxed, fixed group. The insight gained highlights
-the importance of social connections during meals, providing a break from daily routines.
+schedule through an app. Their preference is for a relaxed, fixed group. The insight gained
+highlights the importance of social connections during meals, providing a break from daily routines.
 
 #### Interview 11
 
 A student at ETH Zurich needs an all-in-one app for canteen menus, the ability to input a fixed time
-and place for lunch, and suggestions for changing lunch time or canteen. So far, it has been a discord
-group with which coordination has been done. Normal time tends to be at 13:00 since there is a
-massive queue at 12:00.
+and place for lunch, and suggestions for changing lunch time or canteen. So far, it has been a
+discord group with which coordination has been done. Normal time tends to be at 13:00 since there is
+a massive queue at 12:00.
 
 #### Interview 12
 
@@ -107,42 +118,69 @@ personalization, and in-app ratings. They have a flexible lunch schedule.
 
 #### Affinity diagram:
 
-https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540
+[Miro Board Link](https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540)
 
-![Affinity Diagram](img/logo-ait.png
-https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/5611db35-c80d-43f4-8ede-35b6f0ae6b3d)
+![Affinity Diagram](img/affinity_diagram.jpeg)
 
 ## Desk Research
 
-We researched 12 related works and have summarized the three most related or relevant ones here. You can find a full version of each 12 solutions in `Deliverables/week3`.
+We researched 12 related works and have summarized the three most related or relevant ones here. You
+can find a full version of each 12 solutions in `Deliverables/week3`.
 
 #### Lunchpool
 
-Lunchpool kicked off as a startup idea back in 2019, aiming to help colleagues connect and network over lunch. We got in touch with CEO Alexander Abell and learned that due to the COVID-19 pandemic, they shifted their focus to virtual events. Nonetheless, the original idea provided us with some valuable insights.
-Initially, the app was designed for in-company use. On Lunchpool, users set up profiles with info ranging from dietary needs to favorite movies. This setup encourages users to meet new people, as shared interests can break the ice and prevent any awkward silences. Users can let others know they're "down for lunch" and can then be invited by others or they can start their own lunch event that others can join. After connecting once you become “lunch buddies” for repeat lunch plans. It was also meant to integrate with common calendar apps and also provide you with restaurant recommendations.
-We liked the user-friendly interface and functionality but were wondering at which point the profile with interests etc. becomes to complicated and closer to a full-fledged social media than a casual everyday lunch planner.
+Lunchpool kicked off as a startup idea back in 2019, aiming to help colleagues connect and network
+over lunch. We got in touch with CEO Alexander Abell and learned that due to the COVID-19 pandemic,
+they shifted their focus to virtual events. Nonetheless, the original idea provided us with some
+valuable insights. Initially, the app was designed for in-company use. On Lunchpool, users set up
+profiles with info ranging from dietary needs to favorite movies. This setup encourages users to
+meet new people, as shared interests can break the ice and prevent any awkward silences. Users can
+let others know they're "down for lunch" and can then be invited by others or they can start their
+own lunch event that others can join. After connecting once you become “lunch buddies” for repeat
+lunch plans. It was also meant to integrate with common calendar apps and also provide you with
+restaurant recommendations. We liked the user-friendly interface and functionality but were
+wondering at which point the profile with interests etc. becomes to complicated and closer to a
+full-fledged social media than a casual everyday lunch planner.
 
-![lunchpool1 (2)](https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/17c49e9e-f23c-4f3f-8ea6-118e5e590c9c)
-![lunchpool2 (2) (1)](https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/ff949911-1353-4d3f-9a34-06c8802f6402)
+![lunchpool screenshot 1](Deliverables/week3/lunchpool1.png)
+![lunchpool screenshot 1](Deliverables/week3/lunchpool2.png)
 
 #### Group Chats
 
-Group chats are the natural solution that almost every potential user is using to plan their lunches. They exist on every major messaging service like whatsapp, discord, etc. In these group chats of friends, one person proposes the time and everyone gives some kind of reaction to the plan to indicate if they will join or not. This is also the most flexible solution as no framework is imposed on how to plan the lunch and thus allows for any kind of irregularity. However, since group chats tend to be used for different reasons as well, the lunch messages can be lost in the amount of sent messages. The other problem is that a group chat is not always inclusive of every person joining the meal and thus don’t solve the problem in its most general form. We found that the messages exchanged in order to plan a lunch are often repetitive, thus indicated that there is an opportunity for optimisation. Below are a few screenshots of how these group chats might look like.
+Group chats are the natural solution that almost every potential user is using to plan their
+lunches. They exist on every major messaging service like whatsapp, discord, etc. In these group
+chats of friends, one person proposes the time and everyone gives some kind of reaction to the plan
+to indicate if they will join or not. This is also the most flexible solution as no framework is
+imposed on how to plan the lunch and thus allows for any kind of irregularity. However, since group
+chats tend to be used for different reasons as well, the lunch messages can be lost in the amount of
+sent messages. The other problem is that a group chat is not always inclusive of every person
+joining the meal and thus don’t solve the problem in its most general form. We found that the
+messages exchanged in order to plan a lunch are often repetitive, thus indicated that there is an
+opportunity for optimisation. Below are a few screenshots of how these group chats might look like.
 
-<img width="186" alt="group_chat_screenshot_1 (1)" src="https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/1b88a0e1-04e2-47a7-98c2-8504881541cf">
-<br>
-<img width="186" alt="group_chat_screenshot_2 (1)" src="https://github.com/eth-hci-course/hci-project-hci2023-group-16/assets/146080612/3973cbd6-0a3d-492b-9f1b-3aa6b974f1c9">
+![group chat screenshot 1](Deliverables/week3/group_chat_screenshot_1.png)
+![group chat screenshot 1](Deliverables/week3/group_chat_screenshot_2.png)
 
 #### Lunchzeit
 
-Lunchzeit, a German firm established in 2017 with a team of three professionals, focuses on fostering workplace connections and enhancing overall well-being. Their lunchlottery function is designed to facilitate diverse and engaging connections among employees. Their core philosophy is built upon the idea that fostering comfortable and connected employees leads to quantifiable benefits, such as reduced sick days, increased loyalty, and heightened productivity and creativity.
+Lunchzeit, a German firm established in 2017 with a team of three professionals, focuses on
+fostering workplace connections and enhancing overall well-being. Their lunchlottery function is
+designed to facilitate diverse and engaging connections among employees. Their core philosophy is
+built upon the idea that fostering comfortable and connected employees leads to quantifiable
+benefits, such as reduced sick days, increased loyalty, and heightened productivity and creativity.
 
-One notable aspect of Lunchzeit's approach is its adaptability. They tailor their matchmaking algorithm to meet the specific requirements of each partnering company, offering bespoke solutions. Whether it's the creation of a user-friendly web app or the seamless integration of their services into a company's intranet, Lunchzeit provides tailored solutions.
+One notable aspect of Lunchzeit's approach is its adaptability. They tailor their matchmaking
+algorithm to meet the specific requirements of each partnering company, offering bespoke solutions.
+Whether it's the creation of a user-friendly web app or the seamless integration of their services
+into a company's intranet, Lunchzeit provides tailored solutions.
 
-Furthermore, Lunchzeit offers its services at 49€ per month, presenting an affordable option for companies aiming to improve their corporate culture and boost employee morale.
+Furthermore, Lunchzeit offers its services at 49€ per month, presenting an affordable option for
+companies aiming to improve their corporate culture and boost employee morale.
 
-This is something that could also be great for students, since feeling connected as a student and having people to ask questions can also improve a students grades and morale.
-Thus it might be beneficial to try to connect people not only with their best friends for lunch, but maybe add other students from time to time.
+This is something that could also be great for students, since feeling connected as a student and
+having people to ask questions can also improve a students grades and morale. Thus it might be
+beneficial to try to connect people not only with their best friends for lunch, but maybe add other
+students from time to time.
 
 ## "How Might We" Statements
 
@@ -155,77 +193,125 @@ Thus it might be beneficial to try to connect people not only with their best fr
   - How might we enable the user to have control over the group of people that join?
 - How might we make sure that users actually commit to their proposed lunchtime?
   - How might we prompt users to keep their shared lunchtime slots updated?
-  - How might we decide how to prioritize the different needs of the users? (Place, Time, Amount of people)
+  - How might we decide how to prioritize the different needs of the users? (Place, Time, Amount of
+    people)
 - How might we integrate in-app decision-making features for lunch plans?
 - How might we enable the user to select a specific restaurant or provide his preferences?
 
 ## Brainstorming
 
-We chose the brainstorming approach B, where we first had a 15min idea generation phase on Miro, an online whiteboard tool working marvellously for this job. Afterwards we used the feature to see who created which note in order to have every team member present their idea, making for a very productive discussion. While keeping our judgment towards ideas at a bare minimum, we still observed that mostly two different ways of solving the problem rose to the surface.
+We chose the brainstorming approach B, where we first had a 15min idea generation phase on Miro, an
+online whiteboard tool working marvellously for this job. Afterwards we used the feature to see who
+created which note in order to have every team member present their idea, making for a very
+productive discussion. While keeping our judgment towards ideas at a bare minimum, we still observed
+that mostly two different ways of solving the problem rose to the surface.
 
-The first approach is more similar to Calendly. Each user enters their preferred time on a calendar and the app creates groups automatically that correspond to the respective friend groups. The second approach consists of users seeing the proposed times of their friends and being able to commit them. The difference basically boils down to who should be in charge of creating groups - the app or the users.
+The first approach is more similar to Calendly. Each user enters their preferred time on a calendar
+and the app creates groups automatically that correspond to the respective friend groups. The second
+approach consists of users seeing the proposed times of their friends and being able to commit them.
+The difference basically boils down to who should be in charge of creating groups - the app or the
+users.
 
-We also discussed the problem of users potentially not committing to their indicated schedule where we found a few interesting solutions.
+We also discussed the problem of users potentially not committing to their indicated schedule where
+we found a few interesting solutions.
 
-Overall we are very happy with our brainstorming and the resulting Miro board from which we can draw inspiration in the future.
-https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540
+Overall we are very happy with our brainstorming and the resulting Miro board from which we can draw
+inspiration in the future. https://miro.com/app/board/uXjVNfhB-Wg=/?share_link_id=104881299540
 
-<img src="Deliverables/week3/Brainstorming_Miro.jpg" alt="Storyboard Idea A" title="Brainstorm_miro" width="500" height="600" />
-![Affinity diagram from brainstorm](Deliverables/week3/affinity_brainstorm.png)
+<img src="Deliverables/week3/Brainstorming_Miro.jpg" alt="Storyboard Idea A" title="Brainstorm_miro"
+width="500" height="600" /> ![Affinity diagram from
+brainstorm](Deliverables/week3/affinity_brainstorm.png)
 
 ## Low-fidelity Prototype
 
 #### Idea A
 
-<img src="Deliverables/LowFiPrototyping/IdeaA/Storyboard/IMG_1247.JPG" alt="Storyboard Idea A" title="Storyboard Idea A" width="500" height="600" />
+<img src="Deliverables/LowFiPrototyping/IdeaA/Storyboard/IMG_1247.JPG" alt="Storyboard Idea A"
+title="Storyboard Idea A" width="500" height="600" />
 
-This version of the app illustrates the convenience of automated lunch scheduling for busy students. Without the hassle of daily planning, one receives timely notifications about lunch matches with friends based on the selected availability in the beginning of the week.
+This version of the app illustrates the convenience of automated lunch scheduling for busy students.
+Without the hassle of daily planning, one receives timely notifications about lunch matches with
+friends based on the selected availability in the beginning of the week.
 
-<img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg" alt="Paper Prototype Idea A 2" title="Paper Prototype Idea A 2" width="300" height="600" />
+<img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_2.jpg" alt="Paper Prototype Idea A 2"
+title="Paper Prototype Idea A 2" width="300" height="600" />
 
-At the start of each week, you can select your desired lunch times and canteen for each day. You can do so by scrolling through a list of available times and selecting your preferred canteen from a dropdown menu. The app then pairs you with friends who have opted for the same time slot. The final location is determined based on the majority vote.
+At the start of each week, you can select your desired lunch times and canteen for each day. You can
+do so by scrolling through a list of available times and selecting your preferred canteen from a
+dropdown menu. The app then pairs you with friends who have opted for the same time slot. The final
+location is determined based on the majority vote.
 
-<img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_1.jpg" alt="Paper Prototype Idea A 1" title="Paper Prototype Idea A 1" width="300" height="600" />
+<img src="Deliverables/LowFiPrototyping/IdeaA/Paper/ideaA_1.jpg" alt="Paper Prototype Idea A 1"
+title="Paper Prototype Idea A 1" width="300" height="600" />
 
-You received a match for a lunch time and place with your friends and can either accept or reject the offer.
+You received a match for a lunch time and place with your friends and can either accept or reject
+the offer.
 
 #### Idea B
 
-<img src="Deliverables/LowFiPrototyping/IdeaB/Storyboard/IMG_1246.JPG" alt="Storyboard Idea B" title="Storyboard Idea B" width="500" height="600" />
+<img src="Deliverables/LowFiPrototyping/IdeaB/Storyboard/IMG_1246.JPG" alt="Storyboard Idea B"
+title="Storyboard Idea B" width="500" height="600" />
 
-This version of the app demonstrates the coordination of lunch plans amidst a hectic schedule. Bypassing the clutter of multiple chat groups, this version showcases the proposition and matching process.
+This version of the app demonstrates the coordination of lunch plans amidst a hectic schedule.
+Bypassing the clutter of multiple chat groups, this version showcases the proposition and matching
+process.
 
-<img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg" alt="Paper Prototype Idea B 2" title="Paper Prototype Idea B 2" width="300" height="600" />
+<img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_2.jpg" alt="Paper Prototype Idea B 2"
+title="Paper Prototype Idea B 2" width="300" height="600" />
 
-The home screen shows you an already proposed location and time including the people joining. You can either press on the offer to join or press a button to propose another time.
+The home screen shows you an already proposed location and time including the people joining. You
+can either press on the offer to join or press a button to propose another time.
 
-<img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg" alt="Paper Prototype Idea B 3" title="Paper Prototype Idea B 3" width="300" height="600" />
+<img src="Deliverables/LowFiPrototyping/IdeaB/Paper/ideaB_3.jpg" alt="Paper Prototype Idea B 3"
+title="Paper Prototype Idea B 3" width="300" height="600" />
 
-Through this interface, you can suggest a time using a scrollable selector and choose a canteen from a dropdown menu. You can also designate the meeting point using the provided textbox and select the maximum number of friends joining via a dropdown menu.
+Through this interface, you can suggest a time using a scrollable selector and choose a canteen from
+a dropdown menu. You can also designate the meeting point using the provided textbox and select the
+maximum number of friends joining via a dropdown menu.
 
 #### Idea C
 
-<img src="Deliverables/LowFiPrototyping/IdeaC/Storyboard/image.jpg" alt="Storyboard Idea C" title="Storyboard Idea C" width="800" height="600" />
+<img src="Deliverables/LowFiPrototyping/IdeaC/Storyboard/image.jpg" alt="Storyboard Idea C"
+title="Storyboard Idea C" width="800" height="600" />
 
-This version of the app showcases the process of confirming attendance for a lunch meeting initiated by another user.
+This version of the app showcases the process of confirming attendance for a lunch meeting initiated
+by another user.
 
 ## Mid-fidelity Prototype
 
 #### Prototype 1: Manual Scheduling
 
-<img src="img/manual_1.png" alt="Prototype Manual 1" title="Prototype Manual 1" width="300" height="600" /> <img src="img/manual_2.png" alt="Prototype Manual 2" title="Prototype Manual 2" width="300" height="600" />
+<img src="img/manual_1.png" alt="Prototype Manual 1" title="Prototype Manual 1" width="300"
+height="600" /> <img src="img/manual_2.png" alt="Prototype Manual 2" title="Prototype Manual 2"
+width="300" height="600" />
 
-<img src="img/manual_3.png" alt="Prototype Manual 3" title="Prototype Manual 3" width="300" height="600" /> <img src="img/manual_4.png" alt="Prototype Manual 4" title="Prototype Manual 4" width="300" height="600" />
+<img src="img/manual_3.png" alt="Prototype Manual 3" title="Prototype Manual 3" width="300"
+height="600" /> <img src="img/manual_4.png" alt="Prototype Manual 4" title="Prototype Manual 4"
+width="300" height="600" />
 
-This prototype solves the lunch scheduling problem day by day. You can commit to a time scheduled by your friends or you can also propose a time and invite them yourself. With easy login features, you can manage your circle by adding them to your friends list. Overall, this version of the app allows for flexible scheduling on a daily basis and facilitates last-minute plan changes.
+This prototype solves the lunch scheduling problem day by day. You can commit to a time scheduled by
+your friends or you can also propose a time and invite them yourself. With easy login features, you
+can manage your circle by adding them to your friends list. Overall, this version of the app allows
+for flexible scheduling on a daily basis and facilitates last-minute plan changes.
 
 #### Prototype 2: Automatic Scheduling
 
-<img src="img/automatic_3.png" alt="Prototype Automatic 3" title="Prototype Automatic 3" width="300" height="600"/> <img src="img/automatic_2.png" alt="Prototype Automatic 2" title="Prototype Automatic 2" width="300" height="600" />
+<img src="img/automatic_3.png" alt="Prototype Automatic 3" title="Prototype Automatic 3" width="300"
+height="600"/> <img src="img/automatic_2.png" alt="Prototype Automatic 2" title="Prototype Automatic
+2" width="300" height="600" />
 
-<img src="img/automatic_1.png" alt="Prototype Automatic 1" title="Prototype Automatic 1" width="300" height="600"/> <img src="img/automatic_4.png" alt="Prototype Automatic 4" title="Prototype Automatic 4" width="300" height="600" />
+<img src="img/automatic_1.png" alt="Prototype Automatic 1" title="Prototype Automatic 1" width="300"
+height="600"/> <img src="img/automatic_4.png" alt="Prototype Automatic 4" title="Prototype Automatic
+4" width="300" height="600" />
 
-This prototype handles the lunch scheduling problem in an automatic way. At the beginning of the week you pick your preferred lunch times for each day and either create or join a group of friends. The app will then automatically pick a time that suits each individual group member and propose it to the group. On each day you can then decide which group you would like to eat lunch with by accepting or declining the algorithm's proposed lunch time for each group. This scheduling manner allows for less last-minute flexibility, but it takes away the daily hassle of committing to and proposing lunch times. You simply set your preferences once a week and pick your preferred slot daily."
+This prototype handles the lunch scheduling problem in an automatic way. At the beginning of the
+week you pick your preferred lunch times for each day and either create or join a group of friends.
+The app will then automatically pick a time that suits each individual group member and propose it
+to the group. On each day you can then decide which group you would like to eat lunch with by
+accepting or declining the algorithm's proposed lunch time for each group. This scheduling manner
+allows for less last-minute flexibility, but it takes away the daily hassle of committing to and
+proposing lunch times. You simply set your preferences once a week and pick your preferred slot
+daily."
 
 #### Peer Feedback
 
@@ -237,91 +323,141 @@ Andri Bernhardsgrütter: Group 11 <br>
 
 #### Summary of Peer Feedback
 
-We presented both our manual and automatic prototype models to a group of students. They recognized the problem that we are trying to solve, but didn't quite agree on our approach. Contrary to our expectations, the majority of our peer reviewers expressed a preference for the automatic model. They criticized the manual, invitation-based system as inconvenient, stating they were unlikely to use it. They argued it failed to solve the lunch scheduling problem in an easy way, pointing out that it is too similar to other messaging services and would only add to the confusion caused by having yet another app. They liked the automatic approach, since it's based on entering your availability just once a week and letting the app make lunch arrangements. In contrast, the purpose and benefit of the manual system remained unclear to them. The reviewers only raised one concern specific to the automatic model, which was regarding the potential complications in changing your weekly available lunch times when a lunch appointment is already set for that day.
+We presented both our manual and automatic prototype models to a group of students. They recognized
+the problem that we are trying to solve, but didn't quite agree on our approach. Contrary to our
+expectations, the majority of our peer reviewers expressed a preference for the automatic model.
+They criticized the manual, invitation-based system as inconvenient, stating they were unlikely to
+use it. They argued it failed to solve the lunch scheduling problem in an easy way, pointing out
+that it is too similar to other messaging services and would only add to the confusion caused by
+having yet another app. They liked the automatic approach, since it's based on entering your
+availability just once a week and letting the app make lunch arrangements. In contrast, the purpose
+and benefit of the manual system remained unclear to them. The reviewers only raised one concern
+specific to the automatic model, which was regarding the potential complications in changing your
+weekly available lunch times when a lunch appointment is already set for that day.
 
 For both prototypes, they offered valuable suggestions for additional features:
 
 - Implementing a favorites system to prioritize preferred groups.
-- Integrating personal preferences into user profiles, such as food preferences, allergies, location preferences, etc.
+- Integrating personal preferences into user profiles, such as food preferences, allergies, location
+  preferences, etc.
 - Displaying who has accepted or declined invitations.
 - Adding and inviting friends of friends or suggested friends
 
 #### Conclusion
 
-After our recent feedback session, it became evident that while our core idea held promise, our execution needed refining. We combined the best ideas from both prototypes to create yet another prototype, which solves the weak points of each individual prototype. Refer to pictures below for the new prototype.
+After our recent feedback session, it became evident that while our core idea held promise, our
+execution needed refining. We combined the best ideas from both prototypes to create yet another
+prototype, which solves the weak points of each individual prototype. Refer to pictures below for
+the new prototype.
 
-We've transitioned from a labor-intensive invitation system to a more streamlined automatic scheduling system. Although the latter does alleviate much of the user's responsibility, it also necessitated a weekly plan input, which we perceived as another potential friction point.
+We've transitioned from a labor-intensive invitation system to a more streamlined automatic
+scheduling system. Although the latter does alleviate much of the user's responsibility, it also
+necessitated a weekly plan input, which we perceived as another potential friction point.
 
 To further simplify the process, we've introduced a group-based system. Here's how it works:
 
-Group Creation: A group leader establishes a group, setting a default time and location for lunch. This preset arrangement gets automatically proposed every day, making the decision process virtually hands-off for most members.
+Group Creation: A group leader establishes a group, setting a default time and location for lunch.
+This preset arrangement gets automatically proposed every day, making the decision process virtually
+hands-off for most members.
 
-Flexibility: Members aren't strictly bound to the default. They can suggest alternative times if needed. Moreover, users have the liberty to be part of multiple groups, providing them with a range of lunch options daily. All it takes is a single click to select their preferred group for the day.
+Flexibility: Members aren't strictly bound to the default. They can suggest alternative times if
+needed. Moreover, users have the liberty to be part of multiple groups, providing them with a range
+of lunch options daily. All it takes is a single click to select their preferred group for the day.
 
-Spontaneous Lunches: While our group-based system streamlines scheduled lunches, we recognize the joy of spontaneous outings. We've catered to this by introducing a 'wildcard' function. Users can quickly form a temporary group by cherry-picking members from existing groups. These ad-hoc groups are ephemeral, dissolving post-lunch to ensure your group menu remains clutter-free.
+Spontaneous Lunches: While our group-based system streamlines scheduled lunches, we recognize the
+joy of spontaneous outings. We've catered to this by introducing a 'wildcard' function. Users can
+quickly form a temporary group by cherry-picking members from existing groups. These ad-hoc groups
+are ephemeral, dissolving post-lunch to ensure your group menu remains clutter-free.
 
-In essence, our new prototype aims to strike a balance between structure and spontaneity, ensuring users have a hassle-free experience while retaining the flexibility to mix things up when they wish
+In essence, our new prototype aims to strike a balance between structure and spontaneity, ensuring
+users have a hassle-free experience while retaining the flexibility to mix things up when they wish
 
-Here are the images of the final prototype:
-![final prototype full](img/finalprototype1.png)
+Here are the images of the final prototype: ![final prototype full](img/finalprototype1.png)
 
 #### What Feature For A/B?
-After receiving peer feedback, we decided to A/B test an entirely new interface concept. The key points mentioned were simplicity, convenience, and differentiation from other messaging apps. Consequently, we are planning to implement a swiping-based interface, similar to that of Tinder. This will show available lunches on the home screen one by one, allowing users to swipe through potential lunch times. This interface design aims to address all the points raised in the peer feedback. 
+
+After receiving peer feedback, we decided to A/B test an entirely new interface concept. The key
+points mentioned were simplicity, convenience, and differentiation from other messaging apps.
+Consequently, we are planning to implement a swiping-based interface, similar to that of Tinder.
+This will show available lunches on the home screen one by one, allowing users to swipe through
+potential lunch times. This interface design aims to address all the points raised in the peer
+feedback.
 
 # User Study Organization
 
-
-The A/B testing we want to do in this study, is to look at the accepting of groups feature. 
-NH 1: The swiping feature instead of the button accept feature has no impact on SUS value from the user.
-NH 2: The swiping feature instead of the button accept feature has no impact has no impact on the time needed to select a group.
-NH3: The swiping feature instead of the button accept feature has no impact on the amount of interactions (i.e., taps/swipes) the user has to do.
+The A/B testing we want to do in this study, is to look at the accepting of groups feature. NH 1:
+The swiping feature instead of the button accept feature has no impact on SUS value from the user.
+NH 2: The swiping feature instead of the button accept feature has no impact has no impact on the
+time needed to select a group. NH3: The swiping feature instead of the button accept feature has no
+impact on the amount of interactions (i.e., taps/swipes) the user has to do.
 
 ## Goal of the Study
 
 - What are we investigating and why?
 
-The aim of this study is to assess the impact of a swiping interface for accepting group meal appointments in our LunchSphere app. Specifically, we are interested in understanding whether this swiping feature affects the User's System Usability Scale (SUS) score, the time required to select a group, and the number of interactions (taps/swipes) users need to perform. We have chosen to conduct an A/B test on this feature as we believe that simplicity and efficiency in planning are key qualities for a planning app, based on feedback received.
+The aim of this study is to assess the impact of a swiping interface for accepting group meal
+appointments in our LunchSphere app. Specifically, we are interested in understanding whether this
+swiping feature affects the User's System Usability Scale (SUS) score, the time required to select a
+group, and the number of interactions (taps/swipes) users need to perform. We have chosen to conduct
+an A/B test on this feature as we believe that simplicity and efficiency in planning are key
+qualities for a planning app, based on feedback received.
 
 - Is your investigation inspired by your low-fi/mid-fi?
 
-While our investigation is not directly inspired by our low-fi/mid-fi prototypes, we acknowledge that we haven't fully developed or given extensive consideration to the accepting feature. Therefore, we are conducting this A/B test to gather insights into this specific aspect of our app.
+While our investigation is not directly inspired by our low-fi/mid-fi prototypes, we acknowledge
+that we haven't fully developed or given extensive consideration to the accepting feature.
+Therefore, we are conducting this A/B test to gather insights into this specific aspect of our app.
 
 We put more emphasis on different parts of the prototype.
 
 - How will A/B variants help you achieve your goal?
 
-A/B testing helps us to systematically evaluate the impact of the swiping feature on SUS values, efficiency, and user interactions. The data collected from A/B testing will inform our decision-making process, helping us determine the most user-friendly and effective approach for accepting group meal appointments in our app.
+A/B testing helps us to systematically evaluate the impact of the swiping feature on SUS values,
+efficiency, and user interactions. The data collected from A/B testing will inform our
+decision-making process, helping us determine the most user-friendly and effective approach for
+accepting group meal appointments in our app.
 
-What is A: In this variant, our LunchSphere app displays groups with clear buttons for accepting and other available options. There is no decline button, and users can see who has already joined the group. Users can join the group that suits their lunch schedule.
+What is A: In this variant, our LunchSphere app displays groups with clear buttons for accepting and
+other available options. There is no decline button, and users can see who has already joined the
+group. Users can join the group that suits their lunch schedule.
 
 <p align="center"><img src="img/OriginalLunch.png" align="center" title="Original Lunch Schedule" width="300" height="600"/></p>
 
-What is B: In this variant, groups are presented in a Tinder-like manner. Users can swipe right to accept a group, and unlike the A variant, they also have the option to decline, which allows them to see more groups. Swiping up enables users to reschedule the group if needed. Additionally, users are presented with an overview after swiping through all the events, in case they didn't find a suitable group or made a mistake while swiping.
+What is B: In this variant, groups are presented in a Tinder-like manner. Users can swipe right to
+accept a group, and unlike the A variant, they also have the option to decline, which allows them to
+see more groups. Swiping up enables users to reschedule the group if needed. Additionally, users are
+presented with an overview after swiping through all the events, in case they didn't find a suitable
+group or made a mistake while swiping.
 
 <p align="center"><img src="img/TinderLunch.png" align="center" title="Tinderlike Lunch Schedule" width="300" height="600"/></p>
 
 ## Hypotheses
 
-NH1: The swiping feature instead of the button accept feature has no impact on the SUS value of the user
+NH1: The swiping feature instead of the button accept feature has no impact on the SUS value of the
+user
 
-NH2: The swiping feature instead of the button accept feature has no impact on the time needed to select a group
+NH2: The swiping feature instead of the button accept feature has no impact on the time needed to
+select a group
 
-NH3: The swiping feature instead of the button accept feature has no impact on the amount of interactions (i.e., taps/swipes) the user has to do. 
+NH3: The swiping feature instead of the button accept feature has no impact on the amount of
+interactions (i.e., taps/swipes) the user has to do.
 
 ## What data to collect?
 
 1. **Participant Information (Before the Test)**
-    - **Unique ID**: [Assigned by the study]
-    - **Demographics**: Age, Gender
-    - **App Usage Background**: Familiarity with swiping apps like Tinder
-    - **Lunch Planning Habits**: Frequency of planning lunches via group chats and in-person, and propensity to initiate lunch plans
+   - **Unique ID**: [Assigned by the study]
+   - **Demographics**: Age, Gender
+   - **App Usage Background**: Familiarity with swiping apps like Tinder
+   - **Lunch Planning Habits**: Frequency of planning lunches via group chats and in-person, and
+     propensity to initiate lunch plans
 2. **User Satisfaction Measurement**
-    - **SUS Scale**: To gauge the perceived usability and satisfaction with the app interface
+   - **SUS Scale**: To gauge the perceived usability and satisfaction with the app interface
 3. **App Interaction Metrics**
-    - **Task Completion Time**: How long it takes to select a group using the app
-    - **Interaction Count**: The number of taps/swipes needed to complete the group selection task
+   - **Task Completion Time**: How long it takes to select a group using the app
+   - **Interaction Count**: The number of taps/swipes needed to complete the group selection task
 4. **Post-Test Subjective Insights**
-    - **User Preferences**: At the end of the session, participants will discuss their preferred interface and explain their choices, providing insight into the quantitative data
+   - **User Preferences**: At the end of the session, participants will discuss their preferred
+     interface and explain their choices, providing insight into the quantitative data
 
 ## **Preliminary Experiment Procedure**
 
@@ -331,30 +467,40 @@ NH3: The swiping feature instead of the button accept feature has no impact on t
 
 ### **Introduction to the Experiment**
 
-1. Welcome the participant to the user study of "LunchSphere" and explain that you will guide them through an experiment involving the use of our lunch planner app.
-2. Let them know that they will be presented with two different versions of the app, and they do not need any prior knowledge about the app.
+1. Welcome the participant to the user study of "LunchSphere" and explain that you will guide them
+   through an experiment involving the use of our lunch planner app.
+2. Let them know that they will be presented with two different versions of the app, and they do not
+   need any prior knowledge about the app.
 
 ### **Scenario: Scheduling a Lunch, Step 1:**
 
 1. Present the following scenario to the participant:
-    
-    *Imagine it's around 10 am, and you're at home feeling quite hungry. You have a meeting scheduled until 12:00, and you want to have lunch at the university's cafeteria (mensa) with your friends. However, you're unsure if your friends are planning to eat before or after the meeting. You know that most of your friends use the "LunchSphere" app, and you're part of some lunch groups. You decide to open the app and search for a lunch reservation after 12:00.*
-    
+
+   _Imagine it's around 10 am, and you're at home feeling quite hungry. You have a meeting scheduled
+   until 12:00, and you want to have lunch at the university's cafeteria (mensa) with your friends.
+   However, you're unsure if your friends are planning to eat before or after the meeting. You know
+   that most of your friends use the "LunchSphere" app, and you're part of some lunch groups. You
+   decide to open the app and search for a lunch reservation after 12:00._
 
 ### **Scenario: Scheduling a Lunch, Step 2: (Practical)**
 
-1. Provide the participant with a smartphone with the "LunchSphere" app installed and have them use it to schedule a lunch based on Step 1.
+1. Provide the participant with a smartphone with the "LunchSphere" app installed and have them use
+   it to schedule a lunch based on Step 1.
 
 ### **Scenario: Rescheduling a Lunch, Step 1:**
 
 1. Present the following scenario to the participant:
-    
-    *After using the app to schedule lunch, your supervisor informs you that the meeting will run longer than expected, likely until 12:20. This means you cannot make it to lunch with your friends as initially planned. However, there's a reschedule feature on the app. You know your friends are flexible with their schedules, so you decide to try and reschedule the lunch with them.*
-    
+
+   _After using the app to schedule lunch, your supervisor informs you that the meeting will run
+   longer than expected, likely until 12:20. This means you cannot make it to lunch with your
+   friends as initially planned. However, there's a reschedule feature on the app. You know your
+   friends are flexible with their schedules, so you decide to try and reschedule the lunch with
+   them._
 
 ### **Scenario: Rescheduling a Lunch, Step 2 (Practical)**
 
-1. Provide the participant with the smartphone with the "LunchSphere" app again and instruct them to use the reschedule feature to adjust their lunch plans based on Step 1.
+1. Provide the participant with the smartphone with the "LunchSphere" app again and instruct them to
+   use the reschedule feature to adjust their lunch plans based on Step 1.
 
 ### Subjective Ratings
 
@@ -362,31 +508,71 @@ NH3: The swiping feature instead of the button accept feature has no impact on t
 
 ### Performance
 
-- While the participant performs the tasks, we measure the time he needs with a timer implemented in our App. We also log the swaps/taps the participant performed in our App. 
-We use both of these measures for our performance assessment.
+- While the participant performs the tasks, we measure the time he needs with a timer implemented in
+  our App. We also log the swaps/taps the participant performed in our App. We use both of these
+  measures for our performance assessment.
 
 ### Qualitative feedback
 
 - **Post task interview**:
-    - "What were your thoughts when using the app for scheduling/rescheduling?"
-    - "Were there any aspects of the app that confused you or that you found difficult to use?"
-    - "What did you like or dislike about the user interface and design?"
-    - "Did you encounter any issues or unexpected behaviors?"
-- **Comparative Analysis:** Since participants will interact with two different versions of the app, ask them to compare the two versions and express their preferences. This can help you understand which version performs better in terms of user experience.
-- **Think-Aloud Protocol:** Encourage participants to verbalize their thoughts, feelings, and actions as they interact with the app. This allows you to gain insights into their decision-making process, frustrations, and satisfaction in real time. (maybe this I’m not sure, this could also impact our measurements and lead to noise)
+  - "What were your thoughts when using the app for scheduling/rescheduling?"
+  - "Were there any aspects of the app that confused you or that you found difficult to use?"
+  - "What did you like or dislike about the user interface and design?"
+  - "Did you encounter any issues or unexpected behaviors?"
+- **Comparative Analysis:** Since participants will interact with two different versions of the app,
+  ask them to compare the two versions and express their preferences. This can help you understand
+  which version performs better in terms of user experience.
+- **Think-Aloud Protocol:** Encourage participants to verbalize their thoughts, feelings, and
+  actions as they interact with the app. This allows you to gain insights into their decision-making
+  process, frustrations, and satisfaction in real time. (maybe this I’m not sure, this could also
+  impact our measurements and lead to noise)
 
 ## Insights and changes from preliminary user study
-The experiment, all in all, went as expected. There were no bugs or unexpected behaviors in our app that we'd have to change. The users understood their tasks pretty quickly. I had the feeling that both users saw it almost like a test, meaning they were very careful not to press any wrong buttons. The task completion time and interaction count metrics worked well and can give us a good sense of how fast the user can adapt to the two versions of our feature.
+
+The experiment, all in all, went as expected. There were no bugs or unexpected behaviors in our app
+that we'd have to change. The users understood their tasks pretty quickly. I had the feeling that
+both users saw it almost like a test, meaning they were very careful not to press any wrong buttons.
+The task completion time and interaction count metrics worked well and can give us a good sense of
+how fast the user can adapt to the two versions of our feature.
 
 **Things we need to change**
- - Both users thought that the listed groups were ordered chronologically. When using both variants, this is indeed the case up to the group they needed to select. After that, they figured they didn't have to keep on swiping/scrolling, since the time of the next groups would not fit the description. We thus need to either order all the groups chronologically or completely mix them up in the beginning, so that they look at all proposed options.
- - For the swiping feature, the first user swiped incorrectly at the beginning and accidentally committed to the wrong group. From there, he did not know if he could go back to swiping and commit to another group. The second user did not realize the swiping feature at all and just used the red and green buttons at the bottom of our app. As a change, we should put small arrows or other aids to help the user correctly utilize our feature. And additionally a training phase to get the user familiar with the app such that things like that don't happen. We forgot to include that in the preliminary user protocol.
 
-##First User Study
-We then conducted the user study and found some major flaws in the study protocol and the app. The most important ones were, first, we did not have a training phase of any sort, resulting in confused users who did not know how to use the app. Second, we gave the users an imaginary situation to schedule lunch. We made sure it matched the actual prototype with the names. However, we forgot to consider the people who were 'pending' in our lunch groups. This resulted in having no clear target group lunchtime in the study and left the participants guessing whether they should enter the lunch group, even though in the scenario they were asked not to join groups with that specific name. Third, in the swiping-based app, there was still no clear enough indication for swiping, so people mostly did not swipe and still used the red and green buttons. So, we were puzzled because we were not only investigating one variable as we should but were also investigating how intuitive the prototypes were on first use because there was no introduction. This also led to users not doing the swiping in the swipe prototype. Additionally, we were kind of measuring decision-making in the users because there was no real lunchtime that suited the scenario given. Because we wanted to be honest and really find out something with this user study, we just fixed everything and redid the study. Here is the final user study protocol:
+- Both users thought that the listed groups were ordered chronologically but this was not the case.
+  The order held only up to the group they needed to select. After that, they figured they didn't
+  have to keep on swiping/scrolling, since the time of the next groups would not fit the
+  description. We thus need to either order all the groups chronologically or completely mix them up
+  in the beginning, so that they look at all proposed options.
+- For the swiping feature, the first user swiped incorrectly at the beginning and accidentally
+  committed to the wrong group. From there, he did not know if he could go back to swiping and
+  commit to another group. The second user did not realize the swiping feature at all and just used
+  the red and green buttons at the bottom of our app. As a change, we should put small arrows or
+  other aids to help the user correctly utilize our feature. And additionally a training phase to
+  get the user familiar with the app such that things like that don't happen. We forgot to include
+  that in the preliminary user protocol.
 
+## First User Study
+
+We then conducted the user study and found some major flaws in the study protocol and the app. The
+two test users in the preliminary user study behaved as we expected, but this was unfortunately not
+the case for most study participants. Either they did not think the task through or they were more
+familiar with the swiping mechanics, we do not know. The most important issues were we experienced
+with participants of the real study were as follows. First, we gave the users an imaginary situation
+to schedule lunch. We made sure it matched the actual prototype with the names. However, we forgot
+to consider the people who were 'pending' in our lunch groups. This resulted in having no clear
+target group lunchtime in the study and left the participants guessing whether they should enter the
+lunch group, even though in the scenario they were asked not to join groups with that specific name.
+Second, we did not have a training phase of any sort, resulting in confused users who did not know
+how to use the app. Third, in the swiping-based app, there was still no clear enough indication for
+swiping, so people mostly did not swipe and still used the red and green buttons. So, we were
+puzzled because we were not only investigating one variable as we should but were also investigating
+how intuitive the prototypes were on first use because there was no introduction. This also led to
+users not doing the swiping in the swipe prototype. To address this issue and be confident of the
+results we would achieve then, we decided to conduct a new second study. We had already very
+valuable insights from the first (faulty) study, but we cannot trust its quantitative results. Here
+is the final user study protocol, as was used in the second (correct) study.
 
 ## Final User Study Protocol
+
 ### Fill out the data in the google sheets file
 
 - Click the link [here]
@@ -397,23 +583,39 @@ We then conducted the user study and found some major flaws in the study protoco
 
 ### **Introduction to the Experiment**
 
-- Welcome the participant to the user study of "LunchSphere" and explain that you will guide them through an experiment involving the use of our lunch planner app.
-- Let them know that they will be presented with two different versions of the app, and they do not need any prior knowledge about the app.
+- Welcome the participant to the user study of "LunchSphere" and explain that you will guide them
+  through an experiment involving the use of our lunch planner app.
+- Let them know that they will be presented with two different versions of the app, and they do not
+  need any prior knowledge about the app.
 - Show one user the A version first and the other the B version first.
 
 ### Training phase
 
-- Show the explanation video to the User. If the user starts with prototype B, show them the respective explanation video (B).
+- Show the explanation video to the User. If the user starts with prototype B, show them the
+  respective explanation video (B). The videos are available under `Deliverables/Study/`
 
 ### **Scenario: Scheduling a Lunch:**
 
-- Present the following scenario to the participant. Tell them that they will be given a cheat sheet to perform the task with the necessary information
+- Present the following scenario to the participant. Tell them that they will be given a cheat sheet
+  to perform the task with the necessary information
 
-It's around 10 am, and you're at home feeling quite hungry. You have a meeting at ETH Zentrum scheduled until 12:05, and you want to have lunch at the university's cafeteria (Mensa) with your friends. However, you're unsure if your friends are planning to eat before or after the meeting. You know most of your friends use the 'LunchSphere' app, and you're part of some lunch groups. You decide to open the app and search for a lunch group after 12:05. Being picky, you don't like Polymensa because their food is usually a bit bland, your favorites would be Plattenmensa or Uni Mensa. You also prefer not to eat lunch with Marie Weber and Franklyn Lund for personal reasons. You hope to get something as close to 12:10 as possible because, at 1:00, you have a lecture you want to attend, so you cannot spend too much time on lunch. 
+It's around 10 am, and you're at home feeling quite hungry. You have a meeting at ETH Zentrum
+scheduled until 12:05, and you want to have lunch at the university's cafeteria (Mensa) with your
+friends. However, you're unsure if your friends are planning to eat before or after the meeting. You
+know most of your friends use the 'LunchSphere' app, and you're part of some lunch groups. You
+decide to open the app and search for a lunch group after 12:05. Being picky, you don't like
+Polymensa because their food is usually a bit bland, your favorites would be Plattenmensa or Uni
+Mensa. You also prefer not to eat lunch with Marie Weber and Franklyn Lund for personal reasons. You
+hope to get something as close to 12:10 as possible because, at 1:00, you have a lecture you want to
+attend, so you cannot spend too much time on lunch.
 
 ### Action**: Scheduling a Lunch**
 
-- Let the participant use the app to schedule a lunch based on the scenario given. The timer only stops once the user enters the committed page of the **right** group (ETH and CO, 12:15, UZH Mensa). Once the user enters the committed page, take the device and navigate to statistics. It is important that you don’t touch the screen anywhere except for the statistics button. Note the gesture count and the timer to the sheets.
+- Let the participant use the app to schedule a lunch based on the scenario given. The timer only
+  stops once the user enters the committed page of the **right** group (ETH and CO, 12:15, UZH
+  Mensa). Once the user enters the committed page, take the device and navigate to statistics. It is
+  important that you don’t touch the screen anywhere except for the statistics button. Note the
+  gesture count and the timer to the sheets.
 
 <aside>
 💡 **Cheatsheet**
@@ -430,30 +632,53 @@ It's around 10 am, and you're at home feeling quite hungry. You have a meeting a
 
 ### Performance
 
-- While the participant performs the tasks, we measure the time he/she needs with a timer implemented in our App. The timer starts when the user taps on the button ‘A Test’ or ‘B Test’ and ends when the user successfully accepted the lunch group they were given. We also tack the total number of gestures, quantifying the instances when the user lifts their finger from the screen therefore recording swipes and button taps.
-We use both of these measures for our performance assessment.
+- While the participant performs the tasks, we measure the time he/she needs with a timer
+  implemented in our App. The timer starts when the user taps on the button ‘A Test’ or ‘B Test’ and
+  ends when the user successfully accepted the lunch group they were given. We also tack the total
+  number of gestures, quantifying the instances when the user lifts their finger from the screen
+  therefore recording swipes and button taps. We use both of these measures for our performance
+  assessment.
 
 ### Qualitative feedback after each A and B
 
 - **Post task interview**:
-    - "What were your thoughts when using the app for scheduling/rescheduling?"
-    - "Were there any aspects of the app that confused you or that you found difficult to use?"
-    - "What did you like or dislike about the user interface and design?"
-    - "Did you encounter any issues or unexpected behaviors?
+  - "What were your thoughts when using the app for scheduling/rescheduling?"
+  - "Were there any aspects of the app that confused you or that you found difficult to use?"
+  - "What did you like or dislike about the user interface and design?"
+  - "Did you encounter any issues or unexpected behaviors?
 
 ### Switch prototype
 
-- Tell the participant that we now do the same procedure but with a different prototype. Then go to the training phase step again in this protocol with the other prototype in hand. Start by showing them the other explanation video
+- Tell the participant that we now do the same procedure but with a different prototype. Then go to
+  the training phase step again in this protocol with the other prototype in hand. Start by showing
+  them the other explanation video
 
 ### Qualitative Feedback after both A and B
 
-- **Comparative Analysis:** Since participants will interact with two different versions of the app, ask them to compare the two versions and express their preferences. This can help you understand which version performs better in terms of user experience.
+- **Comparative Analysis:** Since participants will interact with two different versions of the app,
+  ask them to compare the two versions and express their preferences. This can help you understand
+  which version performs better in terms of user experience.
 
 ## Study Results
-The quantitative results show that prototype A has a higher SUS rating on average than prototype B. However, it was not statistically significant (p=0.14). A possible interpretation could be that both interfaces are equally effective in terms of usability. Another explanation could also be that the SUS rating scheme is just not sensitive enough to capture such subtle differences between the particular interfaces. When testing the task completion time, A was faster than B, but it was also not significant enough (p = 0.11). This might indicate that the tasks we gave the participants were not challenging enough to see differences in performance between the different groups. The only significant results we found were in the gesture count. To complete the task, participants needed significantly fewer gestures in B than in A (p = 0.03). But given the results from the task completion time, this result does not have such a significant impact. We hypothesize that this finding is due to the nature of a swipe versus a scroll. Usually, a scroll can be infinitely small, and in contrast, a swipe is a more definitive action.
 
-The qualitative results were quite clear. Participants liked the overview of prototype A and they enjoyed the more 'fun' usage of the B prototype.
+The quantitative results show that prototype A has a higher SUS rating on average than prototype B.
+However, it was not statistically significant (p=0.14). A possible interpretation could be that both
+interfaces are equally effective in terms of usability. Another explanation could also be that the
+SUS rating scheme is just not sensitive enough to capture such subtle differences between the
+particular interfaces. When testing the task completion time, A was faster than B, but it was also
+not significant enough (p = 0.11). This might indicate that the tasks we gave the participants were
+not challenging enough to see differences in performance between the different groups. The only
+significant results we found were in the gesture count. To complete the task, participants needed
+significantly fewer gestures in B than in A (p = 0.03). But given the results from the task
+completion time, this result does not have such a significant impact. We hypothesize that this
+finding is due to the nature of a swipe versus a scroll. Usually, a scroll can be infinitely small,
+and in contrast, a swipe is a more definitive action.
 
-In conclusion, the study does not show significant results to confidently decide between both versions. Through qualitative results, we are inclined to use prototype A for the first version of LunchSphere. We plan to repeat the experiment with a larger user base.
+The qualitative results were quite clear. Participants liked the overview of prototype A and they
+enjoyed the more 'fun' usage of the B prototype.
 
-Link to full study report: https://github.com/eth-hci-course/hci-project-hci2023-group-16/blob/a8476b291814914793009f09b0424d722643ab82/Deliverables/Study/Study_Report_LunchSphere.pdf
+In conclusion, the study does not show significant results to confidently decide between both
+versions. Through qualitative results, we are inclined to use prototype A for the first version of
+LunchSphere. We plan to repeat the experiment with a larger user base.
+
+The full study report can be found under `Deliverables/Study/Study_Report_LunchSphere.pdf`
