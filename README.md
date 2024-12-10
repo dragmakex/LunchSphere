@@ -8,9 +8,6 @@
 
 # LunchLink, Group 16
 
-Andri Bernhardsgrütter, Charles Kremer, Nishanth Kumar, Alexander Schlieper, Alexander Staikov,
-Nicolas Stucki
-
 ## Project description
 
 Our group members often have lunch at the university cafeteria, but coordinating these lunch outings
